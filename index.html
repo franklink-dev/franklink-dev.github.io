@@ -24,27 +24,18 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
-    <body>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-        
+
         <!--  ====== preloader=============================================  -->
-        <div id="preloader">
-            <div id="loading">
-                <div id="loading-center">
-                    <div id="loading-center-absolute">
-                        <div class="object" id="object_one"></div>
-                        <div class="object" id="object_two"></div>
-                        <div class="object" id="object_three"></div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /preloader -->
-     
+        <!-- /preloader -->
+
         <!--  ====== header-area-start=======================================  -->
         <header>
-            <div id="header-sticky" class="transparent-header header-area">
+            <div id="header-sticky" class="transparent-header header-area sticky-menu">
                 <div class="header">
                     <div class="container">
                         <div class="row align-items-center justify-content-between position-relative">
@@ -55,7 +46,7 @@
                             </div><!-- /col -->
                             <div class="col-xl-7 col-lg-7 col-md-1 col-sm-1 col-1 d-none d-lg-flex justify-content-end position-static">
                                 <div class="main-menu">
-                                    <nav id="mobile-menu">
+                                    <nav id="mobile-menu" style="display: block;">
                                         <ul class="d-block">
                                             <li class="full-mega-menu-position"><a class="active" href="index.html">Home</a>
                                                 <ul class="mega-menu full-mega-menu full-mega-menu1 pt-35 pb-10 pl-30 pr-0 theme-bg">
@@ -120,7 +111,7 @@
                                                 <ul class="mega-menu full-mega-menu full-mega-menu2 d-lg-flex white-bg pl-35 pt-30 pr-25 pb-20">
                                                     <li>
                                                         <a class="mega-title mb-15" href="#">Home</a>
- 
+
                                                         <ul>
                                                             <li><a href="index.html">Saas</a></li>
                                                             <li><a href="index2-sass.html">Saas 2</a></li>
@@ -275,7 +266,7 @@
                 <h6 class="f-700 mb-0">Call Us</h6>
                 <a class="theme-color f-700" href="tell:+8801234567890">+8801234567890</a>
             </div><!-- /mobile phone area -->
-            
+
             <!-- mobile subscribe area -->
             <div class="mobile-subscribe pb-125">
                 <h6 class="f-700 mb-1">Subscribe to Our Newsletter</h6>
@@ -290,42 +281,43 @@
         </div><!-- /side-mobile-menu -->
         <div class="body-overlay"></div>
         <!-- header extra info end  -->
-   
+
 
         <main>
             <!-- ======slider-area-start=========================================== -->
             <div class="slider-area position-relative over-hidden">
-                <div id="scene" class="position-absolute w-100 h-100">
-                    <img data-depth="0.20" class="shape shape-1 d-none d-lg-inline-block" src="images/slider/shape/shape1.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-2 d-none d-lg-inline-block" src="images/slider/shape/shape2.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-3 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-4 d-none d-lg-inline-block flash-infinite" src="images/slider/shape/shape4.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-5 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-6 d-none d-lg-inline-block" src="images/slider/shape/shape5.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-7 d-none d-lg-inline-block" src="images/slider/shape/shape6.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-8 d-none d-lg-inline-block" src="images/slider/shape/shape7.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-9 d-none d-lg-inline-block" src="images/slider/shape/shape8.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-10 d-none d-lg-inline-block" src="images/slider/shape/shape9.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-11 d-none d-lg-inline-block" src="images/slider/shape/shape2.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-12 d-none d-lg-inline-block" src="images/slider/shape/shape10.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-13 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-14 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-15 d-none d-lg-inline-block" src="images/slider/shape/shape1.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-16 d-none d-lg-inline-block" src="images/slider/shape/shape11.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-17 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-18 d-none d-lg-inline-block" src="images/slider/shape/shape12.png" alt="#">
-                    <img data-depth="0.20" class="shape shape-19 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#">
+                <div id="scene" class="position-absolute w-100 h-100" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                    <img data-depth="0.20" class="shape shape-1 d-none d-lg-inline-block" src="images/slider/shape/shape1.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-2 d-none d-lg-inline-block" src="images/slider/shape/shape2.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-3 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-4 d-none d-lg-inline-block flash-infinite" src="images/slider/shape/shape4.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-5 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-6 d-none d-lg-inline-block" src="images/slider/shape/shape5.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-7 d-none d-lg-inline-block" src="images/slider/shape/shape6.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-8 d-none d-lg-inline-block" src="images/slider/shape/shape7.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-9 d-none d-lg-inline-block" src="images/slider/shape/shape8.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-10 d-none d-lg-inline-block" src="images/slider/shape/shape9.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-11 d-none d-lg-inline-block" src="images/slider/shape/shape2.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-12 d-none d-lg-inline-block" src="images/slider/shape/shape10.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-13 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-14 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-15 d-none d-lg-inline-block" src="images/slider/shape/shape1.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-16 d-none d-lg-inline-block" src="images/slider/shape/shape11.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-17 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-18 d-none d-lg-inline-block" src="images/slider/shape/shape12.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+                    <img data-depth="0.20" class="shape shape-19 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
                 </div>
                 <!-- /shape-slider -->
-                <div class="single-slider slider-height1 container-wrapper d-flex align-items-center z-index1" data-background="images/slider/home1-slider-bg.png">
-                    <div class="container">
+                <div class="single-slider slider-height1 container-wrapper d-flex align-items-center z-index1" data-background="images/slider/home1-slider-bg.png" style="background-image: url(&quot;images/slider/home1-slider-bg.png&quot;);">
+                    <div class="container" style="margin-top:-60px">
                         <div class="row align-items-center">
                             <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-center">
-                                <div class="slider-content mt--30 position-relative">
-                                    <span class="f-700 theme-color d-block pb-1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="40">Evalo Softweare</span>
-                                    <h1 class="f-700 pb-22" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="150">Quality solution to make your tech life easier</h1>
-                                    <p data-aos="fade-right" data-aos-duration="2000">Pore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerction</p>
-                                    <div class="video-player-btn d-flex align-items-center z-index11 mt-45" >
+                                <div class="slider-content mt--30 position-relative" style="padding-right:40px; margin-top:-40px">
+
+                                    <h1 class="f-700 pb-22 aos-init aos-animate" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="150">Your Career Hack, in AI Form
+</h1>
+                                    <p data-aos="fade-right" data-aos-duration="2000" class="aos-init aos-animate">Franklink is the AI networking agent for students — turning missed chances into real connections.</p>
+                                    <div class="video-player-btn d-flex align-items-center z-index11 mt-45">
                                         <a data-fancybox="" href="https://youtu.be/nqye02H_H6I" class="d-flex align-items-center">
                                             <div class="video-play-wrap position-relative d-inline-block">
                                                 <div class="video-mark">
@@ -341,18 +333,18 @@
                                     </div><!-- /video-player-btn -->
                                 </div>
                             </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-center ">
+                            <div class="col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-center " style="padding-right: 80px;">
                                 <div class="slider-img1 mt-25 pl-65 z-index1 position-relative">
                                     <img class="bounce-animate" src="images/slider/home1-slider-img.png" alt="image">
                                     <div class="slider-right-dotted s-dotted position-absolute d-none d-md-block z-index-1">
-                                        <img class="bounce-animate2" src="images/slider/shape/slider-right-dotted.png" alt="image">
+
                                     </div><!-- /slider-right-dotted -->
                                 </div>
                             </div><!-- /col -->
                         </div><!-- /row -->
                     </div><!-- /container -->
                     <div class="slider-left-dotted s-dotted position-absolute d-none d-md-block z-index1">
-                        <img class="rotate-animation" src="images/slider/shape/slider-left-dotted.png" alt="image">
+
                     </div><!-- /slider-left-dotted -->
                 </div>
             </div>
@@ -407,19 +399,23 @@
                 <div class="container">
                     <div class="row align-items-center  flex-column-reverse flex-lg-row">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="about-img img-left-margin text-center" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="about-img img-left-margin text-center aos-init" data-aos="fade-right" data-aos-duration="2000">
                                 <img class="d-block bounce-animate2" src="images/about/home1-about-img.jpg" alt="image">
                             </div><!-- /about-img -->
                         </div><!-- /col -->
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="about-content mb-50 mt-10" data-aos="fade-left" data-aos-duration="2000"> 
+                            <div class="about-content mb-50 mt-10 aos-init aos-animate" data-aos="fade-left" data-aos-duration="2000">
                                 <div class="title">
                                     <span class="theme-color f-700">Learn more about us</span>
-                                    <h3 class="f-700">Innovative application with easy access</h3>
+                                    <h3 class="f-700">Your Personal AI Networking Agent
+</h3>
                                 </div>
                                 <div class="about-text mt-55 ">
-                                    <h6 class="f-400 mb-30">Phasellus seiusmod tempor incididunt ut labore et dolore magna aliqud minim veniam</h6>
-                                    <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nua.</p>
+                                    <h6 class="f-400 mb-30">Think less. Connect more. Franklink does the hard work for you.
+</h6>
+                                    <p>• 100+ personalized messages in 1 hour (vs. 1–2 manually)</p>
+     <p>• 3x higher response rates with genuine personalization</p>
+     <p>• 20+ hours saved each month — use it to study, sleep, or relax</p>
                                     <div class="my-btn mt-47">
                                         <a href="about-us.html" class="btn theme-bg text-capitalize f-18 f-700">Get Started</a>
                                     </div><!-- /my-btn -->
@@ -436,7 +432,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-4  col-lg-4  col-md-4  col-sm-12 col-12">
-                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt" data-aos="fade-up">
+                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt aos-init" data-aos="fade-up">
                                 <div class="ser-icon d-inline-block text-center mb-20 transition5">
                                     <img src="images/icon/writing-2.png" alt="image">
                                 </div><!-- /ser-icon -->
@@ -447,7 +443,7 @@
                             </div><!-- /single-service-content -->
                         </div><!-- /col -->
                         <div class="col-xl-4  col-lg-4  col-md-4  col-sm-12 col-12">
-                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                                 <div class="ser-icon d-inline-block text-center mb-20  transition5">
                                     <img src="images/icon/diagram.png" alt="image">
                                 </div><!-- /ser-icon -->
@@ -458,7 +454,7 @@
                             </div><!-- /single-service-content -->
                         </div><!-- /col -->
                         <div class="col-xl-4  col-lg-4  col-md-4  col-sm-12 col-12">
-                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
                                 <div class="ser-icon d-inline-block text-center mb-20  transition5">
                                     <img src="images/icon/gear-1.png" alt="image">
                                 </div><!-- /ser-icon -->
@@ -475,16 +471,16 @@
 
             <!-- ====== feature-area-start=========================================== -->
             <div class="feature-area mt-60 over-hidden">
-                <div class="feature-bg bg-no-repeat" data-aos="fade-up" data-aos-duration="1800" data-background="images/feature/home1-feature-bg.png">
+                <div class="feature-bg bg-no-repeat aos-init" data-aos="fade-up" data-aos-duration="1800" data-background="images/feature/home1-feature-bg.png" style="background-image: url(&quot;images/feature/home1-feature-bg.png&quot;);">
                     <div class="container">
                         <div class="row align-items-center mt-10 flex-column-reverse flex-lg-row">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pr-10">
-                                <div class="feature-img img-left-margin mt-35 text-center" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="feature-img img-left-margin mt-35 text-center aos-init" data-aos="fade-right" data-aos-duration="2000">
                                     <img class="d-block bounce-animate2" src="images/feature/home1-feature-img.png" alt="image">
                                 </div><!-- /feature-img -->
                             </div><!-- /col -->
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pl-lg-0 pl-xl-3">
-                                <div class="feature-content mb-10" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="feature-content mb-10 aos-init" data-aos="fade-left" data-aos-duration="2000">
                                     <div class="title">
                                         <span class="theme-color f-700">Learn more about us</span>
                                         <h3 class="f-700 pb-30">Generate sales and manage earning</h3>
@@ -556,11 +552,11 @@
 
             <!-- ====== sp-feature-area-start================================================= -->
             <div class="sp-feature-area over-hidden mt--50">
-                <div class="sp-feature-bg feature-bg bg-no-repeat pt-220 pb-95" data-aos="fade-up" data-aos-duration="1800" data-background="images/feature/home1-sp-feature-bg.png">
+                <div class="sp-feature-bg feature-bg bg-no-repeat pt-220 pb-95 aos-init" data-aos="fade-up" data-aos-duration="1800" data-background="images/feature/home1-sp-feature-bg.png" style="background-image: url(&quot;images/feature/home1-sp-feature-bg.png&quot;);">
                     <div class="container">
                         <div class="row align-items-center mt-10">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="sp-feature-content pr-xl-2 mb-10 mt-45" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="sp-feature-content pr-xl-2 mb-10 mt-45 aos-init" data-aos="fade-right" data-aos-duration="2000">
                                     <div class="title">
                                         <span class="theme-color f-700">Learn more about us</span>
                                         <h3 class="f-700 pb-30">Online reporting to get best of business</h3>
@@ -584,9 +580,9 @@
                                         <a href="about-us.html" class="btn theme-bg text-capitalize">More Details</a>
                                     </div><!-- /my-btn -->
                                 </div><!-- /feature-content -->
-                            </div><!-- /col -->  
+                            </div><!-- /col -->
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="feature-img img-right-margin mt-35 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="feature-img img-right-margin mt-35 d-flex justify-content-center aos-init" data-aos="fade-left" data-aos-duration="2000">
                                     <img class="d-block ml-lg-auto bounce-animate2" src="images/feature/home1-sp-feature-img.png" alt="image">
                                 </div><!-- /feature-img -->
                             </div><!-- /col -->
@@ -618,7 +614,7 @@
                                             <span class="per d-inline-block f-700">+</span>
                                         </div>
                                         <p class="black-color text-center f-700 mb-0 mt-1">Moudle</p>
-                                    </div>    
+                                    </div>
                                 </li>
                                 <li class="d-inline-block facts2 theme-bg-fact single-facts-margin-left position-relative">
                                     <div class="single-facts  theme-bg text-center pt-46 pb-50 mb-30">
@@ -627,7 +623,7 @@
                                             <span class="white-color d-inline-block f-700">K</span>
                                         </div>
                                         <p class="white-color text-center f-700 mb-0 mt-1">Lines of Code</p>
-                                    </div>    
+                                    </div>
                                 </li>
                                 <li class="d-inline-block facts3 single-facts-margin-left  position-relative">
                                     <div class="single-facts  white-bg text-center pt-46 pb-50 mb-30">
@@ -636,7 +632,7 @@
                                             <span class="d-inline-block f-700">+</span>
                                         </div>
                                         <p class="black-color text-center f-700 mb-0 mt-1">Report Modeling</p>
-                                    </div>    
+                                    </div>
                                 </li>
                                 <li class="d-inline-block facts4 theme-bg-fact single-facts-margin-left position-relative">
                                     <div class="single-facts  theme-bg text-center pt-46 pb-50 mb-30">
@@ -645,7 +641,7 @@
                                             <span class="white-color d-inline-block f-700">+</span>
                                         </div>
                                         <p class="white-color text-center f-700 mb-0 mt-1">Color Sceme</p>
-                                    </div>    
+                                    </div>
                                 </li>
                                 <li class="d-inline-block facts5 single-facts-margin-left position-relative clear-both">
                                     <div class="single-facts  white-bg text-center pt-46 pb-50 mb-30">
@@ -654,7 +650,7 @@
                                             <span class="per d-inline-block f-700">K</span>
                                         </div>
                                         <p class="black-color text-center f-700 mb-0 mt-1">Active user</p>
-                                    </div>    
+                                    </div>
                                 </li>
                             </ul><!-- /facts-wrapper -->
                         </div><!-- /col -->
@@ -679,7 +675,7 @@
                         <div class="col-xl-12  col-lg-  col-md-  col-sm- col-">
                             <div class="screenshot-wrapper w-100 mt-180">
                                 <div class="gallery position-relative pt-200">
-                                    <div class="gallery-controls position-absolute"></div><!-- /gallery-controls -->
+                                    <div class="gallery-controls position-absolute"><button class="gallery-controls-previous">previous</button><button class="gallery-controls-add">add</button><button class="gallery-controls-next">next</button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button></div><!-- /gallery-controls -->
                                     <div class="gallery-container w-100">
                                         <img class="gallery-item gallery-item-1" src="images/screenshots/home1-screenshots3.jpg" alt="image" data-index="1">
                                         <img class="gallery-item gallery-item-2" src="images/screenshots/home1-screenshots1.jpg" alt="image" data-index="2">
@@ -701,7 +697,7 @@
                 <div class="container">
                     <div class="row mt-10">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="faq-content mt-55 mb-50" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="faq-content mt-55 mb-50 aos-init" data-aos="fade-right" data-aos-duration="2000">
                                 <div class="title">
                                     <span class="theme-color f-700">What people want to know</span>
                                     <h3 class="f-700 pb-30">Frequently Asked Questions</h3>
@@ -723,7 +719,7 @@
                                                 </div>
                                             </div><!-- /collapseOne -->
                                         </div><!-- /card1 -->
-        
+
                                         <div class="card border-0">
                                             <div class="card-header bg-transparent p-0" id="headingTwo">
                                                 <h6 class="mb-0">
@@ -732,14 +728,14 @@
                                                     </a>
                                                 </h6>
                                             </div><!-- /card-header -->
-        
+
                                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                                 <div class="card-body">
                                                     <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta </p>
                                                 </div>
                                             </div>
                                         </div><!-- /card2 -->
-        
+
                                         <div class="card card-header-end border-0">
                                             <div class="card-header bg-transparent p-0" id="headingThree">
                                                 <h6 class="mb-0">
@@ -748,7 +744,7 @@
                                                     </a>
                                                 </h6>
                                             </div>
-        
+
                                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                                 <div class="card-body">
                                                     <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta </p>
@@ -760,7 +756,7 @@
                             </div><!-- /faq-content -->
                         </div><!-- /col -->
                         <div class="col-xl-6 col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-sm-12 col-12 pr-10">
-                            <div class="faq-img img-right-margin text-center"  data-aos="fade-left" data-aos-duration="2000">
+                            <div class="faq-img img-right-margin text-center aos-init" data-aos="fade-left" data-aos-duration="2000">
                                 <img class="d-block bounce-animate2" src="images/bg/home1-faq-img.png" alt="image">
                             </div><!-- /faq-img -->
                         </div><!-- /col -->
@@ -771,7 +767,7 @@
 
             <!-- ====== work-area-start ==================================== -->
             <div class="work-area over-hidden">
-                <div class="work-bg bg-no-repeat bg-cover pt-200" data-background="images/bg/home1-process-bg.png">
+                <div class="work-bg bg-no-repeat bg-cover pt-200" data-background="images/bg/home1-process-bg.png" style="background-image: url(&quot;images/bg/home1-process-bg.png&quot;);">
                     <div class="container">
                         <div class="row align-items-center justify-content-center">
                             <div class="col-xl-9  col-lg-10  col-md-11  col-sm-12 col-12">
@@ -785,7 +781,7 @@
                         <div class="work-wrapper pt-105 pb-85">
                             <div class="row">
                                 <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative transition5 white-bg mb-80" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="10">
+                                    <div class="single-work-content position-relative transition5 white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="10">
                                         <div class="item-tag-wrapper rounded-circle text-center transition5">
                                             <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
                                                 <span class="text-white f-700">01</span>
@@ -805,7 +801,7 @@
                                     </div><!-- /single-work-content -->
                                 </div><!-- /col -->
                                 <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative white-bg mb-80" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                                    <div class="single-work-content position-relative white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                                         <div class="item-tag-wrapper rounded-circle text-center transition3">
                                             <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
                                                 <span class="text-white f-700">02</span>
@@ -818,14 +814,14 @@
                                                 </span>
                                             </div><!-- /work-icon -->
                                             <div class="work-text">
-                                                <h5 class="f-700 mb-22">Research & Development</h5>
+                                                <h5 class="f-700 mb-22">Research &amp; Development</h5>
                                                 <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultrici cing elit, sed do eius emod tempor incid</p>
                                             </div>
                                         </div>
                                     </div><!-- /single-work-content -->
                                 </div><!-- /col -->
                                 <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative white-bg mb-80" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="10">
+                                    <div class="single-work-content position-relative white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="10">
                                         <div class="item-tag-wrapper rounded-circle text-center transition3">
                                             <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
                                                 <span class="text-white f-700">03</span>
@@ -838,14 +834,14 @@
                                                 </span>
                                             </div><!-- /work-icon -->
                                             <div class="work-text">
-                                                <h5 class="f-700 mb-22">Sales & Earning</h5>
+                                                <h5 class="f-700 mb-22">Sales &amp; Earning</h5>
                                                 <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultrici cing elit, sed do eius emod tempor incid</p>
                                             </div>
                                         </div>
                                     </div><!-- /single-work-content -->
                                 </div><!-- /col -->
                                 <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content  position-relative white-bg mb-80" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                                    <div class="single-work-content position-relative white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                                         <div class="item-tag-wrapper rounded-circle text-center transition3">
                                             <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
                                                 <span class="text-white f-700">04</span>
@@ -887,16 +883,16 @@
                         <div class="row align-items-center justify-content-center">
                             <div class="col-xl-4  col-lg-5 col-md-8 col-sm-8 col-10">
                                 <div class="testimonial-img">
-                                    <img  data-aos="zoom-in" data-aos-duration="2000" src="images/testimonial/home1-testi-img.png" alt="image">
+                                    <img data-aos="zoom-in" data-aos-duration="2000" src="images/testimonial/home1-testi-img.png" alt="image" class="aos-init">
                                 </div><!-- /testimonial-persons -->
                             </div><!-- /col -->
                             <div class="col-xl-7 offset-xl-1  col-lg-7 col-md-12  col-sm-12 col-12">
-                                <div class="testimonial-content position-relative mt-1" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="testimonial-content position-relative mt-1 aos-init" data-aos="fade-left" data-aos-duration="2000">
                                     <div class="quit d-inline-block position-absolute left-0 z-index11">
                                         <span class="black-color d-inline-block"><i class="fas fa-quote-left"></i></span>
                                     </div>
-                                    <div class="testimonial-active">
-                                        <div class="testimonial-text pb-25">
+                                    <div class="testimonial-active slick-initialized slick-slider"><b class="slick-arrow" style="display: inline;"><span class="fal fa-long-arrow-left l-a"></span></b>
+                                        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3710px; transform: translate3d(-530px, 0px, 0px);"><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 530px;">
                                             <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
                                             <div class="testi-info d-flex mt-50">
                                                 <div class="testi-avatar mr-20 rounded-circle">
@@ -907,8 +903,7 @@
                                                     <p class="">Web Designer</p>
                                                 </div>
                                             </div>
-                                        </div><!-- /testimonial-text -->
-                                        <div class="testimonial-text pb-25">
+                                        </div><div class="testimonial-text pb-25 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 530px;">
                                             <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
                                             <div class="testi-info d-flex mt-50">
                                                 <div class="testi-avatar mr-20 rounded-circle">
@@ -919,8 +914,7 @@
                                                     <p class="">Web Designer</p>
                                                 </div>
                                             </div>
-                                        </div><!-- /testimonial-text -->
-                                        <div class="testimonial-text pb-25">
+                                        </div><div class="testimonial-text pb-25 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 530px;">
                                             <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
                                             <div class="testi-info d-flex mt-50">
                                                 <div class="testi-avatar mr-20 rounded-circle">
@@ -931,8 +925,54 @@
                                                     <p class="">Web Designer</p>
                                                 </div>
                                             </div>
-                                        </div><!-- /testimonial-text -->
-                                    </div>
+                                        </div><div class="testimonial-text pb-25 slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 530px;">
+                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
+                                            <div class="testi-info d-flex mt-50">
+                                                <div class="testi-avatar mr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info">
+                                                    <h6 class="f-700">Nayna Eva</h6>
+                                                    <p class="">Web Designer</p>
+                                                </div>
+                                            </div>
+                                        </div><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 530px;">
+                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
+                                            <div class="testi-info d-flex mt-50">
+                                                <div class="testi-avatar mr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info">
+                                                    <h6 class="f-700">Nayna Eva</h6>
+                                                    <p class="">Web Designer</p>
+                                                </div>
+                                            </div>
+                                        </div><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 530px;">
+                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
+                                            <div class="testi-info d-flex mt-50">
+                                                <div class="testi-avatar mr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info">
+                                                    <h6 class="f-700">Nayna Eva</h6>
+                                                    <p class="">Web Designer</p>
+                                                </div>
+                                            </div>
+                                        </div><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 530px;">
+                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
+                                            <div class="testi-info d-flex mt-50">
+                                                <div class="testi-avatar mr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info">
+                                                    <h6 class="f-700">Nayna Eva</h6>
+                                                    <p class="">Web Designer</p>
+                                                </div>
+                                            </div>
+                                        </div></div></div><!-- /testimonial-text -->
+                                        <!-- /testimonial-text -->
+                                        <!-- /testimonial-text -->
+                                    <b class="slick-arrow" style="display: inline;"><span class="fal fa-long-arrow-right r-a"></span></b></div>
                                 </div>
                             </div><!-- /col -->
                         </div><!-- /row -->
@@ -942,7 +982,7 @@
             <!-- testimonial-area-end  -->
 
             <!-- ====== banner-area-start ========================================= -->
-            <div class="banner-area banner-margin-bottom position-relative" data-aos="fade-up" data-aos-duration="1500">
+            <div class="banner-area banner-margin-bottom position-relative aos-init" data-aos="fade-up" data-aos-duration="1500">
                 <div class="container">
                     <div class="banner-wrapper banner-border white-bg pl-70 pr-70 pt-55 pb-75 transition3">
                         <div class="row align-items-center justify-content-between">
@@ -968,7 +1008,7 @@
         </main>
 
         <!-- ====== footer-area-start ============================================ -->
-        <footer> 
+        <footer>
             <div class="footer-area primary-bg pt-200">
                 <div class="footer-top pb-55">
                     <div class="container">
@@ -1030,10 +1070,10 @@
                                     <h6 class="text-capitalize f-700 mb-22">Get in Touch</h6>
                                     <ul class="footer-address">
                                         <li class="d-flex align-items-start">
-                                            <span class="f-icon mr-20 mt-1"><i class="fas fa-map-marker-alt"></i></span> 
+                                            <span class="f-icon mr-20 mt-1"><i class="fas fa-map-marker-alt"></i></span>
                                             <div class="">
                                                 22/1 Bardeshi, Amin Bazar <br>Dhaka 1348 <br>
-                                            </div>  
+                                            </div>
                                         </li>
                                         <li>
                                             <span class="f-icon mr-20 mt-1"><i class="far fa-envelope"></i></span>
@@ -1070,20 +1110,20 @@
                                 </div><!-- /col -->
                                 <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12 mb-10">
                                     <div class="phone-contact text-center text-md-right">
-                                        <a class="theme-color f-700" href="tell:+8801234567890"><span class="pr-1"><span class="d-inline-block"><i class="fas fa-phone-alt"></i></span></span> +880 1234 567 890</a>
+                                        <a class="theme-color f-700" href="#"><span class="pr-1"><span class="d-inline-block"><i class="fas fa-phone-alt"></i></span></span>(909) 901-9967</a>
                                     </div>
                                 </div><!-- /col -->
                             </div><!-- /row -->
                             <div class="row align-items-center justify-content-between">
                                 <div class="col-xl-6  col-lg-5  col-md-12  col-sm-12 col-12">
                                     <div class="copyright-text text-center text-lg-left mt-20 mb-20">
-                                        <p class="mb-0 secondary-color2">All rights reserved 
-                                            <a href="https://www.bootstrapmb.com/" class="c-theme f-700 black-color">eThemeStudio</a>  ©  2022
+                                        <p class="mb-0 secondary-color2">All rights reserved
+                                            <a href="https://www.franklink.app/" class="c-theme f-700 black-color">Franklink</a>  ©  2025
                                         </p>
                                     </div>
                                 </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
-                                    <ul class="useful-link text-center text-lg-right mt-20">
+                                <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12" style="">
+                                    <ul class="useful-link text-center text-lg-right ">
                                         <li class="d-inline-block mb-20">
                                             <a href="#" class="secondary-color d-inline-block">Terms &amp; Condition</a>
                                         </li>
@@ -1091,8 +1131,8 @@
                                             <a href="#" class="secondary-color d-inline-block">Privacy</a>
                                         </li>
                                         <li class="d-inline-block pl-45 mb-20">
-                                            <a href="#" class="secondary-color d-inline-block">Cookes</a>
-                                        </li>                                    
+                                            <a href="#" class="secondary-color d-inline-block">Cookies</a>
+                                        </li>
                                     </ul><!-- social -->
                                 </div><!-- /col -->
                             </div>
@@ -1125,5 +1165,190 @@
         <script src="js/plugins.js"></script>
         <script src="js/jquery.meanmenu.min.js"></script>
         <script src="js/main.js"></script>
-    </body>
+
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script><script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script>
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script>
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script>
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host +
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body>
 </html>
