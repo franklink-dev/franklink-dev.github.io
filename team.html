@@ -22,6 +22,80 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <style>
+        /* Franklink Custom Styles - Professional Blue Theme (Cluely-inspired) */
+
+        :root {
+            --franklink-primary: #1B4DFF;        /* Modern professional blue */
+            --franklink-primary-hover: #0036E5;   /* Darker hover state */
+            --franklink-secondary: #4A67FF;       /* Lighter accent blue */
+            --franklink-light: #F0F4FF;           /* Very light blue background */
+            --franklink-gray-blue: #6B7D98;       /* Muted gray-blue for text */
+            --franklink-gradient: linear-gradient(135deg, #1B4DFF 0%, #4A67FF 100%);
+        }
+
+        /* Change theme color to modern professional blue */
+        .theme-color, .theme-color span {
+            color: var(--franklink-primary) !important;
+        }
+
+        .theme-bg {
+            background: var(--franklink-gradient) !important;
+            border: none !important;
+        }
+
+        /* Enhanced gradient buttons */
+        .btn.theme-bg {
+            background: var(--franklink-gradient) !important;
+            border: none !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn.theme-bg:hover {
+            background: var(--franklink-primary-hover) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(27, 77, 255, 0.25) !important;
+        }
+
+        /* Icon backgrounds with modern light blue */
+        .primary-bg {
+            background: var(--franklink-light) !important;
+            border-radius: 12px !important;
+        }
+
+        /* Enhanced modern buttons */
+        .hero-cta .btn, .cta-buttons .btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            padding: 14px 28px !important;
+        }
+
+        /* Counter numbers in blue */
+        .counter, .f-count span {
+            color: var(--franklink-primary) !important;
+            font-weight: 700 !important;
+        }
+
+        /* Link hover states */
+        h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+            color: var(--franklink-primary) !important;
+        }
+
+        /* Navigation active and hover states */
+        .main-menu nav ul li a.active {
+            color: var(--franklink-primary) !important;
+            font-weight: 600 !important;
+        }
+
+        .main-menu nav ul li a:hover {
+            color: var(--franklink-primary) !important;
+            transition: color 0.3s ease;
+        }
+        </style>
     </head>
     <body>
         <!--[if lte IE 9]>
