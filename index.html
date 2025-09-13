@@ -7,7 +7,7 @@
         <meta name="description" content="Franklink is the AI networking agent that helps students land more replies, build stronger connections, and stop missing opportunities. Send 100+ personalized messages in 1 hour.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
         <!-- All css here -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -23,39 +23,86 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <style>
-        /* Franklink Custom Styles - Professional Blue Theme (Cluely-inspired) */
+        /* Franklink Modern Tech Design - Inspired by Cluely/Planbase/TruthSystems */
 
         :root {
-            --franklink-primary: #1B4DFF;        /* Modern professional blue */
-            --franklink-primary-hover: #0036E5;   /* Darker hover state */
-            --franklink-secondary: #4A67FF;       /* Lighter accent blue */
-            --franklink-light: #F0F4FF;           /* Very light blue background */
-            --franklink-gray-blue: #6B7D98;       /* Muted gray-blue for text */
-            --franklink-gradient: linear-gradient(135deg, #1B4DFF 0%, #4A67FF 100%);
+            --franklink-primary: #2563EB;        /* Clean blue */
+            --franklink-primary-hover: #1D4ED8;  /* Darker hover */
+            --franklink-secondary: #64748B;      /* Slate gray */
+            --franklink-light: #F8FAFC;          /* Very light gray */
+            --franklink-gray: #64748B;           /* Muted text */
+            --franklink-dark: #0F172A;           /* Dark text */
+            --franklink-border: #E2E8F0;         /* Light border */
+            --franklink-gradient: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
         }
 
-        /* Change theme color to modern professional blue */
-        .theme-color, .theme-color span {
-            color: var(--franklink-primary) !important;
+        /* Global Typography - Clean and Modern */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+            line-height: 1.6;
+            color: var(--franklink-dark);
         }
 
-        .theme-bg {
-            background: var(--franklink-gradient) !important;
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            line-height: 1.25;
+            color: var(--franklink-dark);
         }
 
-        /* Update button colors with modern gradients */
+        p {
+            color: var(--franklink-gray);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Modern Button Styling */
         .btn.theme-bg {
-            background: var(--franklink-gradient) !important;
+            background: var(--franklink-primary) !important;
             border: none !important;
-            border-radius: 8px !important;
-            font-weight: 600 !important;
+            border-radius: 6px !important;
+            font-weight: 500 !important;
             padding: 12px 24px !important;
+            font-size: 14px !important;
+            transition: all 0.2s ease !important;
         }
 
         .btn.theme-bg:hover {
             background: var(--franklink-primary-hover) !important;
             transform: translateY(-1px);
-            box-shadow: 0 8px 25px rgba(27, 77, 255, 0.25) !important;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15) !important;
+        }
+
+        .theme-color, .theme-color span {
+            color: var(--franklink-primary) !important;
+        }
+
+        /* Clean Hero Section */
+        .slider-area.home5 {
+            background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%) !important;
+            padding: 120px 0 80px !important;
+        }
+
+        .slider-content h1 {
+            font-size: 48px !important;
+            font-weight: 700 !important;
+            line-height: 1.1 !important;
+            color: var(--franklink-dark) !important;
+            margin-bottom: 20px !important;
+        }
+
+        .slider-content p {
+            font-size: 18px !important;
+            color: var(--franklink-gray) !important;
+            line-height: 1.6 !important;
+            margin-bottom: 32px !important;
+        }
+
+        .slider-content span {
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            color: var(--franklink-primary) !important;
         }
 
         /* Outline buttons */
@@ -207,7 +254,7 @@
                         <div class="row align-items-center justify-content-between position-relative">
                             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
                                 <div class="logo mr-10">
-                                    <a href="index.html" class="d-inline-block"><img src="images/logo/franklink-logo.jpg" alt="Franklink" style="max-height: 40px;"></a>
+                                    <a href="index.html" class="d-inline-block"><img src="images/logo_banner.png" alt="Franklink" style="max-height: 55px;"></a>
                                 </div>
                             </div><!-- /col -->
                             <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-6 d-none d-lg-flex align-items-center position-static">
@@ -325,71 +372,35 @@
    
 
         <main class="over-hidden">
-            <!-- ======slider-area-start=========================================== -->
-            <div class="slider-area position-relative over-hidden home5">
-                <div id="scene" class="position-absolute w-100 h-100">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-1 d-none d-lg-block s-shape heartbeat2" src="images/slider/home5-shape/hm5-shape1.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-2 d-none d-lg-block" src="images/slider/home5-shape/hm5-shape2.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-3 d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape3.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-4  d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape4.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-5  d-none d-lg-block heartbeat2" src="images/slider/home5-shape/hm5-shape5.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-6  d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape6.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-7  d-none d-lg-block heartbeat2" src="images/slider/home5-shape/hm5-shape7.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-8  d-none d-lg-block" src="images/slider/home5-shape/hm5-shape8.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-10  d-none d-lg-block" src="images/slider/home5-shape/hm5-shape9.png" alt="#">
-                    <img data-depth="0.20" class="hm5-shape hm5-shape-11  d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape6.png" alt="#">
-                </div>
-                <!-- /shape-slider -->
+            <!-- ======hero-area-start=========================================== -->
+            <div class="slider-area position-relative home5">
 
-                <div class="single-slider slider-height5 d-flex align-items-center position-relative z-index1">
+                <div class="single-slider d-flex align-items-center position-relative">
                     <div class="container">
                         <div class="row align-items-center">
-                            <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-center">
-                                <div class="slider-content mt-100 position-relative pr-40">
-                                    <span class="f-700 theme-color d-block pb-1" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="40">Cold emails are dead.</span>
-                                    <h1 class="f-700 pb-22" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">Your Career Hack, in AI Form</h1>
-                                    <p data-aos="fade-up" data-aos-duration="2800" data-aos-delay="40">Franklink's AI finds the right alumni and crafts personalized messages. <strong>Get 3x more responses, save 20+ hours monthly.</strong></p>
-                                    <div class="hero-cta pt-30 pb-90" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="150">
-                                        <a href="#" class="btn theme-bg white-color text-capitalize px-4 py-3">
-                                            Start Free Today
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <div class="slider-content">
+                                    <span class="theme-color d-block mb-3" data-aos="fade-up" data-aos-duration="600">AI NETWORKING PLATFORM</span>
+                                    <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Connect with the right people. Get 3x more responses.</h1>
+                                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Franklink's AI finds relevant alumni and crafts personalized messages that actually get responses. Save 20+ hours monthly while building meaningful professional connections.</p>
+                                    <div class="hero-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                                        <a href="#" class="btn theme-bg white-color me-3">
+                                            Get Started Free
                                         </a>
-                                    </div><!-- /hero-cta -->
-                                    <div class="video-player-btn d-flex align-items-center z-index11 mt-45" >
-                                        <a data-fancybox="" href="https://youtu.be/nqye02H_H6I" class="d-flex align-items-center">
-                                            <div class="video-play-wrap position-relative d-inline-block">
-                                                <div class="video-mark">
-                                                    <div class="wave-pulse wave-pulse-1"></div>
-                                                    <div class="wave-pulse wave-pulse-2"></div>
-                                                </div>
-                                                <div class="video-play position-relative text-center theme-bg d-inline-block white-color">
-                                                    <i class="fas fa-play"></i>
-                                                </div>
-                                            </div>
-                                            <span class="d-inline-block f-700 black-color pl-22">Watch Demo</span>
+                                        <a href="#" class="btn btn-outline-secondary">
+                                            Watch Demo
                                         </a>
-                                    </div><!-- /video-player-btn -->
+                                    </div>
                                 </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-start justify-content-start mt-0">
-                                <div class="slider-img1 pl-45 z-index1 position-relative" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100" style="max-width: 100%; margin-top: -60px; margin-left: 30px;">
-                                    <img class="bounce-animate" src="images/slider/franklink-main.jpg" alt="Franklink AI Networking Platform" style="border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; height: auto;">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                                <div class="slider-img position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                    <img src="images/slider/franklink-main.jpg" alt="Franklink AI Platform" class="img-fluid" style="border-radius: 12px; box-shadow: 0 25px 50px rgba(15, 23, 42, 0.08); width: 100%; height: auto;">
                                 </div>
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /container -->
-                    <div class="slider-left-dotted s-dotted position-absolute d-none d-md-block z-index1">
-                        <img src="images/slider/shape/slider-left-dotted.png" alt="image">
-                    </div><!-- /slider-left-dotted -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-line-img position-absolute left-0 right-0 top-0 bottom-0 z-index-1" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="200">
-                    <img src="images/bg/hm5-slider-thin-lines.png" alt="image">
-                </div>
-                <!-- /shape-bg -->
-                <div class="hm5-round-shape hm5-round-shape-1 rounded-circle position-absolute d-inline-block heartbeat "></div>
-                <div class="hm5-round-shape hm5-round-shape-2 rounded-circle position-absolute d-inline-block heartbeat2 "></div>
-                <div class="hm5-round-shape hm5-round-shape-3 rounded-circle position-absolute d-inline-block heartbeat2 "></div>
-                <div class="hm5-round-shape hm5-round-shape-4 rounded-circle position-absolute d-inline-block heartbeat "></div>
-                <div class="hm5-round-shape hm5-round-shape-5 rounded-circle position-absolute d-inline-block heartbeat "></div>
             </div>
             <!-- slider-area-end  -->
 
@@ -400,8 +411,8 @@
                     <div class="container">
                         <div class="row align-items-end flex-column-reverse flex-lg-row">
                             <div class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-11">
-                                <div class="home5-about-left-img" data-aos="fade-right" data-aos-duration="2000" style="margin-top: -710px;">
-                                <img class="bounce-animate" src="images/about/home5-about-img.png" alt="image">
+                                <div class="home5-about-left-img" data-aos="fade-right" data-aos-duration="2000" style="margin-left: 0px; margin-top: -510px;  width: 100%; height: auto;">
+                                <img class="bounce-animate" src="images/prompt.jpg" alt="image">
                                 </div><!-- /about-left-img -->
                             </div><!-- /col -->
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -539,7 +550,7 @@
                         </div><!-- /col -->
                         <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
                             <div class="home5-feature-img text-right" data-aos="fade-left" data-aos-duration="2000">
-                                <img class="bounce-animate" src="images/feature/franklink-chat.jpg" alt="Franklink Chat Interface" style="border-radius: 10px;">
+                                <img class="bounce-animate" src="images/goodafternoon.jpg" alt="Franklink Chat Interface" style="border-radius: 10px;">
                             </div><!-- /service-img -->
                         </div><!-- /col -->
                     </div><!-- /row -->
@@ -549,7 +560,7 @@
                     <div class="row align-items-center justify-content-center home5-feature-wrapper3 mt-65">
                         <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
                             <div class="home5-feature-img" data-aos="fade-right" data-aos-duration="1500">
-                                <img class="bounce-animate" src="images/feature/home5-feature3-img.png" alt="image">
+                                <img class="bounce-animate" src="images/feature/franklink-chat.jpg" alt="image">
                             </div><!-- /service-img -->
                         </div><!-- /col -->
                         <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
