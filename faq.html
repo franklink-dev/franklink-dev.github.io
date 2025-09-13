@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Evalo | Minimal Saas Startup and Agency HTML Template</title>
-        <meta name="description" content="">
+        <title>FAQ - Frequently Asked Questions | Franklink</title>
+        <meta name="description" content="Get answers to common questions about Franklink's AI networking platform for students. Learn how to maximize your networking results.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
@@ -22,6 +22,25 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <style>
+        /* Franklink Blue Theme */
+        :root {
+            --franklink-primary: #1B4DFF;
+            --franklink-primary-hover: #0036E5;
+            --franklink-secondary: #4A67FF;
+            --franklink-light: #F0F4FF;
+            --franklink-gradient: linear-gradient(135deg, #1B4DFF 0%, #4A67FF 100%);
+        }
+        .theme-color, .theme-color span { color: var(--franklink-primary) !important; }
+        .theme-bg { background: var(--franklink-gradient) !important; }
+        .btn.theme-bg { background: var(--franklink-gradient) !important; border: none !important; border-radius: 8px !important; font-weight: 600 !important; }
+        .btn.theme-bg:hover { background: var(--franklink-primary-hover) !important; transform: translateY(-1px); box-shadow: 0 8px 25px rgba(27, 77, 255, 0.25) !important; }
+        .primary-bg { background: var(--franklink-light) !important; border-radius: 12px !important; }
+        .counter, .f-count span { color: var(--franklink-primary) !important; font-weight: 700 !important; }
+        h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: var(--franklink-primary) !important; }
+        .main-menu nav ul li a.active { color: var(--franklink-primary) !important; font-weight: 600 !important; }
+        .main-menu nav ul li a:hover { color: var(--franklink-primary) !important; transition: color 0.3s ease; }
+        </style>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -41,195 +60,50 @@
             </div>
         </div><!-- /preloader -->
      
-        <!--  ====== header-area-start=======================================  -->
+       <!--  ====== header-area-start=======================================  -->
         <header>
-            <div id="header-sticky" class="transparent-header home6 header-area">
+            <div id="header-sticky" class="transparent-header header-area home5">
                 <div class="header">
                     <div class="container">
                         <div class="row align-items-center justify-content-between position-relative">
-                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6">
-                                <div class="logo">
-                                    <a href="index.html" class="d-inline-block"><img src="images/logo/logo.png" alt="Evalo"></a>
+                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="logo mr-10">
+                                    <a href="index.html" class="d-inline-block"><img src="images/logo/franklink-logo.jpg" alt="Franklink" style="max-height: 40px;"></a>
                                 </div>
                             </div><!-- /col -->
-                            <div class="col-xl-7 col-lg-7 col-md-1 col-sm-1 col-1 d-none d-lg-flex justify-content-end position-static pr-0">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul class="d-block">
-                                            <li class="full-mega-menu-position"><a class="active" href="index.html">Home</a>
-                                                <ul class="mega-menu full-mega-menu full-mega-menu1 pt-35 pb-10 pl-30 pr-0 theme-bg">
-                                                    <li class="pl-05 pr-05  pb-20">
-                                                        <a href="index.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img1.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Saas 1</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index2-sass.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img2.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Saas 2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index3-digital-agency.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img3.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Digital Agency</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index4-startup.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img4.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Startup</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index5-app-landing-page.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img5.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">App Landing Page</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index6-agency.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img6.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Agency 2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index7-portfolio-minimal.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img5.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Minimal portfolio</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index8-portfolio.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img1.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Portfolio</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about-us.html">About</a></li>
-                                            <li><a href="service.html">Service</a>
-                                                <ul class="mega-menu mega-dropdown-menu white-bg ml-0">
-                                                    <li><a href="service.html">Service</a></li>
-                                                    <li><a href="login.html">Login</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="full-mega-menu-position"><a href="#">pages</a>
-                                                <ul class="mega-menu full-mega-menu full-mega-menu2 d-lg-flex white-bg pl-35 pt-30 pr-25 pb-20">
-                                                    <li>
-                                                        <a class="mega-title mb-15" href="#">Home</a>
- 
-                                                        <ul>
-                                                            <li><a href="index.html">Saas</a></li>
-                                                            <li><a href="index2-sass.html">Saas 2</a></li>
-                                                            <li><a href="index3-digital-agency.html">Digital Agency 1</a></li>
-                                                            <li><a href="index4-startup.html">Startup</a></li>
-                                                            <li><a href="index5-app-landing-page.html">App Landing</a></li>
-                                                            <li><a href="index6-agency.html">Digital Agency 2</a></li>
-                                                            <li><a href="index7-portfolio-minimal.html">Minimal Portfolio</a></li>
-                                                            <li><a href="index8-portfolio.html">Portfolio</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a class="mega-title mb-15" href="#">Pages</a>
-                                                        <ul>
-                                                            <li><a href="about-us.html">About us</a></li>
-                                                            <li><a href="service.html">Service</a></li>
-                                                            <li><a href="blog-details.html">Service</a></li>
-                                                            <li><a href="team.html">Team</a></li>
-                                                            <li><a href="contact-us.html">Contact us</a></li>
-                                                            <li><a href="faq.html">Faq page</a></li>
-                                                            <li><a href="404-error.html">404-error</a></li>
-                                                            <li><a href="login.html">Login</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a class="mega-title mb-15" href="#">Blog</a>
-                                                        <ul>
-                                                            <li><a href="blog.html">Main Blog Page</a></li>
-                                                            <li><a href="blog2.html">Blog Page v2</a></li>
-                                                            <li><a href="blog3.html">Blog Page v3</a></li>
-                                                            <li><a href="blog-details.html">Blog details 1</a></li>
-                                                            <li><a href="blog-details2.html">Blog details 2</a></li>
-                                                            <li><a href="blog-details3.html">blog-details 3</a></li>
-                                                            <li><a href="blog-details-gallery.html">Blog details gallery</a></li>
-                                                            <li><a href="blog-details-quote.html">Blog details quote</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a class="mega-title mb-25" href="#">Recent Blog</a>
-                                                        <ul>
-                                                            <li>
-                                                                <div class="recent-blog-menu d-flex justify-content-between pb-22">
-                                                                    <div class="rbm-img pr-15">
-                                                                        <a href="blog-details.html" class="d-inline-block">
-                                                                            <img class="w-100 h-100" src="images/menu/blog-menu-img1.jpg" alt="image">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="rbm-text">
-                                                                        <a href="blog-details.html" class="d-block">
-                                                                            <h6 class="mt--5">Lorem ipsum doloram etceio nse</h6>
-                                                                        </a>
-                                                                        <span class="d-block secondary-color2">Sept 28, 2020</span>
-                                                                    </div>
-                                                                </div><!-- /recent-blog-menu -->
-                                                                <div class="recent-blog-menu d-flex justify-content-between">
-                                                                    <div class="rbm-img pr-15">
-                                                                        <a href="blog-details.html" class="d-inline-block">
-                                                                            <img class="w-100 h-100" src="images/menu/blog-menu-img1.jpg" alt="image">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="rbm-text">
-                                                                        <a href="blog-details.html" class="d-inline-block">
-                                                                            <h6 class="mt--4">Lorem ipsum doloram etceio nse</h6>
-                                                                        </a>
-                                                                        <span class="d-block secondary-color2">Sept 28, 2020</span>
-                                                                    </div>
-                                                                </div><!-- /recent-blog-menu -->
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul><!-- /mega-menu 2 -->
-                                            </li>
-                                            <li><a href="blog.html">blog</a>
-                                                <ul class="mega-menu mega-dropdown-menu white-bg ml-0">
-                                                    <li><a href="blog.html">Blog v1</a></li>
-                                                    <li><a href="blog2.html">Blog v2</a></li>
-                                                    <li><a href="blog3.html">Blog v3</a></li>
-                                                    <li><a href="blog4.html">Blog v4</a></li>
-                                                    <li><a href="blog5.html">Blog v5</a></li>
-                                                    <li><a href="blog6.html">Blog v6</a></li>
-                                                    <li class="position-relative">
-                                                        <a href="#">Blog details <span class="pr-20 float-right"><i class="fas fa-angle-right"></i></span></a>
-                                                        <div class="mega-menu mega-sub-menu bg-white">
-                                                            <ul>
-                                                                <li><a href="blog-details.html">Blog details 1</a></li>
-                                                                <li><a href="blog-details2.html">Blog details 2</a></li>
-                                                                <li><a href="blog-details3.html">blog-details 3</a></li>
-                                                                <li><a href="blog-details-gallery.html">Blog details gallery</a></li>
-                                                                <li><a href="blog-details-quote.html">Blog details quote</a></li>
-                                                            </ul>
-                                                        </div><!-- /mega-sub-menu -->
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact-us.html">Contact</a>
-                                            </li>
-                                         </ul>
-                                    </nav>
-                                </div><!-- /main-menu -->
+                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-6 d-none d-lg-flex align-items-center position-static">
+                                <div class="menu-bar-home12  d-flex d-flex align-items-center">
+                                    <div class="main-menu text-left">
+                                        <nav id="mobile-menu">
+                                            <ul class="d-block">
+                                                <li><a class="active" href="index.html">Home</a></li>
+                                                <li><a href="about-us.html">About</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="contact-us.html">Contact</a>
+                                                </li>
+                                             </ul>
+                                        </nav>
+                                    </div><!-- /main-menu -->
+
+                                    <div class="header-right-left-content d-flex align-items-center justify-content-end">
+                                        <div class="header-search pl-15 position-relative d-none d-md-block d-lg-none d-lg-block" data-toggle="tooltip" data-selector="true" data-placement="bottom" title="Search">
+                                            <span class="black-color d-inline-block"><span><i class="fas fa-search"></i></span></span>
+                                        </div>
+                                    </div><!-- /header-right-left-content -->
+                                </div><!-- /menu-bar-home12 -->
+                                <div class="my-btn pl-20 pr-30 d-md-block">
+                                    <a href="login.html" class="btn theme-bg text-capitalize">Go Pro</a>
+                                </div><!-- /my-btn -->
+                                <ul class="home12-menu text-right d-none d-lg-inline-block">
+                                    <li class="click-show-menu-h12"><span class="theme-color"><i class="fal fa-bars"></i></span></li>
+                                    <li class="click-close-menu-h12"><span class="theme-color"><i class="fas fa-times"></i></span></li>
+                                </ul>
                             </div><!-- /col -->
-                            <div class="col-xl-3  col-lg-3 col-md-6 col-sm-6 col-4">
-                                <div class="header-right d-flex align-items-center justify-content-end">
-                                    <div class="my-btn d-none d-md-block d-none">
-                                        <a href="contact-us.html" class="btn transparent-bg text-capitalize">Get A Quote</a>
-                                    </div><!-- /my-btn -->
-                                    <div class="d-block d-lg-none pl-20">
-                                        <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
-                                    </div>
-                                   <!-- <div class="mobile-menu"></div> -->
-                                </div><!-- /header-right -->
+                            <div class="col-xl-2 col-lg-2 col-md-9 col-sm-8 col-6 d-lg-none d-block">
+                                <div class="d-block d-lg-none pl-3 text-right">
+                                    <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
+                                </div><!-- /mobile-menubar -->
                             </div><!-- /col -->
                         </div><!-- /row -->
                     </div><!-- /container -->
@@ -242,7 +116,7 @@
         <!--  ====== header extra info start================================== -->
         <!-- side-mobile-menu start -->
 
-        <div class="side-mobile-menu white-bg pt-10 pb-30 pl-35 pr-30 pb-100">
+        <div class="side-mobile-menu white-bg pt-10 pb-30 pl-35 pr-30 pb-400">
             <div class="w-100">
                 <div class="close-icon d-inline-block float-right clear-both mt-15 mb-10">
                     <a href="javascript:void(0);"><span class="icon-clear theme-color"><i class="fa fa-times"></i></span></a>
@@ -258,7 +132,7 @@
 
             <div class="mobile-menu mt-10 w-100"></div>
 
-            
+
             <ul class="social-link pt-50 clear-both">
                 <li class="d-inline-block">
                     <a class="facebook-color text-center pr-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -275,11 +149,11 @@
             </ul><!-- social-link -->
 
             <!-- mobile phone area -->
-            <div class="mobile-phone-contact phone-contact mt-150 mb-25">
+            <div class="mobile-phone-contact phone-contact mt-80 mb-25">
                 <h6 class="f-700 mb-0">Call Us</h6>
                 <a class="theme-color f-700" href="tell:+8801234567890">+8801234567890</a>
             </div><!-- /mobile phone area -->
-            
+
             <!-- mobile subscribe area -->
             <div class="mobile-subscribe pb-125">
                 <h6 class="f-700 mb-1">Subscribe to Our Newsletter</h6>
@@ -309,6 +183,7 @@
         </div>
         <!-- header-search-details end -->
         <!-- header extra info end  -->
+
    
 
         <main>
@@ -356,19 +231,19 @@
                             <div class="faq-content mt-35 mb-60">
                                 <div class="nav nav-pills flex-column faq-nav primary-border" id="faq-tabs" role="tablist" aria-orientation="vertical">
                                     <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
-                                        Frequently Asked Questions
+                                        Getting Started
                                     </a>
                                     <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
-                                        Profile
+                                        How It Works
                                     </a>
                                     <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
-                                        Account
+                                        Pricing & Plans
                                     </a>
                                     <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
-                                        Favorites
+                                        Privacy & Security
                                     </a>
                                     <a href="#tab5" class="nav-link border-bottom-0" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
-                                        Transactions
+                                        Support
                                     </a>
                                 </div>
                             </div><!-- /faq-content -->
@@ -381,13 +256,13 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-1-heading-1">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Just once I'd like to eat dinner with a celebrity?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">What is Franklink and how does it work?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
                                                     <div class="card-body">
                                                         <p>
-                                                            Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta  ctetur adipisicing nisi ut aliquip ex ea com.
+                                                            Franklink is an AI-powered networking platform that helps students connect with alumni and professionals. Our AI finds relevant contacts, crafts personalized messages, and manages outreach to get you 3x more responses while saving 20+ hours monthly.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -395,13 +270,13 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-1-heading-2">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700  d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Bender, I didn't know you liked cooking?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700  d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Who can use Franklink?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
                                                     <div class="card-body">
                                                         <p>
-                                                            Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta  ctetur adipisicing nisi ut aliquip ex ea com.
+                                                            Franklink is designed for college students, recent graduates, and young professionals looking to expand their network. Whether you're seeking internships, job opportunities, mentorship, or industry insights, our platform helps you connect with the right people.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -409,13 +284,13 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-1-heading-3">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Why Evalo is a great startup template?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">How do I get started with Franklink?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
                                                     <div class="card-body">
                                                         <p>
-                                                            Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta  ctetur adipisicing nisi ut aliquip ex ea com.
+                                                            Getting started is simple: 1) Sign up with your university email, 2) Tell us your career goals and interests, 3) Our AI finds relevant alumni and professionals, 4) Review and send personalized messages, 5) Track responses and build meaningful connections.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -423,13 +298,13 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-1-heading-4">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">How to get the best output from Evalo?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">What makes Franklink different from manual networking?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
                                                     <div class="card-body">
                                                         <p>
-                                                            Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta  ctetur adipisicing nisi ut aliquip ex ea com.
+                                                            Franklink automates the research and personalization process that typically takes hours. Our AI analyzes profiles, finds commonalities, and crafts authentic messages at scale. You get higher response rates (3x more) while saving 20+ hours monthly compared to manual outreach.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -437,13 +312,13 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-1-heading-5">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color border-bottom-0 f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5">What is the proper way to customize Evalo?</a>
+                                                        <a href="#" class="btn btn-link black-color border-bottom-0 f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-1-content-5" aria-expanded="false" aria-controls="accordion-tab-1-content-5">How long does it take to see results?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-1-content-5" aria-labelledby="accordion-tab-1-heading-5" data-parent="#accordion-tab-1">
                                                     <div class="card-body">
                                                         <p>
-                                                            Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta  ctetur adipisicing nisi ut aliquip ex ea com.
+                                                            Most users see their first responses within 24-48 hours. Within the first week, you'll typically receive multiple positive responses and connection requests. Long-term relationship building happens over weeks and months as you nurture these initial connections.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -455,48 +330,48 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-2-heading-1">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative"  data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">Does anybody else feel jealous and aroused and worried?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative"  data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">How does Franklink find the right alumni and professionals?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
                                                     <div class="card-body">
-                                                        <p>Kif, I have mated with a woman. Inform the men. This is the worst part. The calm before the battle. Bender, being God isn't easy. If you do too much, people get dependent on you, and if you do nothing, they lose hope. You have to use a light touch. Like a safecracker, or a pickpocket.</p>
+                                                        <p>Our AI analyzes your career goals, academic background, and interests to search through extensive alumni databases and professional networks. We match you with people based on industry relevance, career path similarity, and mutual connections for the highest likelihood of meaningful engagement.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-2-heading-2">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">This opera's as lousy as it is brilliant?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">What makes Franklink's messages so effective?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
                                                     <div class="card-body">
-                                                        <p>Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry! It's okay, Bender. I like cooking too. Interesting. No, wait, the other thing: tedious.</p>
+                                                        <p>Our AI crafts personalized messages by researching each recipient's background, recent activities, and shared interests. Each message feels authentic and relevant, mentioning specific details that show genuine interest rather than generic outreach templates.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-2-heading-3">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Who are you, my warranty?!</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Can I review and edit messages before they're sent?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
                                                     <div class="card-body">
-                                                        <p>Oh, I think we should just stay friends. I'll tell them you went down prying the wedding ring off his cold, dead finger. Aww, it's true. I've been hiding it for so long. Say it in Russian! Then throw her in the laundry room, which will hereafter be referred to as "the brig".</p>
+                                                        <p>Absolutely! You have full control over every message. Our AI generates personalized drafts, but you can review, edit, and approve each one before sending. This ensures your personal voice comes through while benefiting from AI-powered research and personalization.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-2-heading-4">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">I haven't felt much of anything since my guinea pig died?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">How does Franklink track and manage my networking progress?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
                                                     <div class="card-body">
-                                                        <p>And I'm his friend Jesus. Oh right. I forgot about the battle. OK, if everyone's finished being stupid. We'll need to have a look inside you with this camera. I'm just glad my fat, ugly mama isn't alive to see this day.</p>
+                                                        <p>Our dashboard provides comprehensive analytics including response rates, engagement metrics, and relationship progression. You can track conversations, set follow-up reminders, and see which approaches work best for your networking goals.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -507,48 +382,48 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-3-heading-1">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Michelle, I don't regret this, but I both rue and lament it?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">What pricing plans does Franklink offer?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
                                                     <div class="card-body">
-                                                        <p>Look, last night was a mistake. We'll need to have a look inside you with this camera. Good news, everyone! There's a report on TV with some very bad news! You know, I was God once. You lived before you met me?!</p>
+                                                        <p>We offer flexible plans for different needs: a Free tier for basic networking (5 messages/month), Student Pro ($19/month) with unlimited messages and advanced features, and Team plans for career centers and organizations. All plans include our AI matching and message personalization.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0"  id="accordion-tab-3-heading-2">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">Why am I sticky and naked?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">Is there a free trial or student discount?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-3-content-2" aria-labelledby="accordion-tab-3-heading-2" data-parent="#accordion-tab-3">
                                                     <div class="card-body">
-                                                        <p>Did I miss something fun? Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans! Kids don't turn rotten just from watching TV.</p>
+                                                        <p>Yes! We offer a 7-day free trial for all paid plans, and students get 50% off with valid .edu email verification. We believe in making professional networking accessible to all students, regardless of financial situation.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-3-heading-3">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">Is that a cooking show?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">Can I cancel or change my plan anytime?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3">
                                                     <div class="card-body">
-                                                        <p>OK, this has gotta stop. I'm going to remind Fry of his humanity the way only a woman can. You seem malnourished. Are you suffering from intestinal parasites? Check it out, y'all. Everyone who was invited is here. I am Singing Wind, Chief of the Martians.</p>
+                                                        <p>Absolutely. You can upgrade, downgrade, or cancel your plan at any time with no long-term commitments. Changes take effect at your next billing cycle, and you'll maintain access to paid features until then.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0"  id="accordion-tab-3-heading-4">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4">You are the last hope of the universe?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-3-content-4" aria-expanded="false" aria-controls="accordion-tab-3-content-4">What's included in the Student Pro plan?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-3-content-4" aria-labelledby="accordion-tab-3-heading-4" data-parent="#accordion-tab-3">
                                                     <div class="card-body">
-                                                        <p>I don't want to be rescued. I videotape every customer that comes in here, so that I may blackmail them later. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."</p>
+                                                        <p>Student Pro includes unlimited AI-powered messages, advanced analytics, priority matching, conversation tracking, follow-up reminders, LinkedIn integration, and priority customer support. Perfect for active job seekers and career-focused students.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -559,48 +434,48 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-4-heading-1">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">You, minion. Lift my arm?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">How does Franklink protect my personal information?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
                                                     <div class="card-body">
-                                                        <p>AFTER HIM! A true inspiration for the children. What are you hacking off? Is it my torso?! 'It is!' My precious torso! I saw you with those two "ladies of the evening" at Elzars. Explain that. She also liked to shut up! Why not indeed!</p>
+                                                        <p>We use enterprise-grade encryption and security measures to protect your data. Your personal information is never shared with third parties without consent, and all communications are encrypted. We comply with GDPR, CCPA, and other privacy regulations.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-4-heading-2">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">No, I'm Santa Claus?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">What data does Franklink collect and store?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4">
                                                     <div class="card-body">
-                                                        <p>I meant 'physically'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually? When the lights go out, it's nobody's business what goes on between two consenting adults.</p>
+                                                        <p>We collect profile information you provide, networking preferences, message performance data, and basic usage analytics. This data helps improve our AI matching and personalization. You can export or delete your data at any time through your account settings.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-4-heading-3">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3">Belligerent and numerous?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3">Can recipients see that I'm using Franklink?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-4-content-3" aria-labelledby="accordion-tab-4-heading-3" data-parent="#accordion-tab-4">
                                                     <div class="card-body">
-                                                        <p>Hey, what kinda party is this? There's no booze and only one hooker. I'm just glad my fat, ugly mama isn't alive to see this day. Wow! A superpowers drug you can just rub onto your skin? You'd think it would be something you'd have to freebase. Well, let's just dump it in the sewer and say we delivered it. You guys realize you live in a sewer, right? </p>
+                                                        <p>No. Messages appear to come directly from your personal email or LinkedIn account. There are no Franklink signatures or indicators that reveal you're using our platform. Your networking appears completely natural and authentic to recipients.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0"  id="accordion-tab-4-heading-4">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"   data-toggle="collapse" data-target="#accordion-tab-4-content-4" aria-expanded="false" aria-controls="accordion-tab-4-content-4">Take me to your leader?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"   data-toggle="collapse" data-target="#accordion-tab-4-content-4" aria-expanded="false" aria-controls="accordion-tab-4-content-4">Is my account secure from unauthorized access?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-4-content-4" aria-labelledby="accordion-tab-4-heading-4" data-parent="#accordion-tab-4">
                                                     <div class="card-body">
-                                                        <p>PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon. Interesting. No, wait, the other thing: tedious. All I want is to be a monkey of moderate intelligence who wears a suit… that's why I'm transferring to business school! Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat.</p>
+                                                        <p>Yes, we use two-factor authentication, secure login protocols, and monitor for suspicious activity. You'll receive notifications of any login attempts, and can revoke access from any device. Your account data is backed up and protected against breaches.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -611,48 +486,48 @@
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-5-heading-1">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">Say what?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed"  data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">How can I get help if I have issues or questions?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse show" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5">
                                                     <div class="card-body">
-                                                        <p>That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing. Oh, I don't have time for this.For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. But existing is basically all I do! I never loved you.</p>
+                                                        <p>We offer multiple support channels: in-app chat support, email help@franklink.com, comprehensive documentation, video tutorials, and for Pro users, priority phone support. Our team typically responds within 2-4 hours during business days.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-5-heading-2">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2">Who's brave enough to fly into something we all keep calling a death sphere?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2">Do you offer training or onboarding for new users?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-5-content-2" aria-labelledby="accordion-tab-5-heading-2" data-parent="#accordion-tab-5">
                                                     <div class="card-body">
-                                                        <p>Maybe I love you so much I love you no matter who you are pretending to be. Ah, the 'Breakfast Club' soundtrack! I can't wait til I'm old enough to feel ways about stuff! Now Fry, it's been a few years since medical school, so remind me.</p>
+                                                        <p>Yes! Every new user gets a personalized onboarding session, access to our video tutorial library, and networking best practices guide. We also offer optional 1-on-1 coaching sessions to help you maximize your networking results.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0"  id="accordion-tab-5-heading-3">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-5-content-3" aria-expanded="false" aria-controls="accordion-tab-5-content-3">You mean while I'm sleeping in it?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-5-content-3" aria-expanded="false" aria-controls="accordion-tab-5-content-3">What if I'm not getting good response rates?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-5-content-3" aria-labelledby="accordion-tab-5-heading-3" data-parent="#accordion-tab-5">
                                                     <div class="card-body">
-                                                        <p>We can't compete with Mom! Her company is big and evil! Ours is small and neutral! Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'? I just told you! You've killed me!</p>
+                                                        <p>Our team will review your profile, messages, and targeting to identify improvement opportunities. We provide personalized recommendations and can adjust your AI settings. Most users see improved results within a week of optimization.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card border-0">
                                                 <div class="card-header bg-transparent border-bottom-0 p-0" id="accordion-tab-5-heading-4">
                                                     <h6 class="mb-0">
-                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-5-content-4" aria-expanded="false" aria-controls="accordion-tab-5-content-4">And until then, I can never die?</a>
+                                                        <a href="#" class="btn btn-link black-color f-700 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#accordion-tab-5-content-4" aria-expanded="false" aria-controls="accordion-tab-5-content-4">How do I provide feedback or suggest new features?</a>
                                                     </h6>
                                                 </div>
                                                 <div class="collapse" id="accordion-tab-5-content-4" aria-labelledby="accordion-tab-5-heading-4" data-parent="#accordion-tab-5">
                                                     <div class="card-body">
-                                                        <p>I don't know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas. Well, let's just dump it in the sewer and say we delivered it.</p>
+                                                        <p>We love user feedback! Use our in-app feedback feature, email us at feedback@franklink.com, or join our user community forum. We regularly implement user suggestions and provide updates on requested features through our product roadmap.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -681,7 +556,6 @@
                                     <div class="title">
                                         <span class="theme-color f-700">Still got questions?</span>
                                         <h3 class="f-700 pb-30">Drop us a line of your query</h3>
-                                        <p>Phasellus seiusmod tempor incididunt ut labore et dolore mag na aliqua. </p>
                                     </div><!-- /title -->
                                 </div><!-- /contact-wrapper -->
                             </div><!-- /col -->
@@ -738,98 +612,24 @@
         </main>
           
         <!-- ====== footer-area-start ============================================ -->
-        <footer> 
-            <div class="footer-area home5 home7 service-page pt-135">
-                <div class="footer-top pb-30">
+        <footer>
+            <div class="footer-area home5 pt-85">
+                <div class="footer-top pb-55">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4  col-lg-4  col-md-6  col-sm-12 col-12 pr-xl-0">
-                                <div class="footer-widget f-adress pb-40 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Address</h6>
-                                    <ul class="footer-address">
-                                        <li class="d-flex align-items-start">
-                                            <span class="f-icon mr-25 mt-1"><i class="fas fa-map-marker-alt"></i></span> 
-                                            <div class="">
-                                                22/1 Bardeshi, Amin Bazar <br>Dhaka 1348 <br>
-                                            </div>  
-                                        </li>
-                                        <li>
-                                            <span class="f-icon mr-20 mt-1"><i class="far fa-envelope"></i></span>
-                                            hello@startico.com
-                                        </li>
-                                        <li>
-                                            <span class="f-icon mr-20 mt-2"><i class="fas fa-phone-alt"></i></span>
-                                            +880 1234 567 890
-                                            
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
-                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Links</h6>
-                                    <ul class="footer-info">
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Service</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Custome</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
-                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Help</h6>
-                                    <ul class="footer-info">
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Doc</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Privacy</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Legal</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-4  col-lg-4  col-md-12  col-sm-12 col-12">
-                                <div class="footer-widget f-subscriber-area pb-30 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Subscribe to our Newsletter</h6>
+                            <div class="col-xl-4 col-lg-4  col-md-12  col-sm-12 col-12">
+                                <div class="footer-widget f-subscriber-area pb-30 mt-25 pr-100">
+                                    <h6 class="text-capitalize f-700 mb-22">Stay Updated</h6>
                                     <div class="footer-subscribe">
-                                        <p>Fectetur adipisicing elit, sed do eius mod tempor ncididunt</p>
+                                        <p>Get the latest updates on networking tips and Franklink.</p>
                                         <form action="#">
                                             <div class="subscribe-info mt-22 position-relative">
-                                                <input class="sub-name form-control border-0 pl-20 pt-15 pb-15 pr-10 primary-bg secondary-color rounded-0" type="email" name="email" id="email" placeholder="Submit email">
+                                                <input class="sub-name form-control border-0 pl-20 pt-15 pb-15 pr-10 primary-bg secondary-color rounded-0" type="email" name="email" id="email" placeholder="Enter your email">
                                                 <span class="secondary-color d-inline-block position-absolute pointer"><i class="far fa-envelope"></i></span>
                                             </div>
                                         </form>
                                     </div>
-                                </div>
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /container -->
-                </div>
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="copyright-area pb-50">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="copyright-text text-center text-md-left mt-20 mb-20">
-                                        <p class="mb-0 secondary-color2">All rights reserved 
-                                            <a href="https://www.bootstrapmb.com/" class="c-theme f-700 black-color">eThemeStudio</a>  ©  2022
-                                        </p>
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12 ">
-                                    <ul class="social-link text-center text-md-right mt-20 mb-20">
+                                    <ul class="social-link mt-45">
                                         <li class="d-inline-block">
                                             <a class="facebook-color text-center pr-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a>
                                         </li>
@@ -843,6 +643,87 @@
                                             <a class="instagram-color text-center d-inline-block transition-3" href="#"><i class="fab fa-instagram"></i></a>
                                         </li>
                                     </ul><!-- social-link -->
+                                </div>
+                            </div><!-- /col -->
+                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
+                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                                    <h6 class="text-capitalize f-700 mb-22">Product</h6>
+                                    <ul class="footer-info">
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">AI Networking</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Alumni Search</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Message Crafting</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
+                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                                    <h6 class="text-capitalize f-700 mb-22">Support</h6>
+                                    <ul class="footer-info">
+                                        <li>
+                                            <a href="faq.html" class="position-relative d-inline-block mb-2">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html" class="position-relative d-inline-block mb-2">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Help Center</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Get Started</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+                             <div class="col-xl-2  col-lg-3  col-md-3  col-sm-6 col-12">
+                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                                    <h6 class="text-capitalize f-700 mb-22">Company</h6>
+                                    <ul class="footer-info">
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="team.html" class="position-relative d-inline-block mb-2">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Press</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                    </div><!-- /container -->
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="copyright-area pb-50">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-xl-6  col-lg-5  col-md-12  col-sm-12 col-12">
+                                    <div class="copyright-text text-center text-lg-left mt-20 mb-20">
+                                        <p class="mb-0 secondary-color2">All rights reserved Franklink © 2025
+                                        </p>
+                                    </div>
+                                </div><!-- /col -->
+                                <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
+                                    <ul class="useful-link text-center text-lg-right mt-20">
+                                        <li class="d-inline-block mb-20">
+                                            <a href="#" class="secondary-color d-inline-block">Terms &amp; Condition</a>
+                                        </li>
+                                        <li class="d-inline-block pl-45 mb-20">
+                                            <a href="#" class="secondary-color d-inline-block">Privacy</a>
+                                        </li>
+                                        <li class="d-inline-block pl-45 mb-20">
+                                            <a href="#" class="secondary-color d-inline-block">Cookies</a>
+                                        </li>
+                                    </ul><!-- social -->
                                 </div><!-- /col -->
                             </div>
                         </div><!-- /copyright-area -->

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Evalo | Minimal Saas Startup and Agency HTML Template</title>
-        <meta name="description" content="">
+        <title>Franklink - AI Networking Agent for Students</title>
+        <meta name="description" content="Franklink is the AI networking agent that helps students land more replies, build stronger connections, and stop missing opportunities. Send 100+ personalized messages in 1 hour.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/flaticon.css">
         <link rel="stylesheet" href="css/aos.css">
-        <link rel="stylesheet" href="css/carousel.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -23,211 +22,227 @@
         <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-    </head>
+        <style>
+        /* Franklink Custom Styles - Professional Blue Theme (Cluely-inspired) */
 
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+        :root {
+            --franklink-primary: #1B4DFF;        /* Modern professional blue */
+            --franklink-primary-hover: #0036E5;   /* Darker hover state */
+            --franklink-secondary: #4A67FF;       /* Lighter accent blue */
+            --franklink-light: #F0F4FF;           /* Very light blue background */
+            --franklink-gray-blue: #6B7D98;       /* Muted gray-blue for text */
+            --franklink-gradient: linear-gradient(135deg, #1B4DFF 0%, #4A67FF 100%);
+        }
+
+        /* Change theme color to modern professional blue */
+        .theme-color, .theme-color span {
+            color: var(--franklink-primary) !important;
+        }
+
+        .theme-bg {
+            background: var(--franklink-gradient) !important;
+        }
+
+        /* Update button colors with modern gradients */
+        .btn.theme-bg {
+            background: var(--franklink-gradient) !important;
+            border: none !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 12px 24px !important;
+        }
+
+        .btn.theme-bg:hover {
+            background: var(--franklink-primary-hover) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(27, 77, 255, 0.25) !important;
+        }
+
+        /* Outline buttons */
+        .btn-outline-primary {
+            border-color: var(--franklink-primary) !important;
+            color: var(--franklink-primary) !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--franklink-primary) !important;
+            border-color: var(--franklink-primary) !important;
+            color: white !important;
+        }
+
+        .btn-outline-light {
+            border-color: rgba(255,255,255,0.5) !important;
+            color: white !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+        }
+
+        .btn-outline-light:hover {
+            background: white !important;
+            border-color: white !important;
+            color: var(--franklink-primary) !important;
+        }
+
+        /* Update links and accents */
+        h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+            color: var(--franklink-primary) !important;
+        }
+
+        /* Navigation active state with modern styling */
+        .main-menu nav ul li a.active {
+            color: var(--franklink-primary) !important;
+            font-weight: 600 !important;
+        }
+
+        .main-menu nav ul li a:hover {
+            color: var(--franklink-primary) !important;
+            transition: color 0.3s ease;
+        }
+
+        /* Icon backgrounds with modern light blue */
+        .primary-bg {
+            background: var(--franklink-light) !important;
+            border-radius: 12px !important;
+        }
+
+        /* Enhanced modern buttons */
+        .hero-cta .btn, .cta-buttons .btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            padding: 14px 28px !important;
+        }
+
+        .hero-cta .btn:hover, .cta-buttons .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(27, 77, 255, 0.25) !important;
+        }
+
+        /* Checkmarks and icons with modern blue */
+        .fal.fa-check, .fal.fa-long-arrow-right {
+            color: var(--franklink-primary) !important;
+        }
+
+        /* Modern card styling */
+        .single-service {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .single-service:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        /* Counter styling */
+        .counter, .f-count span {
+            color: var(--franklink-primary) !important;
+            font-weight: 700 !important;
+        }
+
+        /* FAQ accordion modern styling */
+        .card-header a {
+            font-weight: 600 !important;
+            color: #1a1a1a !important;
+        }
+
+        .card-header a:hover, .card-header a:focus {
+            color: var(--franklink-primary) !important;
+            text-decoration: none !important;
+        }
+
+        /* Improve text readability with modern typography */
+        p {
+            line-height: 1.6;
+            color: #4a5568;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            letter-spacing: -0.025em;
+            font-weight: 700;
+            color: #1a202c;
+        }
+
+        /* Hero section text enhancement */
+        .slider-content h1 {
+            font-size: 3.5rem !important;
+            line-height: 1.1 !important;
+            font-weight: 800 !important;
+        }
+
+        @media (max-width: 768px) {
+            .slider-content h1 {
+                font-size: 2.5rem !important;
+            }
+        }
+        </style>
+    </head>
+    <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
+        
         <!--  ====== preloader=============================================  -->
-        <!-- /preloader -->
-
+        <div id="preloader">
+            <div id="loading">
+                <div id="loading-center">
+                    <div id="loading-center-absolute">
+                        <div class="object" id="object_one"></div>
+                        <div class="object" id="object_two"></div>
+                        <div class="object" id="object_three"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /preloader -->
+     
         <!--  ====== header-area-start=======================================  -->
         <header>
-            <div id="header-sticky" class="transparent-header header-area sticky-menu">
+            <div id="header-sticky" class="transparent-header header-area home5">
                 <div class="header">
                     <div class="container">
                         <div class="row align-items-center justify-content-between position-relative">
-                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5 col-6">
-                                <div class="logo">
-                                    <a href="index.html" class="d-block"><img src="images/logo/logo.png" alt="Evalo"></a>
+                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                                <div class="logo mr-10">
+                                    <a href="index.html" class="d-inline-block"><img src="images/logo/franklink-logo.jpg" alt="Franklink" style="max-height: 40px;"></a>
                                 </div>
                             </div><!-- /col -->
-                            <div class="col-xl-7 col-lg-7 col-md-1 col-sm-1 col-1 d-none d-lg-flex justify-content-end position-static">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu" style="display: block;">
-                                        <ul class="d-block">
-                                            <li class="full-mega-menu-position"><a class="active" href="index.html">Home</a>
-                                                <ul class="mega-menu full-mega-menu full-mega-menu1 pt-35 pb-10 pl-30 pr-0 theme-bg">
-                                                    <li class="pl-05 pr-05  pb-20">
-                                                        <a href="index.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img1.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Saas 1</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index2-sass.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img2.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Saas 2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index3-digital-agency.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img3.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Digital Agency</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index4-startup.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img4.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Startup</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index5-app-landing-page.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img5.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">App Landing Page</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index6-agency.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img6.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Agency 2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index7-portfolio-minimal.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img5.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Minimal portfolio</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pl-05 pr-05 pb-20">
-                                                        <a href="index8-portfolio.html">
-                                                            <img class="w100" src="images/menu/mega-menu-img1.jpg" alt="image">
-                                                            <span class="d-block black text-md-center f-700 mt-10">Portfolio</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about-us.html">About</a></li>
-                                            <li><a href="service.html">Service</a>
-                                                <ul class="mega-menu mega-dropdown-menu white-bg ml-0">
-                                                    <li><a href="service.html">Service</a></li>
-                                                    <li><a href="login.html">Login</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="full-mega-menu-position"><a href="#">pages</a>
-                                                <ul class="mega-menu full-mega-menu full-mega-menu2 d-lg-flex white-bg pl-35 pt-30 pr-25 pb-20">
-                                                    <li>
-                                                        <a class="mega-title mb-15" href="#">Home</a>
+                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-6 d-none d-lg-flex align-items-center position-static">
+                                <div class="menu-bar-home12  d-flex d-flex align-items-center">
+                                    <div class="main-menu text-left">
+                                        <nav id="mobile-menu">
+                                            <ul class="d-block">
+                                                <li><a class="active" href="index.html">Home</a></li>
+                                                <li><a href="about-us.html">About</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="contact-us.html">Contact</a>
+                                                </li>
+                                             </ul>
+                                        </nav>
+                                    </div><!-- /main-menu -->
 
-                                                        <ul>
-                                                            <li><a href="index.html">Saas</a></li>
-                                                            <li><a href="index2-sass.html">Saas 2</a></li>
-                                                            <li><a href="index3-digital-agency.html">Digital Agency 1</a></li>
-                                                            <li><a href="index4-startup.html">Startup</a></li>
-                                                            <li><a href="index5-app-landing-page.html">App Landing</a></li>
-                                                            <li><a href="index6-agency.html">Digital Agency 2</a></li>
-                                                            <li><a href="index7-portfolio-minimal.html">Minimal Portfolio</a></li>
-                                                            <li><a href="index8-portfolio.html">Portfolio</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a class="mega-title mb-15" href="#">Pages</a>
-                                                        <ul>
-                                                            <li><a href="about-us.html">About us</a></li>
-                                                            <li><a href="service.html">Service</a></li>
-                                                            <li><a href="blog-details.html">Service</a></li>
-                                                            <li><a href="team.html">Team</a></li>
-                                                            <li><a href="contact-us.html">Contact us</a></li>
-                                                            <li><a href="faq.html">Faq page</a></li>
-                                                            <li><a href="404-error.html">404-error</a></li>
-                                                            <li><a href="login.html">Login</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a class="mega-title mb-15" href="#">Blog</a>
-                                                        <ul>
-                                                            <li><a href="blog.html">Main Blog Page</a></li>
-                                                            <li><a href="blog2.html">Blog Page v2</a></li>
-                                                            <li><a href="blog3.html">Blog Page v3</a></li>
-                                                            <li><a href="blog-details.html">Blog details 1</a></li>
-                                                            <li><a href="blog-details2.html">Blog details 2</a></li>
-                                                            <li><a href="blog-details3.html">blog-details 3</a></li>
-                                                            <li><a href="blog-details-gallery.html">Blog details gallery</a></li>
-                                                            <li><a href="blog-details-quote.html">Blog details quote</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a class="mega-title mb-25" href="#">Recent Blog</a>
-                                                        <ul>
-                                                            <li>
-                                                                <div class="recent-blog-menu d-flex justify-content-between pb-22">
-                                                                    <div class="rbm-img pr-15">
-                                                                        <a href="blog-details.html" class="d-inline-block">
-                                                                            <img class="w-100 h-100" src="images/menu/blog-menu-img1.jpg" alt="image">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="rbm-text">
-                                                                        <a href="blog-details.html" class="d-block">
-                                                                            <h6 class="mt--5">Lorem ipsum doloram etceio nse</h6>
-                                                                        </a>
-                                                                        <span class="d-block secondary-color2">Sept 28, 2020</span>
-                                                                    </div>
-                                                                </div><!-- /recent-blog-menu -->
-                                                                <div class="recent-blog-menu d-flex justify-content-between">
-                                                                    <div class="rbm-img pr-15">
-                                                                        <a href="blog-details.html" class="d-inline-block">
-                                                                            <img class="w-100 h-100" src="images/menu/blog-menu-img1.jpg" alt="image">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="rbm-text">
-                                                                        <a href="blog-details.html" class="d-inline-block">
-                                                                            <h6 class="mt--4">Lorem ipsum doloram etceio nse</h6>
-                                                                        </a>
-                                                                        <span class="d-block secondary-color2">Sept 28, 2020</span>
-                                                                    </div>
-                                                                </div><!-- /recent-blog-menu -->
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul><!-- /mega-menu 2 -->
-                                            </li>
-                                            <li><a href="blog.html">blog</a>
-                                                <ul class="mega-menu mega-dropdown-menu white-bg ml-0">
-                                                    <li><a href="blog.html">Blog v1</a></li>
-                                                    <li><a href="blog2.html">Blog v2</a></li>
-                                                    <li><a href="blog3.html">Blog v3</a></li>
-                                                    <li><a href="blog4.html">Blog v4</a></li>
-                                                    <li><a href="blog5.html">Blog v5</a></li>
-                                                    <li><a href="blog6.html">Blog v6</a></li>
-                                                    <li class="position-relative">
-                                                        <a href="#">Blog details <span class="pr-20 float-right"><i class="fas fa-angle-right"></i></span></a>
-                                                        <div class="mega-menu mega-sub-menu bg-white">
-                                                            <ul>
-                                                                <li><a href="blog-details.html">Blog details 1</a></li>
-                                                                <li><a href="blog-details2.html">Blog details 2</a></li>
-                                                                <li><a href="blog-details3.html">blog-details 3</a></li>
-                                                                <li><a href="blog-details-gallery.html">Blog details gallery</a></li>
-                                                                <li><a href="blog-details-quote.html">Blog details quote</a></li>
-                                                            </ul>
-                                                        </div><!-- /mega-sub-menu -->
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact-us.html">Contact</a>
-                                            </li>
-                                         </ul>
-                                    </nav>
-                                </div><!-- /main-menu -->
+                                    <div class="header-right-left-content d-flex align-items-center justify-content-end">
+                                        <div class="header-search pl-15 position-relative d-none d-md-block d-lg-none d-lg-block" data-toggle="tooltip" data-selector="true" data-placement="bottom" title="Search">
+                                            <span class="black-color d-inline-block"><span><i class="fas fa-search"></i></span></span>
+                                        </div>
+                                    </div><!-- /header-right-left-content -->
+                                </div><!-- /menu-bar-home12 -->
+                                <div class="my-btn pl-20 pr-30 d-md-block">
+                                    <a href="login.html" class="btn theme-bg text-capitalize">Go Pro</a>
+                                </div><!-- /my-btn -->
+                                <ul class="home12-menu text-right d-none d-lg-inline-block">
+                                    <li class="click-show-menu-h12"><span class="theme-color"><i class="fal fa-bars"></i></span></li>
+                                    <li class="click-close-menu-h12"><span class="theme-color"><i class="fas fa-times"></i></span></li>
+                                </ul>
                             </div><!-- /col -->
-                            <div class="col-xl-3  col-lg-3 col-md-6 col-sm-6 col-4 pl-lg-0 pl-xl-3">
-                                <div class="header-right d-flex align-items-center justify-content-lg-between justify-content-end">
-                                    <ul class="header-login d-none d-lg-block">
-                                        <li>
-                                            <a class="black-color f-700 black-color" href="login.html" data-toggle="tooltip" data-selector="true" data-placement="bottom" title="Login / Register">
-                                            Login</a>
-                                        </li>
-                                    </ul>
-                                    <div class="my-btn ml-20 d-none d-sm-block">
-                                        <a href="login.html" class="btn theme-bg text-capitalize">Sign Up</a>
-                                    </div><!-- /my-btn -->
-                                    <div class="d-block d-lg-none pl-20">
-                                        <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
-                                    </div>
-                                    <!-- <div class="mobile-menu"></div> -->
-                                </div><!-- /header-right -->
+                            <div class="col-xl-2 col-lg-2 col-md-9 col-sm-8 col-6 d-lg-none d-block">
+                                <div class="d-block d-lg-none pl-3 text-right">
+                                    <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
+                                </div><!-- /mobile-menubar -->
                             </div><!-- /col -->
                         </div><!-- /row -->
                     </div><!-- /container -->
@@ -239,13 +254,24 @@
 
         <!--  ====== header extra info start================================== -->
         <!-- side-mobile-menu start -->
-        <div class="side-mobile-menu white-bg pt-10 pb-30 pl-35 pr-30 pb-100">
-            <div class="d-fle justify-content-between w-100">
+
+        <div class="side-mobile-menu white-bg pt-10 pb-30 pl-35 pr-30 pb-400">
+            <div class="w-100">
                 <div class="close-icon d-inline-block float-right clear-both mt-15 mb-10">
                     <a href="javascript:void(0);"><span class="icon-clear theme-color"><i class="fa fa-times"></i></span></a>
                 </div>
             </div>
+
+            <div class="side-menu-search header-search-content mt-100 pr-15">
+                <form action="#" class="position-relative">
+                    <input class="w-100 rounded-0 pb-2" type="text" placeholder="Type Keyword...">
+                    <a class="position-absolute right-0 top-0 dark-black-color d-block" href="#"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+
             <div class="mobile-menu mt-10 w-100"></div>
+
+            
             <ul class="social-link pt-50 clear-both">
                 <li class="d-inline-block">
                     <a class="facebook-color text-center pr-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -262,11 +288,11 @@
             </ul><!-- social-link -->
 
             <!-- mobile phone area -->
-            <div class="mobile-phone-contact phone-contact mt-150 mb-25">
+            <div class="mobile-phone-contact phone-contact mt-80 mb-25">
                 <h6 class="f-700 mb-0">Call Us</h6>
                 <a class="theme-color f-700" href="tell:+8801234567890">+8801234567890</a>
             </div><!-- /mobile phone area -->
-
+            
             <!-- mobile subscribe area -->
             <div class="mobile-subscribe pb-125">
                 <h6 class="f-700 mb-1">Subscribe to Our Newsletter</h6>
@@ -280,44 +306,55 @@
 
         </div><!-- /side-mobile-menu -->
         <div class="body-overlay"></div>
+
+        <!-- header-search-details start -->
+        <div class="header-search-details text-center white-bg pt-55 pl-60 pr-60">
+            <div class="close-icon float-right">
+                <a href="javascript:void(0);" class="dark-black-color"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="header-search-content container mt-100">
+                <h3 class="f-700 pb-50">Search</h3>
+                <form action="#" class="position-relative mt-200">
+                    <input class="w-100 rounded-0 pb-20" type="text" placeholder="Type Keyword...">
+                    <a class="position-absolute right-0 top-0 dark-black-color d-block" href="#"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+        </div>
+        <!-- header-search-details end -->
         <!-- header extra info end  -->
+   
 
-
-        <main>
+        <main class="over-hidden">
             <!-- ======slider-area-start=========================================== -->
-            <div class="slider-area position-relative over-hidden">
-                <div id="scene" class="position-absolute w-100 h-100" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-                    <img data-depth="0.20" class="shape shape-1 d-none d-lg-inline-block" src="images/slider/shape/shape1.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-2 d-none d-lg-inline-block" src="images/slider/shape/shape2.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-3 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-4 d-none d-lg-inline-block flash-infinite" src="images/slider/shape/shape4.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-5 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-6 d-none d-lg-inline-block" src="images/slider/shape/shape5.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-7 d-none d-lg-inline-block" src="images/slider/shape/shape6.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-8 d-none d-lg-inline-block" src="images/slider/shape/shape7.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-9 d-none d-lg-inline-block" src="images/slider/shape/shape8.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-10 d-none d-lg-inline-block" src="images/slider/shape/shape9.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-11 d-none d-lg-inline-block" src="images/slider/shape/shape2.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-12 d-none d-lg-inline-block" src="images/slider/shape/shape10.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-13 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-14 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-15 d-none d-lg-inline-block" src="images/slider/shape/shape1.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-16 d-none d-lg-inline-block" src="images/slider/shape/shape11.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-17 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-18 d-none d-lg-inline-block" src="images/slider/shape/shape12.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
-                    <img data-depth="0.20" class="shape shape-19 d-none d-lg-inline-block r-shape" src="images/slider/shape/shape3.png" alt="#" style="transform: translate3d(-19.9px, 3.8px, 0px);">
+            <div class="slider-area position-relative over-hidden home5">
+                <div id="scene" class="position-absolute w-100 h-100">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-1 d-none d-lg-block s-shape heartbeat2" src="images/slider/home5-shape/hm5-shape1.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-2 d-none d-lg-block" src="images/slider/home5-shape/hm5-shape2.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-3 d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape3.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-4  d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape4.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-5  d-none d-lg-block heartbeat2" src="images/slider/home5-shape/hm5-shape5.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-6  d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape6.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-7  d-none d-lg-block heartbeat2" src="images/slider/home5-shape/hm5-shape7.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-8  d-none d-lg-block" src="images/slider/home5-shape/hm5-shape8.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-10  d-none d-lg-block" src="images/slider/home5-shape/hm5-shape9.png" alt="#">
+                    <img data-depth="0.20" class="hm5-shape hm5-shape-11  d-none d-lg-block s-shape" src="images/slider/home5-shape/hm5-shape6.png" alt="#">
                 </div>
                 <!-- /shape-slider -->
-                <div class="single-slider slider-height1 container-wrapper d-flex align-items-center z-index1" data-background="images/slider/home1-slider-bg.png" style="background-image: url(&quot;images/slider/home1-slider-bg.png&quot;);">
-                    <div class="container" style="margin-top:-60px">
+
+                <div class="single-slider slider-height5 d-flex align-items-center position-relative z-index1">
+                    <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-center">
-                                <div class="slider-content mt--30 position-relative" style="padding-right:40px; margin-top:-40px">
-
-                                    <h1 class="f-700 pb-22 aos-init aos-animate" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="150">Your Career Hack, in AI Form
-</h1>
-                                    <p data-aos="fade-right" data-aos-duration="2000" class="aos-init aos-animate">Franklink is the AI networking agent for students — turning missed chances into real connections.</p>
-                                    <div class="video-player-btn d-flex align-items-center z-index11 mt-45">
+                                <div class="slider-content mt-100 position-relative pr-40">
+                                    <span class="f-700 theme-color d-block pb-1" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="40">Cold emails are dead.</span>
+                                    <h1 class="f-700 pb-22" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">Your Career Hack, in AI Form</h1>
+                                    <p data-aos="fade-up" data-aos-duration="2800" data-aos-delay="40">Franklink's AI finds the right alumni and crafts personalized messages. <strong>Get 3x more responses, save 20+ hours monthly.</strong></p>
+                                    <div class="hero-cta pt-30 pb-90" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="150">
+                                        <a href="#" class="btn theme-bg white-color text-capitalize px-4 py-3">
+                                            Start Free Today
+                                        </a>
+                                    </div><!-- /hero-cta -->
+                                    <div class="video-player-btn d-flex align-items-center z-index11 mt-45" >
                                         <a data-fancybox="" href="https://youtu.be/nqye02H_H6I" class="d-flex align-items-center">
                                             <div class="video-play-wrap position-relative d-inline-block">
                                                 <div class="video-mark">
@@ -328,759 +365,1039 @@
                                                     <i class="fas fa-play"></i>
                                                 </div>
                                             </div>
-                                            <span class="d-inline-block f-700 black-color pl-22">Play Video</span>
+                                            <span class="d-inline-block f-700 black-color pl-22">Watch Demo</span>
                                         </a>
                                     </div><!-- /video-player-btn -->
                                 </div>
                             </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-center " style="padding-right: 80px;">
-                                <div class="slider-img1 mt-25 pl-65 z-index1 position-relative">
-                                    <img class="bounce-animate" src="images/slider/home1-slider-img.png" alt="image">
-                                    <div class="slider-right-dotted s-dotted position-absolute d-none d-md-block z-index-1">
-
-                                    </div><!-- /slider-right-dotted -->
+                            <div class="col-xl-6 col-lg-6  col-md-6  col-sm-12 col-12  d-flex align-items-start justify-content-start mt-0">
+                                <div class="slider-img1 pl-45 z-index1 position-relative" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100" style="max-width: 100%; margin-top: -60px; margin-left: 30px;">
+                                    <img class="bounce-animate" src="images/slider/franklink-main.jpg" alt="Franklink AI Networking Platform" style="border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; height: auto;">
                                 </div>
                             </div><!-- /col -->
                         </div><!-- /row -->
                     </div><!-- /container -->
                     <div class="slider-left-dotted s-dotted position-absolute d-none d-md-block z-index1">
-
+                        <img src="images/slider/shape/slider-left-dotted.png" alt="image">
                     </div><!-- /slider-left-dotted -->
                 </div>
+                <div class="slider-line-img position-absolute left-0 right-0 top-0 bottom-0 z-index-1" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="200">
+                    <img src="images/bg/hm5-slider-thin-lines.png" alt="image">
+                </div>
+                <!-- /shape-bg -->
+                <div class="hm5-round-shape hm5-round-shape-1 rounded-circle position-absolute d-inline-block heartbeat "></div>
+                <div class="hm5-round-shape hm5-round-shape-2 rounded-circle position-absolute d-inline-block heartbeat2 "></div>
+                <div class="hm5-round-shape hm5-round-shape-3 rounded-circle position-absolute d-inline-block heartbeat2 "></div>
+                <div class="hm5-round-shape hm5-round-shape-4 rounded-circle position-absolute d-inline-block heartbeat "></div>
+                <div class="hm5-round-shape hm5-round-shape-5 rounded-circle position-absolute d-inline-block heartbeat "></div>
             </div>
             <!-- slider-area-end  -->
 
-            <!-- ====== brand-area-start=============================================== -->
-            <div class="brand-area brand-height mt-30 over-hidden">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12  col-lg-12  col-md-12  col-sm-12 col-12">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-xl-2  col-lg-2  col-md-4  col-sm-4 col-6 text-center">
-                                    <div class="single-brand mb-40 d-block text-center">
-                                        <img class="d-inline-block" src="images/brand/brand-logo1.png" alt="image">
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-2  col-lg-2  col-md-4  col-sm-4 col-6 text-center">
-                                    <div class="single-brand mb-40 d-block text-center">
-                                        <img class="d-inline-block" src="images/brand/brand-logo2.png" alt="image">
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-2  col-lg-2  col-md-4  col-sm-4 col-6 text-center">
-                                    <div class="single-brand mb-40 d-block text-center">
-                                        <img class="d-inline-block" src="images/brand/brand-logo3.png" alt="image">
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-2  col-lg-2  col-md-4  col-sm-4 col-6 text-center">
-                                    <div class="single-brand mb-40 d-block text-center">
-                                        <img class="d-inline-block" src="images/brand/brand-logo4.png" alt="image">
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-2  col-lg-2  col-md-4  col-sm-4 col-6 text-center">
-                                    <div class="single-brand mb-40 d-block text-center">
-                                        <img class="d-inline-block" src="images/brand/brand-logo5.png" alt="image">
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-2  col-lg-2  col-md-4  col-sm-4 col-6 text-center">
-                                    <div class="single-brand mb-40 d-block text-center">
-                                        <img class="d-inline-block" src="images/brand/brand-logo6.png" alt="image">
-                                    </div>
-                                </div><!-- /col -->
-                            </div><!-- /row -->
-                        </div><!-- /col -->
-                    </div><!-- /row -->
-                </div><!-- /container -->
-            </div>
-            <!-- brand-area-end  -->
-
 
             <!-- ====== about-area-start=========================================== -->
-            <div class="about-area over-hidden mt-75 mb-80">
-                <div class="container">
-                    <div class="row align-items-center  flex-column-reverse flex-lg-row">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="about-img img-left-margin text-center aos-init" data-aos="fade-right" data-aos-duration="2000">
-                                <img class="d-block bounce-animate2" src="images/about/home1-about-img.jpg" alt="image">
-                            </div><!-- /about-img -->
-                        </div><!-- /col -->
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="about-content mb-50 mt-10 aos-init aos-animate" data-aos="fade-left" data-aos-duration="2000">
-                                <div class="title">
-                                    <span class="theme-color f-700">Learn more about us</span>
-                                    <h3 class="f-700">Your Personal AI Networking Agent
-</h3>
-                                </div>
-                                <div class="about-text mt-55 ">
-                                    <h6 class="f-400 mb-30">Think less. Connect more. Franklink does the hard work for you.
-</h6>
-                                    <p>• 100+ personalized messages in 1 hour (vs. 1–2 manually)</p>
-     <p>• 3x higher response rates with genuine personalization</p>
-     <p>• 20+ hours saved each month — use it to study, sleep, or relax</p>
-                                    <div class="my-btn mt-47">
-                                        <a href="about-us.html" class="btn theme-bg text-capitalize f-18 f-700">Get Started</a>
-                                    </div><!-- /my-btn -->
-                                </div>
-                            </div><!-- /about-content -->
-                        </div><!-- /col -->
-                    </div><!-- /row -->
-                </div><!-- /container -->
+            <div class="about-area home5 home5-about-margin pb-160 z-index1 over-hidden">
+                <div class="home5-about-bg " style="padding-top: 360px; " data-background="images/bg/home5-about-bg.png">
+                    <div class="container">
+                        <div class="row align-items-end flex-column-reverse flex-lg-row">
+                            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-11">
+                                <div class="home5-about-left-img" data-aos="fade-right" data-aos-duration="2000" style="margin-top: -710px;">
+                                <img class="bounce-animate" src="images/about/home5-about-img.png" alt="image">
+                                </div><!-- /about-left-img -->
+                            </div><!-- /col -->
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="pb-70 about-content mt-85" data-aos="fade-left" data-aos-duration="2000">
+                                    <div class="title">
+                                        <span class="theme-color f-700">Save 20+ hours monthly</span>
+                                        <h3 class="f-700">Franklink is transforming student networking</h3>
+                                    </div>
+                                    <div class="home5-about-text mt-25 pt-1">
+                                        <p class="mb-25">Traditional networking is broken. Students waste hours on low-response outreach.</p>
+
+                                         <p class="mb-25">Franklink uses AI analyzes your background to identify relevant connections and create genuine, personalized messages.</p>
+                                    </div>
+
+                                    <div class="row home5-fact-wrapper justify-content-between mt-40">
+                                        <div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12">
+                                            <div class="home5-single-f-counter mb-15">
+                                                <div class="f-count pr-20">
+                                                    <span class="f-700 d-inline-block counter">3</span><span class="d-inline-block f-700">x</span>
+                                                </div>
+                                                <p class="black-color f-700 mb-0">More Responses</p>
+                                            </div> 
+                                        </div><!-- /col -->
+                                        <div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12 pl-lg-0 pr-lg-0">
+                                            <div class="home5-single-f-counter mb-15">
+                                                <div class="f-count pr-20">
+                                                    <span class="f-700 d-inline-block counter">100</span><span class="d-inline-block f-700">+</span>
+                                                </div>
+                                                <p class="black-color f-700 mb-0">Messages per Hour</p>
+                                            </div>
+                                        </div><!-- /col -->
+                                        <div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12">
+                                            <div class="home5-single-f-counter mb-15">
+                                                <div class="f-count pr-20">
+                                                    <span class="f-700 d-inline-block counter">20</span><span class="d-inline-block f-700">+</span>
+                                                </div>
+                                                <p class="black-color f-700 mb-0">Hours Saved</p>
+                                            </div>
+                                        </div><!-- /col -->
+                                    </div><!-- /fact-wrapper -->
+                                </div><!-- /about-content -->
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                    </div><!-- /container -->
+                </div><!-- /home5-about-bg -->
             </div>
             <!-- about-area-end -->
 
-            <!-- ====== service-area-start ==================================== -->
-            <div class="service-area over-hidden">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4  col-lg-4  col-md-4  col-sm-12 col-12">
-                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt aos-init" data-aos="fade-up">
-                                <div class="ser-icon d-inline-block text-center mb-20 transition5">
-                                    <img src="images/icon/writing-2.png" alt="image">
-                                </div><!-- /ser-icon -->
-                                <div class="service-text">
-                                    <h6 class="f-700 mb-22">Big Data Analysis</h6>
-                                    <p>Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing elit</p>
-                                </div>
-                            </div><!-- /single-service-content -->
-                        </div><!-- /col -->
-                        <div class="col-xl-4  col-lg-4  col-md-4  col-sm-12 col-12">
-                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                                <div class="ser-icon d-inline-block text-center mb-20  transition5">
-                                    <img src="images/icon/diagram.png" alt="image">
-                                </div><!-- /ser-icon -->
-                                <div class="service-text">
-                                    <h6 class="f-700 mb-22">Big Data Analysis</h6>
-                                    <p>Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing elit</p>
-                                </div>
-                            </div><!-- /single-service-content -->
-                        </div><!-- /col -->
-                        <div class="col-xl-4  col-lg-4  col-md-4  col-sm-12 col-12">
-                            <div class="single-service-content transition5 mt-10 secondary-border01 pl-50 pt-55 pb-35 pr-50 mb-35 mt-30 tilt aos-init" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-                                <div class="ser-icon d-inline-block text-center mb-20  transition5">
-                                    <img src="images/icon/gear-1.png" alt="image">
-                                </div><!-- /ser-icon -->
-                                <div class="service-text">
-                                    <h6 class="f-700 mb-22">Big Data Analysis</h6>
-                                    <p>Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing elit</p>
-                                </div>
-                            </div><!-- /single-service-content -->
-                        </div><!-- /col -->
-                    </div><!-- /row -->
-                </div><!-- /container -->
-            </div>
-            <!-- service-area-end  -->
 
             <!-- ====== feature-area-start=========================================== -->
-            <div class="feature-area mt-60 over-hidden">
-                <div class="feature-bg bg-no-repeat aos-init" data-aos="fade-up" data-aos-duration="1800" data-background="images/feature/home1-feature-bg.png" style="background-image: url(&quot;images/feature/home1-feature-bg.png&quot;);">
-                    <div class="container">
-                        <div class="row align-items-center mt-10 flex-column-reverse flex-lg-row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pr-10">
-                                <div class="feature-img img-left-margin mt-35 text-center aos-init" data-aos="fade-right" data-aos-duration="2000">
-                                    <img class="d-block bounce-animate2" src="images/feature/home1-feature-img.png" alt="image">
-                                </div><!-- /feature-img -->
-                            </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pl-lg-0 pl-xl-3">
-                                <div class="feature-content mb-10 aos-init" data-aos="fade-left" data-aos-duration="2000">
-                                    <div class="title">
-                                        <span class="theme-color f-700">Learn more about us</span>
-                                        <h3 class="f-700 pb-30">Generate sales and manage earning</h3>
-                                        <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                    <div class="feature-text mt-30">
-                                        <div class="row">
-                                            <div class="col-xl-6  col-lg-6 col-md-6  col-sm-6 col-12">
-                                                <div class="single-feature-service mb-22">
-                                                    <div class="feature-ser-heading d-flex align-items-center mb-1">
-                                                        <div class="feature-ser-icon d-inline-block text-center mr-30">
-                                                            <span class="theme-color d-block">
-                                                                <span class="flat-family flat-family flaticon-012-edit"></span>
-                                                            </span>
-                                                        </div><!-- /ser-icon -->
-                                                        <h6 class="f-700 mb-0">Easy Control Panel</h6>
-                                                    </div><!-- /feature-ser-heading -->
-                                                    <p>Bommodo dolor sit amet otire conse ctetur adipisic</p>
-                                                </div><!-- /single-feature-service -->
-                                            </div><!-- /col -->
-                                            <div class="col-xl-6  col-lg-6 col-md-6  col-sm-6 col-12">
-                                                <div class="single-feature-service mb-22">
-                                                    <div class="feature-ser-heading d-flex align-items-center mb-1">
-                                                        <div class="feature-ser-icon d-inline-block text-center mr-30">
-                                                            <span class="theme-color d-block">
-                                                                <span class="flat-family flat-family flaticon-012-edit"></span>
-                                                            </span>
-                                                        </div><!-- /ser-icon -->
-                                                        <h6 class="f-700 mb-0">Details Reporting</h6>
-                                                    </div><!-- /feature-ser-heading -->
-                                                    <p>Bommodo dolor sit amet otire conse ctetur adipisic</p>
-                                                </div><!-- /single-feature-service -->
-                                            </div><!-- /col -->
-                                            <div class="col-xl-6  col-lg-6 col-md-6  col-sm-6 col-12">
-                                                <div class="single-feature-service mb-22">
-                                                    <div class="feature-ser-heading d-flex align-items-center mb-1">
-                                                        <div class="feature-ser-icon d-inline-block text-center mr-30">
-                                                            <span class="theme-color d-block">
-                                                                <span class="flat-family flat-family flaticon-012-edit"></span>
-                                                            </span>
-                                                        </div><!-- /ser-icon -->
-                                                        <h6 class="f-700 mb-0">Sales Comparison</h6>
-                                                    </div><!-- /feature-ser-heading -->
-                                                    <p>Bommodo dolor sit amet otire conse ctetur adipisic</p>
-                                                </div><!-- /single-feature-service -->
-                                            </div><!-- /col -->
-                                            <div class="col-xl-6  col-lg-6 col-md-6  col-sm-6 col-12">
-                                                <div class="single-feature-service mb-22">
-                                                    <div class="feature-ser-heading d-flex align-items-center mb-1">
-                                                        <div class="feature-ser-icon d-inline-block text-center mr-30">
-                                                            <span class="theme-color d-block">
-                                                                <span class="flat-family flat-family flaticon-012-edit"></span>
-                                                            </span>
-                                                        </div><!-- /ser-icon -->
-                                                        <h6 class="f-700 mb-0">Manage Earning</h6>
-                                                    </div><!-- /feature-ser-heading -->
-                                                    <p>Bommodo dolor sit amet otire conse ctetur adipisic</p>
-                                                </div><!-- /single-feature-service -->
-                                            </div><!-- /col -->
-                                        </div><!-- /row -->
-                                    </div>
-                                </div><!-- /feature-content -->
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /container -->
-                </div>
+            <div class="home5-feature-area feature-area home5 position-relative z-index1 over-hidden">
+                <div class="container ">
+                    <div class="row justify-content-center mb-140 mt-40">
+                        <div class="col-xl-6  col-lg-8  col-md-10  col-sm-10 col-12">
+                            <div class="title text-center">
+                                <h4 class="f-700">Smarter networking. Stronger connections.</h4>
+                            </div>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+
+                    <!-- home5-feature-wrapper 1 start -->
+                    <div class="row align-items-center justify-content-center home5-feature-wrapper mt-65">
+                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
+                            <div class="home5-feature-img" data-aos="fade-right" data-aos-duration="2000">
+                                <img class="d-block bounce-animate" src="images/feature/franklink-network.jpg" alt="University Network Visualization" style="border-radius: 10px;">
+                            </div><!-- /service-img -->
+                        </div><!-- /col -->
+                        <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
+                            <div class="service-content" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="home5-feature-icon mb-30">
+                                    <img src="images/icon/home5-feature1-icon.png" alt="image">
+                                </div><!-- /home5-feature-icon -->
+                                <div class="title">
+                                    <h3 class="f-700 mb-30">Smart Alumni Matching</h3>
+                                    <p class="mt-22 mb-40"><strong>Make connections meaningful.</strong> AI finds the right people through shared experiences, not random searching.</p>
+                                </div><!-- /title -->
+                                <div class="row">
+                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service">
+                                            <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                <span class="primary-bg secondary-color d-block">
+                                                    <i class="fal fa-archive"></i>
+                                                </span>
+                                            </div><!-- /ser-icon -->
+                                            <div class="service-text">
+                                            <h6 class="f-700 pb-2">Shared Experience</h6>
+                                            <p class="mb-0">Discover shared experiences that create instant rapport</p>
+                                            </div>
+                                        </div><!-- /single-service -->
+                                    </div><!-- /col -->
+                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service">
+                                            <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                <span class="primary-bg secondary-color d-block">
+                                                    <i class="fal fa-file-code"></i>
+                                                </span>
+                                            </div><!-- /ser-icon -->
+                                            <div class="service-text">
+                                            <h6 class="f-700 pb-2">Relevance Scoring</h6>
+                                            <p class="mb-0">AI predicts who's most likely to respond and help</p>
+                                            </div>
+                                        </div><!-- /single-service -->
+                                    </div><!-- /col -->
+                                </div><!-- /row -->
+                            </div><!-- /service-content -->
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+                    <!-- home5-feature-wrapper 1 end -->
+
+                    <!-- home5-feature-wrapper 2 start -->
+                    <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row home5-feature-wrapper2 mt-65">
+                        <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
+                            <div class="service-content mt-10" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="home5-feature-icon mb-30">
+                                    <img src="images/icon/home5-feature2-icon.png" alt="image">
+                                </div><!-- /home5-feature-icon -->
+                                <div class="title">
+                                    <h3 class="f-700 mb-30">AI-Powered Message Generation</h3>
+                                </div><!-- /title -->
+                                <ul class="service-text mt-30 align-items-start">
+                                    <li class="mb-10 d-flex">
+                                        <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-check"></i></span>
+                                        Messages that feel human, not robotic
+                                    </li>
+                                    <li class="mb-10 d-flex">
+                                        <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-check"></i></span>
+                                        Reference shared connections naturally 
+                                    </li>
+                                    <li class="mb-10 d-flex">
+                                        <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-check"></i></span>
+                                        Mention specific experiences that create rapport
+                                    </li>
+                                </ul>
+                            </div><!-- /service-content -->
+                        </div><!-- /col -->
+                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
+                            <div class="home5-feature-img text-right" data-aos="fade-left" data-aos-duration="2000">
+                                <img class="bounce-animate" src="images/feature/franklink-chat.jpg" alt="Franklink Chat Interface" style="border-radius: 10px;">
+                            </div><!-- /service-img -->
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+                    <!-- home5-feature-wrapper  2 end -->
+
+                     <!-- home5-feature-wrapper 3 start -->
+                    <div class="row align-items-center justify-content-center home5-feature-wrapper3 mt-65">
+                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
+                            <div class="home5-feature-img" data-aos="fade-right" data-aos-duration="1500">
+                                <img class="bounce-animate" src="images/feature/home5-feature3-img.png" alt="image">
+                            </div><!-- /service-img -->
+                        </div><!-- /col -->
+                        <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
+                            <div class="service-content" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="home5-feature-icon mb-30">
+                                    <img src="images/icon/home5-feature3-icon.png" alt="image">
+                                </div><!-- /home5-feature-icon -->
+                                <div class="title">
+                                    <h3 class="f-700 mb-30">Scale Your Outreach Effortlessly</h3>
+                                </div><!-- /title -->
+
+                                <div class="row">
+                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
+                                        <ul class="service-text mt-30 align-items-start">
+                                            <li class="mb-10 d-flex">
+                                                <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
+                                                Send 100+ messages per hour 
+                                            </li>
+                                            <li class="mb-10 d-flex">
+                                                <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
+                                                Track response rates and engagement 
+                                            </li>
+                                            <li class="mb-10 d-flex">
+                                                <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
+                                                Automated follow-up sequences 
+                                            </li>
+                                        </ul>
+                                    </div><!-- /col -->
+                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
+                                        <ul class="service-text mt-30 service-text-margin align-items-start">
+                                            <li class="mb-10 d-flex">
+                                                <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
+                                                Advanced analytics and insights 
+                                            </li>
+                                            <li class="mb-10 d-flex">
+                                                <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
+                                                CRM integration for contact management 
+                                            </li>
+                                            <li class="mb-10 d-flex">
+                                                <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
+                                                Bulk outreach with personal touch 
+                                            </li>
+                                        </ul>
+                                    </div><!-- /col -->
+                                </div><!-- /row -->
+
+                            </div><!-- /service-content -->
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+                    <!-- home5-feature-wrapper 3 end -->
+
+                </div><!-- /container -->
             </div>
             <!-- feature-area-end -->
 
-            <!-- ====== sp-feature-area-start================================================= -->
-            <div class="sp-feature-area over-hidden mt--50">
-                <div class="sp-feature-bg feature-bg bg-no-repeat pt-220 pb-95 aos-init" data-aos="fade-up" data-aos-duration="1800" data-background="images/feature/home1-sp-feature-bg.png" style="background-image: url(&quot;images/feature/home1-sp-feature-bg.png&quot;);">
+
+            <!-- ====== sp-feature-area-start=========================================== -->
+            <div class="home5-sp-feature-area home5-sp-feature-margin feature-area home5 position-relative over-hidden">
+                <div class="home5-sp-feature-bg bg-no-repeat" data-background="images/bg/home5-sp-feature-bg.png">
                     <div class="container">
-                        <div class="row align-items-center mt-10">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="sp-feature-content pr-xl-2 mb-10 mt-45 aos-init" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="row align-items-center justify-content-center home5-sp-feature-wrapper ">
+                            <div class="col-xl-8 col-lg-7  col-md-12  col-sm-12 col-12 pb-80">
+                                <div class="service-content" data-aos="fade-right" data-aos-duration="2000">
                                     <div class="title">
-                                        <span class="theme-color f-700">Learn more about us</span>
-                                        <h3 class="f-700 pb-30">Online reporting to get best of business</h3>
-                                        <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <span class="theme-color f-700">Franklink delivers results</span>
+                                        <h3 class="f-700 mb-30">Student networking redefined!</h3>
+                                        <p class="mt-22 mb-35"><strong>80% reduction in time spent networking.</strong> Get 100+ personalized messages in 1 hour vs. 1-2 traditional connections.</p>
                                     </div><!-- /title -->
-                                    <ul class="sp-feature-text mt-30">
-                                        <li class="d-flex">
-                                            <span class="sp-feature-icon theme-color d-inline-block mr-20"><i class="fal fa-check"></i></span>
-                                            <p>Bommodo dolor sit amet, conse ctetur adipisic ing elit, sed do eiusmod tempor</p>
-                                        </li>
-                                        <li class="d-flex">
-                                            <span class="sp-feature-icon theme-color d-inline-block mr-20"><i class="fal fa-check"></i></span>
-                                            <p>Ladipisic ing elit, sed do eiusmod tempor kotore bolis</p>
-                                        </li>
-                                        <li class="d-flex">
-                                            <span class="sp-feature-icon theme-color d-inline-block mr-20"><i class="fal fa-check"></i></span>
-                                            <p>Sit amet, conse ctetur adipisic ing elit sed do</p>
-                                        </li>
-                                    </ul>
-                                    <div class="my-btn pt-32">
-                                        <a href="about-us.html" class="btn theme-bg text-capitalize">More Details</a>
-                                    </div><!-- /my-btn -->
-                                </div><!-- /feature-content -->
+                                    <div class="row">
+                                        <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
+                                            <div class="single-service mb-30 d-xl-flex d-lg-block d-flex">
+                                                <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                    <span class="primary-bg secondary-color d-block">
+                                                        <img src="images/icon/web.png" alt="image">
+                                                    </span>
+                                                </div><!-- /ser-icon -->
+                                                <div class="service-text">
+                                                    <h6 class="f-700 pb-2">Intelligent Targeting</h6>
+                                                    <p class="mb-0">500K+ alumni database access for targeted outreach</p>
+                                                </div>
+                                            </div><!-- /single-service -->
+                                            <div class="single-service mb-30 d-xl-flex d-lg-block d-flex">
+                                                <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                    <span class="primary-bg secondary-color d-block">
+                                                        <img src="images/icon/contact-information.png" alt="image">
+                                                    </span>
+                                                </div><!-- /ser-icon -->
+                                                <div class="service-text">
+                                                    <h6 class="f-700 pb-2">Authentic Messaging</h6>
+                                                    <p class="mb-0">Personalized outreach that sounds natural and builds genuine connections</p>
+                                                </div>
+                                            </div><!-- /single-service -->
+                                        </div><!-- /col -->
+                                        <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
+                                            <div class="single-service mb-30 d-xl-flex d-lg-block d-flex">
+                                                <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                    <span class="primary-bg secondary-color d-block">
+                                                        <img src="images/icon/gear-1.png" alt="image">
+                                                    </span>
+                                                </div><!-- /ser-icon -->
+                                                <div class="service-text">
+                                                    <h6 class="f-700 pb-2">Response Tracking</h6>
+                                                    <p class="mb-0">Monitor engagement rates and optimize your networking strategy</p>
+                                                </div>
+                                            </div><!-- /single-service -->
+                                            <div class="single-service mb-30 d-xl-flex d-lg-block d-flex">
+                                                <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                    <span class="primary-bg secondary-color d-block">
+                                                        <img src="images/icon/user.png" alt="image">
+                                                    </span>
+                                                </div><!-- /ser-icon -->
+                                                <div class="service-text">
+                                                    <h6 class="f-700 pb-2">Full Automation</h6>
+                                                    <p class="mb-0">Save 20+ hours monthly with intelligent automation and scaling</p>
+                                                </div>
+                                            </div><!-- /single-service -->
+                                        </div><!-- /col -->
+                                    </div><!-- /row -->
+                                </div><!-- /service-content -->
                             </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="feature-img img-right-margin mt-35 d-flex justify-content-center aos-init" data-aos="fade-left" data-aos-duration="2000">
-                                    <img class="d-block ml-lg-auto bounce-animate2" src="images/feature/home1-sp-feature-img.png" alt="image">
-                                </div><!-- /feature-img -->
+                            <div class="col-xl-4 col-lg-5 col-md-10 col-sm-11 col-12 pl-xl-0">
+                                <div class="home5-sp-feature-img" data-aos="fade-left" data-aos-duration="2000">
+                                    <img class="bounce-animate" src="images/sp-offer/home5-sp-feature-img.png" alt="image">
+                                </div><!-- /service-img -->
                             </div><!-- /col -->
                         </div><!-- /row -->
                     </div><!-- /container -->
-                </div>
+                </div><!-- /home5-about-bg -->
             </div>
             <!-- sp-feature-area-end -->
 
-            <!-- ====== facts-area-start=========================================== -->
-            <div class="facts-area pb-200">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9  col-lg-10  col-md-11  col-sm-12 col-12">
-                            <div class="title text-center">
-                                <span class="theme-color f-700">Learn more about us</span>
-                                <h3 class="f-700 pb-30">Numbers Never Tell A Lie</h3>
-                                <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-                            </div><!-- /title -->
-                        </div><!-- /col -->
-                    </div><!-- /row -->
-                    <div class="row">
-                        <div class="col-xl-12  col-lg-  col-md-  col-sm- col-">
-                            <ul class="facts-wrapper mt-75">
-                                <li class="d-inline-block facts1">
-                                    <div class="single-facts  white-bg text-center pt-46 pb-50 mb-30">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="f-700 d-inline-block counter">20</span>
-                                            <span class="per d-inline-block f-700">+</span>
-                                        </div>
-                                        <p class="black-color text-center f-700 mb-0 mt-1">Moudle</p>
-                                    </div>
-                                </li>
-                                <li class="d-inline-block facts2 theme-bg-fact single-facts-margin-left position-relative">
-                                    <div class="single-facts  theme-bg text-center pt-46 pb-50 mb-30">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="white-color f-700 d-inline-block counter">100</span>
-                                            <span class="white-color d-inline-block f-700">K</span>
-                                        </div>
-                                        <p class="white-color text-center f-700 mb-0 mt-1">Lines of Code</p>
-                                    </div>
-                                </li>
-                                <li class="d-inline-block facts3 single-facts-margin-left  position-relative">
-                                    <div class="single-facts  white-bg text-center pt-46 pb-50 mb-30">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="f-700 d-inline-block counter">10</span>
-                                            <span class="d-inline-block f-700">+</span>
-                                        </div>
-                                        <p class="black-color text-center f-700 mb-0 mt-1">Report Modeling</p>
-                                    </div>
-                                </li>
-                                <li class="d-inline-block facts4 theme-bg-fact single-facts-margin-left position-relative">
-                                    <div class="single-facts  theme-bg text-center pt-46 pb-50 mb-30">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="white-color f-700 d-inline-block counter">50</span>
-                                            <span class="white-color d-inline-block f-700">+</span>
-                                        </div>
-                                        <p class="white-color text-center f-700 mb-0 mt-1">Color Sceme</p>
-                                    </div>
-                                </li>
-                                <li class="d-inline-block facts5 single-facts-margin-left position-relative clear-both">
-                                    <div class="single-facts  white-bg text-center pt-46 pb-50 mb-30">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <span class="f-700 d-inline-block counter">500</span>
-                                            <span class="per d-inline-block f-700">K</span>
-                                        </div>
-                                        <p class="black-color text-center f-700 mb-0 mt-1">Active user</p>
-                                    </div>
-                                </li>
-                            </ul><!-- /facts-wrapper -->
-                        </div><!-- /col -->
-                    </div><!-- /row -->
-                </div><!-- /container -->
-            </div>
-            <!-- facts-area-end -->
 
-            <!-- ====== screenshot-area-start================================================== -->
-            <div class="screenshot-area primary-bg mb-200 mt-30 pt-155">
+            <!-- ====== screenshot-area-start=========================================== -->
+            <div class="home5-screenshot-area mb-180 mt-40">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9  col-lg-10 col-md-11  col-sm-12 col-12">
+                        <div class="col-xl-6  col-lg-8  col-md-10  col-sm-10 col-12">
                             <div class="title text-center">
-                                <span class="theme-color f-700">Screenshots</span>
-                                <h3 class="f-700 pb-30">Have A Close Look</h3>
-                                <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+                                <span class="theme-color f-700">How It Works</span>
+                                <h4 class="f-700 pb-30">See Franklink in action with real networking scenarios</h4>
                             </div><!-- /title -->
                         </div><!-- /col -->
                     </div><!-- /row -->
-                    <div class="row">
-                        <div class="col-xl-12  col-lg-  col-md-  col-sm- col-">
-                            <div class="screenshot-wrapper w-100 mt-180">
-                                <div class="gallery position-relative pt-200">
-                                    <div class="gallery-controls position-absolute"><button class="gallery-controls-previous">previous</button><button class="gallery-controls-add">add</button><button class="gallery-controls-next">next</button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button><button class="gallery-controls-previous"></button><button class="gallery-controls-add"></button><button class="gallery-controls-next"></button></div><!-- /gallery-controls -->
-                                    <div class="gallery-container w-100">
-                                        <img class="gallery-item gallery-item-1" src="images/screenshots/home1-screenshots3.jpg" alt="image" data-index="1">
-                                        <img class="gallery-item gallery-item-2" src="images/screenshots/home1-screenshots1.jpg" alt="image" data-index="2">
-                                        <img class="gallery-item gallery-item-3" src="images/screenshots/home1-screenshots2.jpg" alt="image" data-index="3">
-                                        <img class="gallery-item gallery-item-4" src="images/screenshots/home1-screenshots3.jpg" alt="image" data-index="4">
-                                        <img class="gallery-item gallery-item-5" src="images/screenshots/home1-screenshots1.jpg" alt="image" data-index="5">
-                                        <img class="gallery-item gallery-item-5" src="images/screenshots/home1-screenshots2.jpg" alt="image" data-index="1">
-                                    </div>
-                                </div>
-                            </div><!-- /screenshot-wrapper -->
+                    <div class="row justify-content-center over-hidden">
+                        <div class="col-xl-10  col-lg-  col-md-  col-sm- col- d-flex align-items-end justify-content-center over-hidden pl-0 pr-0">
+                            <div class="home5-screenshot-wrapper row align-items-end justify-content-center w-100 slider-nav pb-40 over-hidden">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="single-screenshot transition5 mb-55">
+                                        <img class="w-100" src="images/screenshots/home5-screenshots-img2.jpg" alt="image">
+                                    </div><!-- /single-screenshot -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="single-screenshot transition5 mb-55">
+                                        <img class="w-100" src="images/screenshots/home5-screenshots-img3.jpg" alt="image">
+                                    </div><!-- /single-screenshot -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-6 col-12">
+                                    <div class="single-screenshot transition5 mb-55">
+                                        <img class="w-100" src="images/screenshots/home5-screenshots-img2.jpg" alt="image">
+                                    </div><!-- /single-screenshot -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-6 col-12">
+                                    <div class="single-screenshot transition5 mb-55">
+                                        <img class="w-100" src="images/screenshots/home5-screenshots-img1.jpg" alt="image">
+                                    </div><!-- /single-screenshot -->
+                                </div><!-- /col -->
+                            </div><!-- /home5-screenshot-wrapper -->
                         </div><!-- /col -->
+                    </div><!-- /row -->
+                    <div class="row justify-content-center">
+                        <div class="slider-for col-xl-8  col-lg-8  col-md-10  col-sm-12 col-12 d-flex justify-content-center">
+                            <div class="single-screenshot-content text-center pb-70">
+                                <h5 class="f-700 pb-30">Alumni Discovery</h5>
+                                <p>AI finds relevant alumni based on your school, interests, and career goals.</p>
+                            </div><!-- /single-screenshot-content -->
+
+                            <div class="single-screenshot-content text-center pb-70">
+                                <h5 class="f-700 pb-30">Message Generation</h5>
+                                <p>Craft personalized messages that reference shared experiences naturally.</p>
+                            </div><!-- /single-screenshot-content -->
+
+                            <div class="single-screenshot-content text-center pb-70">
+                                <h5 class="f-700 pb-30">Bulk Outreach</h5>
+                                <p>Send 100+ personalized messages in an hour while maintaining authenticity. Track responses and engagement in real-time.</p>
+                            </div><!-- /single-screenshot-content -->
+
+                            <div class="single-screenshot-content text-center pb-70">
+                                <h5 class="f-700 pb-30">Analytics Dashboard</h5>
+                                <p>Monitor your networking performance with detailed analytics. See response rates, best-performing messages, and optimize your strategy.</p>
+                            </div><!-- /single-screenshot-content -->
+                        </div><!-- /col -->
+                        
                     </div><!-- /row -->
                 </div><!-- /container -->
             </div>
             <!-- screenshot-area-end -->
 
-            <!-- ====== faq-area-start============================================ -->
-            <div class="faq-area pt-130 mb-70 over-hidden">
+
+            <!-- ====== more-feature-area-start=========================================== -->
+            <div class="home5-more-feature-area">
+                <div class="home5-more-feature-bg bg-no-repeat pt-160 pb-0" data-background="images/bg/more-feature-bg.png">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8  col-lg-10  col-md-11  col-sm-12 col-12">
+                                <div class="title text-center">
+                                    <span class="theme-color f-700">Why students love Franklink</span>
+                                    <h4 class="f-700 mb-30">Powerful features that actually work</h4>
+                                </div><!-- /title -->
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                        <div class="row align-items-center justify-content-center home5-more-feature-wrapper mt-60">
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30 pl-30 mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/layers.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">AI-Powered Connection Discovery</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30 pl-30 mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/107-image.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Personalized Message Generation</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30 pl-30 mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/110-inbox.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Alumni Database Access</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30 pl-30 mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/153-recycle-2.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">3x Higher Response Rates</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30 pl-30 mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/169-shield.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Time-Saving Automation</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12" >
+                                <div  class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30  mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/222-verified.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Real-Time Analytics</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30  mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/167-gear-1.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Easy Customization</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30 pl-30 mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/143-physics.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Student-Focused Support</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12">
+                                <div class="home5-single-more-feature white-bg d-flex align-items-center justify-content-center pt-25 pb-25 pr-30  mb-30">
+                                    <div class="more-feature-icon d-inline-block text-center mr-20 mt-1">
+                                        <span class="d-block">
+                                            <img src="images/icon/028-bar.png" alt="image">
+                                        </span>
+                                    </div><!-- /ser-icon -->
+                                    <div class="service-text">
+                                        <h6 class="f-700 mb-0">Real time Analytics</h6>
+                                    </div>
+                                </div><!-- /single-more-feature -->
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                    </div><!-- /container -->
+            </div><!-- /more-feature-bg -->
+            </div>
+            <!-- more-feature-area-end -->
+
+            <!-- ====== price-area-start=========================================== -->
+            <div class="pricing-plan-section pt-145 pb-100 over-hidden position-relative z-index1">
                 <div class="container">
-                    <div class="row mt-10">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <div class="faq-content mt-55 mb-50 aos-init" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="row">
+                        <div class="col-xl-5  col-lg-5  col-md-12  col-sm-12 col-12">
+                            <div class="title">
+                                <span class="theme-color f-700">Pricing Plan</span>
+                                <h3 class="f-700 mb-30">Start free, upgrade as you grow</h3>
+                                <p class="mb-30 animated fadeInUp">Begin with our free tier to test the waters, then scale up as you build more connections and need advanced features.</p>
+                            </div><!-- /title -->
+
+                            <div class="price-menu-box d-flex align-items-center justify-content-center justify-content-lg-start mt-60 mb-50" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="price-menu-box text-center">
+                                    <ul class="nav nav-tabs price-nav mb-40" id="myTab" role="tablist">
+                                        <li>
+                                            <a class="active" data-toggle="tab" href="#monthly">Monthly</a>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="tab" href="#yearly">Yearly</a>
+                                        </li>
+                                    </ul>
+                                </div>      
+                            </div><!-- /price-menu-box -->
+                        </div> <!-- /col- -->
+
+                        <div class="col-xl-6 offset-xl-1 col-lg-7 col-md-10 col-sm-9 col-12 d-sm-flex d-lg-block justify-content-center">
+                            <div class="tab-content position-relative pl-55">
+                                <div class="table-content position-relative">
+                                    <div id="monthly" class="tab-pane price-table in active">
+                                        <div class="col-inner">
+                                            <div class="price-header mb-30">
+                                                <h5 class="f-700 mb-15">Basic</h5>
+                                            </div>
+                                            <div class="price mb-35">
+                                                <h3 class="text1 theme-color f-700 mb-1">Free</h3>
+                                                <span >Forever</span>
+                                            </div>
+                                            <ul class="price-item-list text-center d-inline-block mb-50">
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0 xw">10 messages per month</p>
+                                                </li> 
+                                                 <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">Pannel</p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">50 widge area </p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">20 tool intigration</p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">Lifetime Updates</p>
+                                                </li> 
+                                            </ul>
+                    
+                                            <div class="my-btn d-block">
+                                                <a href="#" class="btn theme-bg text-capitalize">Download</a>
+                                            </div><!-- /my-btn -->
+                                        </div>
+                                    </div> <!-- /#monthly -->
+                                      <div id="yearly" class="tab-pane price-table price-table2">
+                                        <div class="col-inner">
+                                            <div class="price-header mb-30">
+                                                <h5 class="f-700 mb-15">Premium</h5>
+                                            </div>
+                                            <div class="price mb-35">
+                                                <h3 class="text1 theme-color f-700 mb-1">$10 <span><sup class="p-p theme-color">.99</sup></span></h3>
+                                                <span >Per Month</span>
+                                            </div>
+                                            <ul class="price-item-list text-center d-inline-block mb-50">
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0 xw">5 dashboard panel</p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">50 widge area </p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">30 tool intigration</p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">Lifetime Updates</p>
+                                                </li> 
+                                                <li class="d-inline-block d-flex align-items-center mb-12">
+                                                    <span class="theme-color d-block pr-20">
+                                                        <span class=""><i class="fal fa-check"></i></span>
+                                                    </span>
+                                                    <p class="secondary-color mb-0">2 tb storage</p>
+                                                </li> 
+                                            </ul>
+                                            <div class="my-btn d-block">
+                                                <a href="#" class="btn theme-bg text-capitalize">Download</a>
+                                            </div><!-- /my-btn -->
+                                        </div>
+                                      </div> <!-- /#yearly -->
+                                </div> <!-- /.table-content -->
+                            </div> <!-- /.tab-content -->
+                        </div>
+                    </div> <!-- /row -->
+                </div> <!-- /container -->
+            </div>
+            <!-- price-area-end -->
+
+            <!-- ====== review-area-start ==================================== -->
+            <div class="review-area-home5 review-area-home5-margin home5 over-hidden z-index-1">
+                <div class="home5-review-bg pb-155 bg-no-repeat" data-background="images/bg/home5-review-bg.png">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
+                                <div class="title text-lg-right mt-15">
+                                    <span class="theme-color f-700">Student success stories</span>
+                                    <h3 class="f-700 mb-30">What students say about Franklink</h3>
+                                    <p class="mb-30">Real students sharing how Franklink transformed their networking success.</p>
+                                </div><!-- /title -->
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                        <div class="testimonial-wrapper4  pt-30 ">
+                            <div class="row testimonial-active-home5 pb-80"> 
+                                <div class="col-xl-4 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="testimonial-text5 bg-white text-center pt-70 pb-50 pl-45 pr-45 mb-20 transition5">
+                                        <div class="review-rate-wrapper">
+                                            <div class="quit d-inline-block">
+                                                 <img src="images/testimonial/home5-testimonial-quote.png" alt="image">
+                                            </div>
+                                            <ul class="review-rate mt-30 mb-22 d-flex justify-content-center align-items-center">
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="font-italic secondary-color3 mb-0">Franklink transformed my networking completely. I got 3x more responses and landed my dream internship at Google through connections I made using the platform</p>
+                                        <div class="testi-info mt-35 d-flex align-items-center justify-content-center mb-20">
+                                            <div class="d-flex">
+                                                <div class="testi-avatar pr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home5-author-img1.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info text-left">
+                                                    <h6 class="f-700 mb-0">Nayna Eva</h6>
+                                                    <p class="mb-0">Journalist</p>
+                                                </div>
+                                            </div><!-- /testi-info -->
+                                        </div>
+                                    </div><!-- /testimonial-text -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="testimonial-text5 bg-white text-center pt-70 pb-50 pl-45 pr-45 mb-20 transition5">
+                                        <div class="review-rate-wrapper">
+                                            <div class="quit d-inline-block">
+                                                 <img src="images/testimonial/home5-testimonial-quote.png" alt="image">
+                                            </div>
+                                            <ul class="review-rate mt-30 mb-22 d-flex justify-content-center align-items-center">
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="font-italic secondary-color3 mb-0">Franklink transformed my networking completely. I got 3x more responses and landed my dream internship at Google through connections I made using the platform</p>
+                                        <div class="testi-info mt-35 d-flex align-items-center justify-content-center mb-20">
+                                            <div class="d-flex">
+                                                <div class="testi-avatar pr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home5-author-img2.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info text-left">
+                                                    <h6 class="f-700 mb-0">Juwel Khan</h6>
+                                                    <p class="mb-0">Web Developer</p>
+                                                </div>
+                                            </div><!-- /testi-info -->
+                                        </div>
+                                    </div><!-- /testimonial-text -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="testimonial-text5 bg-white text-center pt-70 pb-50 pl-45 pr-45  mb-20 transition5">
+                                        <div class="review-rate-wrapper">
+                                            <div class="quit d-inline-block">
+                                                 <img src="images/testimonial/home5-testimonial-quote.png" alt="image">
+                                            </div>
+                                            <ul class="review-rate mt-30 mb-22 d-flex justify-content-center align-items-center">
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="font-italic secondary-color3 mb-0">Franklink transformed my networking completely. I got 3x more responses and landed my dream internship at Google through connections I made using the platform</p>
+                                        <div class="testi-info mt-35 d-flex align-items-center justify-content-center mb-20">
+                                            <div class="d-flex">
+                                                <div class="testi-avatar pr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home5-author-img3.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info text-left">
+                                                    <h6 class="f-700 mb-0">Sharmin Eity</h6>
+                                                    <p class="mb-0">Journalist</p>
+                                                </div>
+                                            </div><!-- /testi-info -->
+                                        </div>
+                                    </div><!-- /testimonial-text -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="testimonial-text5 bg-white text-center pt-70 pb-50 pl-45 pr-45 mb-20 transition5">
+                                        <div class="review-rate-wrapper">
+                                            <div class="quit d-inline-block">
+                                                 <img src="images/testimonial/home5-testimonial-quote.png" alt="image">
+                                            </div>
+                                            <ul class="review-rate mt-30 mb-22 d-flex justify-content-center align-items-center">
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="font-italic secondary-color3 mb-0">Franklink transformed my networking completely. I got 3x more responses and landed my dream internship at Google through connections I made using the platform</p>
+                                        <div class="testi-info mt-35 d-flex align-items-center justify-content-center mb-20">
+                                            <div class="d-flex">
+                                                <div class="testi-avatar pr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home5-author-img1.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info text-left">
+                                                    <h6 class="f-700 mb-0">Nayna Eva</h6>
+                                                    <p class="mb-0">Journalist</p>
+                                                </div>
+                                            </div><!-- /testi-info -->
+                                        </div>
+                                    </div><!-- /testimonial-text -->
+                                </div><!-- /col -->
+                                <div class="col-xl-4 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="testimonial-text5 bg-white text-center pt-70 pb-50 pl-45 pr-45 mb-20 transition5">
+                                        <div class="review-rate-wrapper">
+                                            <div class="quit d-inline-block">
+                                                 <img src="images/testimonial/home5-testimonial-quote.png" alt="image">
+                                            </div>
+                                            <ul class="review-rate mt-30 mb-22 d-flex justify-content-center align-items-center">
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-block">
+                                                        <i class="fas fa-star"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="font-italic secondary-color3 mb-0">Franklink transformed my networking completely. I got 3x more responses and landed my dream internship at Google through connections I made using the platform</p>
+                                        <div class="testi-info mt-35 d-flex align-items-center justify-content-center mb-20">
+                                            <div class="d-flex">
+                                                <div class="testi-avatar pr-20 rounded-circle">
+                                                    <img class="rounded-circle" src="images/testimonial/home5-author-img2.jpg" alt="image">
+                                                </div><!-- /testi-avatar -->
+                                                <div class="avatar-info text-left">
+                                                    <h6 class="f-700 mb-0">Juwel Khan</h6>
+                                                    <p class="mb-0">Web Developer</p>
+                                                </div>
+                                            </div><!-- /testi-info -->
+                                        </div>
+                                    </div><!-- /testimonial-text -->
+                                </div><!-- /col -->
+                            </div><!-- /row -->
+                        </div><!-- /testimonial-wrapper -->
+                    </div><!-- /container -->
+                </div><!-- /home5-about-bg -->
+            </div>
+            <!-- testimonial-area-end  -->
+
+            <!-- ====== faq-area-start============================================ -->
+            <div class="faq-area home5 pt-160 mb-170 over-hidden">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="faq-content mb-50" data-aos="fade-right" data-aos-duration="2000">
                                 <div class="title">
-                                    <span class="theme-color f-700">What people want to know</span>
-                                    <h3 class="f-700 pb-30">Frequently Asked Questions</h3>
-                                    <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                                <div class="faq-wrapper mt-40">
-                                    <div class="accordion" id="accordionExample">
-                                        <div class="card border-0">
-                                            <div class="card-header card-header-top rounded-0 bg-transparent p-0" id="headingOne">
-                                                <h6 class="mb-0">
-                                                    <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        How can I install this application?
-                                                    </a>
-                                                </h6>
-                                            </div><!-- /card-header -->
-                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta</p>
-                                                </div>
-                                            </div><!-- /collapseOne -->
-                                        </div><!-- /card1 -->
-
-                                        <div class="card border-0">
-                                            <div class="card-header bg-transparent p-0" id="headingTwo">
-                                                <h6 class="mb-0">
-                                                    <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        How to update the features of Evalo?
-                                                    </a>
-                                                </h6>
-                                            </div><!-- /card-header -->
-
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta </p>
-                                                </div>
-                                            </div>
-                                        </div><!-- /card2 -->
-
-                                        <div class="card card-header-end border-0">
-                                            <div class="card-header bg-transparent p-0" id="headingThree">
-                                                <h6 class="mb-0">
-                                                    <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Why Evalo is a great startup template?
-                                                    </a>
-                                                </h6>
-                                            </div>
-
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta </p>
-                                                </div>
-                                            </div>
-                                        </div><!-- /card -->
-                                    </div><!-- /accordion -->
-                                </div><!-- /faq-wrapper -->
+                                    <span class="theme-color f-700">Got questions?</span>
+                                    <h3 class="f-700 mb-30">Students ask us this</h3>
+                                    <p class="mb-30">Everything you need to know about networking with AI.</p>
+                                </div><!-- /title -->
                             </div><!-- /faq-content -->
                         </div><!-- /col -->
-                        <div class="col-xl-6 col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-sm-12 col-12 pr-10">
-                            <div class="faq-img img-right-margin text-center aos-init" data-aos="fade-left" data-aos-duration="2000">
-                                <img class="d-block bounce-animate2" src="images/bg/home1-faq-img.png" alt="image">
-                            </div><!-- /faq-img -->
+                        <div class="col-xl-6 offset-xl-1 col-lg-6 offset-lg-0 col-md-12 offset-md-0 col-sm-12 col-12 pr-10">
+                            <div class="faq-wrapper mt-10" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card border-0">
+                                        <div class="card-header card-header-top bg-transparent p-0" id="headingOne">
+                                            <h6 class="mb-0">
+                                                <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    How does Franklink find relevant connections?
+                                                </a>
+                                            </h6>
+                                        </div><!-- /card-header -->
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="m-0">Our AI analyzes your background, career goals, and interests to identify alumni and professionals with shared experiences. We scan for mutual connections, similar paths, and relevant industries to find the best matches.</p>
+                                            </div>
+                                        </div><!-- /collapseOne -->
+                                    </div><!-- /card1 -->
+    
+                                    <div class="card border-0">
+                                        <div class="card-header bg-transparent p-0" id="headingTwo">
+                                            <h6 class="mb-0">
+                                                <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    Why do I get better response rates with Franklink?
+                                                </a>
+                                            </h6>
+                                        </div><!-- /card-header -->
+    
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="m-0">Traditional cold emails get 8% response rates. Franklink gets 3x better results because our messages reference shared experiences and mutual connections, making them feel personal and authentic rather than generic.</p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /card2 -->
+    
+                                    <div class="card border-0">
+                                        <div class="card-header bg-transparent p-0" id="headingThree">
+                                            <h6 class="mb-0">
+                                                <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Why Evalo is a great startup template?
+                                                </a>
+                                            </h6>
+                                        </div>
+    
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /card3 -->
+
+                                    <div class="card border-0 card-header-end">
+                                        <div class="card-header bg-transparent p-0" id="headingFour">
+                                            <h6 class="mb-0">
+                                                <a href="#" class="btn btn-link black-color f-700 border-0 d-block text-left rounded-0 position-relative collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Why Evalo is awesome?
+                                                </a>
+                                            </h6>
+                                        </div>
+    
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultricie conse ctetur adipisicing nisi ut aliquip ex ea commodo quat Duis aute irure dolor in reprehenderit in volupta </p>
+                                            </div>
+                                        </div>
+                                    </div><!-- /card3 -->
+                                </div><!-- /accordion -->
+                            </div><!-- /faq-wrapper -->
                         </div><!-- /col -->
                     </div><!-- /row -->
                 </div><!-- /container -->
             </div>
             <!-- faq-area-end -->
 
-            <!-- ====== work-area-start ==================================== -->
-            <div class="work-area over-hidden">
-                <div class="work-bg bg-no-repeat bg-cover pt-200" data-background="images/bg/home1-process-bg.png" style="background-image: url(&quot;images/bg/home1-process-bg.png&quot;);">
+            <!-- ====== home5-cta-banner-area-start ========================================= -->
+            <div class="home5-cta-banner-area home5 mt-120">
+                <div class="home5-cta-feature-bg bg-no-repeat pt-200 pb-185 bg-cover" data-background="images/bg/home5-cta-banner-bg.png" data-aos="fade-up" data-aos-duration="1500">
                     <div class="container">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-xl-9  col-lg-10  col-md-11  col-sm-12 col-12">
-                                <div class="title text-center mt-15">
-                                    <span class="theme-color f-700">Process</span>
-                                    <h3 class="f-700 pb-30">How It Works</h3>
-                                    <p>Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-                                </div><!-- /title -->
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                        <div class="work-wrapper pt-105 pb-85">
-                            <div class="row">
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative transition5 white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="10">
-                                        <div class="item-tag-wrapper rounded-circle text-center transition5">
-                                            <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
-                                                <span class="text-white f-700">01</span>
-                                            </div><!-- /item-tag -->
-                                        </div><!-- /item-tag-wrapper -->
-                                        <div class="d-lg-flex">
-                                            <div class="work-icon d-inline-block text-center mr-30">
-                                                <span class="d-inline-block">
-                                                    <img src="images/icon/user.png" alt="image">
-                                                </span>
-                                            </div><!-- /work-icon -->
-                                            <div class="work-text">
-                                                <h5 class="f-700 mb-22">Signup for Service</h5>
-                                                <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultrici cing elit, sed do eius emod tempor incid</p>
-                                            </div>
-                                        </div>
-                                    </div><!-- /single-work-content -->
-                                </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                                        <div class="item-tag-wrapper rounded-circle text-center transition3">
-                                            <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
-                                                <span class="text-white f-700">02</span>
-                                            </div><!-- /item-tag -->
-                                        </div><!-- /item-tag-wrapper -->
-                                        <div class="d-lg-flex">
-                                            <div class="work-icon d-inline-block text-center mr-30">
-                                                <span class="d-inline-block">
-                                                    <img src="images/icon/bar.png" alt="image">
-                                                </span>
-                                            </div><!-- /work-icon -->
-                                            <div class="work-text">
-                                                <h5 class="f-700 mb-22">Research &amp; Development</h5>
-                                                <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultrici cing elit, sed do eius emod tempor incid</p>
-                                            </div>
-                                        </div>
-                                    </div><!-- /single-work-content -->
-                                </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="10">
-                                        <div class="item-tag-wrapper rounded-circle text-center transition3">
-                                            <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
-                                                <span class="text-white f-700">03</span>
-                                            </div><!-- /item-tag -->
-                                        </div><!-- /item-tag-wrapper -->
-                                        <div class="d-lg-flex">
-                                            <div class="work-icon d-inline-block text-center mr-30">
-                                                <span class="d-inline-block">
-                                                    <img src="images/icon/shopping-cart-1.png" alt="image">
-                                                </span>
-                                            </div><!-- /work-icon -->
-                                            <div class="work-text">
-                                                <h5 class="f-700 mb-22">Sales &amp; Earning</h5>
-                                                <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultrici cing elit, sed do eius emod tempor incid</p>
-                                            </div>
-                                        </div>
-                                    </div><!-- /single-work-content -->
-                                </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
-                                    <div class="single-work-content position-relative white-bg mb-80 aos-init" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-                                        <div class="item-tag-wrapper rounded-circle text-center transition3">
-                                            <div class="item-tag theme-bg d-inline-block text-center rounded-circle position-relative z-index11">
-                                                <span class="text-white f-700">04</span>
-                                            </div><!-- /item-tag -->
-                                        </div><!-- /item-tag-wrapper -->
-                                        <div class="d-lg-flex">
-                                            <div class="work-icon d-inline-block text-center mr-30">
-                                                <span class="d-inline-block">
-                                                    <img src="images/icon/briefcase.png" alt="image">
-                                                </span>
-                                            </div><!-- /work-icon -->
-                                            <div class="work-text">
-                                                <h5 class="f-700 mb-22">Transfer Funds to Bank</h5>
-                                                <p class="m-0">Ovitae purus soda duis eu ers auctor augue ultrici cing elit, sed do eius emod tempor incid</p>
-                                            </div>
-                                        </div>
-                                    </div><!-- /single-work-content -->
+                        <div class="cta-banner-wrapper mt-75">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-8  col-lg-  col-md-  col-sm- col-">
+                                    <div class="title text-center">
+                                        <span class="theme-color f-700">Ready to Transform Your Networking?</span>
+                                        <h3 class="f-700 mb-30">Join Hundreds of Students Already Using Franklink</h3>
+                                        <p>Stop wasting time on ineffective networking. Get 3x more responses, build meaningful connections, and accelerate your career with AI-powered outreach.</p>
+                                    </div><!-- /title -->
+                                    <div class="cta-buttons pt-35 text-center">
+                                        <a href="#" class="btn theme-bg white-color text-capitalize px-4 py-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="30">
+                                            Start Free Today
+                                        </a>
+                                    </div><!-- /cta-buttons -->
                                 </div><!-- /col -->
                             </div><!-- /row -->
-                        </div><!-- /work-wrapper -->
+                        </div><!-- /home5-cta-banner-wrapper -->
                     </div><!-- /container -->
-                </div><!-- /work-bg -->
+                </div>
             </div>
-            <!-- work-area-end  -->
-
-            <!-- ====== testimonial-area-start ==================================== -->
-            <div class="testimonial-area mt-130 mb-20 over-hidden">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-8  col-lg-10  col-md-11  col-sm-12 col-12">
-                            <div class="title text-center mt-20">
-                                <span class="theme-color f-700">Testimonial</span>
-                                <h3 class="f-700 pb-30">What People Say</h3>
-                                <p class="mb-1">Bole nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-                            </div><!-- /title -->
-                        </div><!-- /col -->
-                    </div><!-- /row -->
-                    <div class="testimonial-wrapper1 mt-60">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-xl-4  col-lg-5 col-md-8 col-sm-8 col-10">
-                                <div class="testimonial-img">
-                                    <img data-aos="zoom-in" data-aos-duration="2000" src="images/testimonial/home1-testi-img.png" alt="image" class="aos-init">
-                                </div><!-- /testimonial-persons -->
-                            </div><!-- /col -->
-                            <div class="col-xl-7 offset-xl-1  col-lg-7 col-md-12  col-sm-12 col-12">
-                                <div class="testimonial-content position-relative mt-1 aos-init" data-aos="fade-left" data-aos-duration="2000">
-                                    <div class="quit d-inline-block position-absolute left-0 z-index11">
-                                        <span class="black-color d-inline-block"><i class="fas fa-quote-left"></i></span>
-                                    </div>
-                                    <div class="testimonial-active slick-initialized slick-slider"><b class="slick-arrow" style="display: inline;"><span class="fal fa-long-arrow-left l-a"></span></b>
-                                        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3710px; transform: translate3d(-530px, 0px, 0px);"><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div><div class="testimonial-text pb-25 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div><div class="testimonial-text pb-25 slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div><div class="testimonial-text pb-25 slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div><div class="testimonial-text pb-25 slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 530px;">
-                                            <p class="font-italic secondary-color3">Olireipum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqu Lor em ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor</p>
-                                            <div class="testi-info d-flex mt-50">
-                                                <div class="testi-avatar mr-20 rounded-circle">
-                                                    <img class="rounded-circle" src="images/testimonial/home1-testi-author-img.jpg" alt="image">
-                                                </div><!-- /testi-avatar -->
-                                                <div class="avatar-info">
-                                                    <h6 class="f-700">Nayna Eva</h6>
-                                                    <p class="">Web Designer</p>
-                                                </div>
-                                            </div>
-                                        </div></div></div><!-- /testimonial-text -->
-                                        <!-- /testimonial-text -->
-                                        <!-- /testimonial-text -->
-                                    <b class="slick-arrow" style="display: inline;"><span class="fal fa-long-arrow-right r-a"></span></b></div>
-                                </div>
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /testimonial-wrapper -->
-                </div><!-- /container -->
-            </div>
-            <!-- testimonial-area-end  -->
-
-            <!-- ====== banner-area-start ========================================= -->
-            <div class="banner-area banner-margin-bottom position-relative aos-init" data-aos="fade-up" data-aos-duration="1500">
-                <div class="container">
-                    <div class="banner-wrapper banner-border white-bg pl-70 pr-70 pt-55 pb-75 transition3">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-xl-9 col-lg-9  col-md-12 col-sm-12 col-12">
-                                <div class="banner-content">
-                                    <h4 class="f-700 mb-18">Starts a 30 days free trial</h4>
-                                    <p class="mb-0">Bole nostrud exercim ipsum dolor sit amet, consectetur adipisicing </p>
-                                </div><!-- /work-banner-content -->
-                            </div><!-- /col -->
-                            <div class="col-xl-3 col-lg-3  col-md-12 col-sm-12 col-12">
-                                <div class="banner-btn float-left float-lg-right">
-                                    <div class="my-btn">
-                                        <a href="service.html" class="btn theme-bg text-capitalize f-18 f-700">Get Started</a>
-                                    </div><!-- /my-btn -->
-                                </div><!-- /work-banner-content -->
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /banner-wrapper -->
-                </div><!-- /container -->
-            </div>
-            <!-- banner-area-end  -->
+            <!-- home5-cta-banner-area-end  -->
 
         </main>
-
+          
         <!-- ====== footer-area-start ============================================ -->
-        <footer>
-            <div class="footer-area primary-bg pt-200">
+        <footer> 
+            <div class="footer-area home5 pt-85">
                 <div class="footer-top pb-55">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-3  col-lg-4  col-md-12  col-sm-12 col-12">
-                                <div class="footer-widget f-subscriber-area pb-30 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Subscribe Us</h6>
+                            <div class="col-xl-4 col-lg-4  col-md-12  col-sm-12 col-12">
+                                <div class="footer-widget f-subscriber-area pb-30 mt-25 pr-100">
+                                    <h6 class="text-capitalize f-700 mb-22">Stay Updated</h6>
                                     <div class="footer-subscribe">
-                                        <p>Fectetur adipisicing elit, sed do eius mod tempor</p>
+                                        <p>Get the latest updates on networking tips and Franklink.</p>
                                         <form action="#">
                                             <div class="subscribe-info mt-22 position-relative">
-                                                <input class="sub-name form-control border-0 pl-20 pt-15 pb-15 pr-10 white-bg secondary-color rounded-0" type="email" name="email" id="email" placeholder="Submit email">
+                                                <input class="sub-name form-control border-0 pl-20 pt-15 pb-15 pr-10 primary-bg secondary-color rounded-0" type="email" name="email" id="email" placeholder="Enter your email">
                                                 <span class="secondary-color d-inline-block position-absolute pointer"><i class="far fa-envelope"></i></span>
                                             </div>
                                         </form>
                                     </div>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-2 offset-xl-1  col-lg-2  col-md-3  col-sm-6 col-12">
-                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Service</h6>
-                                    <ul class="footer-info">
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Development</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Maintanance</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Consultancy</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Design</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
-                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Help</h6>
-                                    <ul class="footer-info">
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Documentation</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Sitemap</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Legal Advice</a>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Support</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-3  col-lg-4  col-md-6  col-sm-12 col-12 pr-xl-0">
-                                <div class="footer-widget f-adress pb-40 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Get in Touch</h6>
-                                    <ul class="footer-address">
-                                        <li class="d-flex align-items-start">
-                                            <span class="f-icon mr-20 mt-1"><i class="fas fa-map-marker-alt"></i></span>
-                                            <div class="">
-                                                22/1 Bardeshi, Amin Bazar <br>Dhaka 1348 <br>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="f-icon mr-20 mt-1"><i class="far fa-envelope"></i></span>
-                                            hello@startico.com
-                                        </li>
-                                    </ul>
-                                    <ul class="social-link mt-15">
+                                    <ul class="social-link mt-45">
                                         <li class="d-inline-block">
                                             <a class="facebook-color text-center pr-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a>
                                         </li>
@@ -1096,34 +1413,76 @@
                                     </ul><!-- social-link -->
                                 </div>
                             </div><!-- /col -->
+                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
+                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                                    <h6 class="text-capitalize f-700 mb-22">Product</h6>
+                                    <ul class="footer-info">
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">AI Networking</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Alumni Search</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Message Crafting</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
+                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                                    <h6 class="text-capitalize f-700 mb-22">Support</h6>
+                                    <ul class="footer-info">
+                                        <li>
+                                            <a href="faq.html" class="position-relative d-inline-block mb-2">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact-us.html" class="position-relative d-inline-block mb-2">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Help Center</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Get Started</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+                             <div class="col-xl-2  col-lg-3  col-md-3  col-sm-6 col-12">
+                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                                    <h6 class="text-capitalize f-700 mb-22">Company</h6>
+                                    <ul class="footer-info">
+                                        <li>
+                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="team.html" class="position-relative d-inline-block mb-2">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="position-relative d-inline-block mb-2">Press</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
                         </div><!-- /row -->
                     </div><!-- /container -->
                 </div>
                 <div class="footer-bottom">
                     <div class="container">
-                        <div class="copyright-area mt-20 pb-50">
-                            <div class="row align-items-center">
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12 mb-10">
-                                    <div class="f-logo text-center text-md-left">
-                                        <img src="images/logo/logo.png" alt="image">
-                                    </div><!-- /f-logo -->
-                                </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12 mb-10">
-                                    <div class="phone-contact text-center text-md-right">
-                                        <a class="theme-color f-700" href="#"><span class="pr-1"><span class="d-inline-block"><i class="fas fa-phone-alt"></i></span></span>(909) 901-9967</a>
-                                    </div>
-                                </div><!-- /col -->
-                            </div><!-- /row -->
+                        <div class="copyright-area pb-50">
                             <div class="row align-items-center justify-content-between">
                                 <div class="col-xl-6  col-lg-5  col-md-12  col-sm-12 col-12">
                                     <div class="copyright-text text-center text-lg-left mt-20 mb-20">
-                                        <p class="mb-0 secondary-color2">All rights reserved
-                                            <a href="https://www.franklink.app/" class="c-theme f-700 black-color">Franklink</a>  ©  2025
+                                        <p class="mb-0 secondary-color2">All rights reserved Franklink © 2025
                                         </p>
                                     </div>
                                 </div><!-- /col -->
-                                <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12" style="">
-                                    <ul class="useful-link text-center text-lg-right ">
+                                <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
+                                    <ul class="useful-link text-center text-lg-right mt-20">
                                         <li class="d-inline-block mb-20">
                                             <a href="#" class="secondary-color d-inline-block">Terms &amp; Condition</a>
                                         </li>
@@ -1132,7 +1491,7 @@
                                         </li>
                                         <li class="d-inline-block pl-45 mb-20">
                                             <a href="#" class="secondary-color d-inline-block">Cookies</a>
-                                        </li>
+                                        </li>                                    
                                     </ul><!-- social -->
                                 </div><!-- /col -->
                             </div>
@@ -1153,202 +1512,16 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
-        <script src="js/carousel.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/image-loaded.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/tilt.jquery.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/waypoint.js"></script>
         <script src="js/counterup-min.js"></script>
         <script src="js/slick.min.js"></script>
-        <script src="js/tilt.jquery.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/jquery.meanmenu.min.js"></script>
         <script src="js/main.js"></script>
-
-
-<script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host +
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
-</script><script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host +
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
-</script>
-<script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host +
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
-</script>
-<script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host +
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
-</script>
-<script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host +
-             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
-             'referrer=' + encodeURIComponent(window.location.pathname));
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
-</script></body>
+    </body>
 </html>
