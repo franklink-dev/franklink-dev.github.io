@@ -363,6 +363,40 @@
                 padding-top: 10px !important;
             }
         }
+        /* Always visible navigation */
+        .menu-bar-home12.show-menu {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .menu-bar-home12 .main-menu nav ul {
+            display: flex !important;
+            list-style: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            align-items: center !important;
+        }
+
+        .menu-bar-home12 .main-menu nav ul li {
+            margin-right: 30px !important;
+        }
+
+        .menu-bar-home12 .main-menu nav ul li:last-child {
+            margin-right: 0 !important;
+        }
+
+        .menu-bar-home12 .main-menu nav ul li a {
+            color: var(--franklink-primary) !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+            text-decoration: none !important;
+        }
+
+        .menu-bar-home12 .main-menu nav ul li a:hover {
+            color: var(--franklink-primary-hover) !important;
+        }
         </style>
     </head>
     <body>
@@ -394,17 +428,16 @@
                                     <a href="index.html" class="d-inline-block"><img src="images/logo_banner.png" alt="Franklink" style="max-height: 55px;"></a>
                                 </div>
                             </div><!-- /col -->
-                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-6 d-none d-lg-flex align-items-center position-static">
-                                <div class="menu-bar-home12  d-flex d-flex align-items-center">
+                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-6 d-flex align-items-center position-static">
+                                <div class="menu-bar-home12 show-menu d-flex align-items-center">
                                     <div class="main-menu text-left">
-                                        <nav id="mobile-menu">
-                                            <ul class="d-block">
+                                        <nav>
+                                            <ul id="mobile-menu">
                                                 <li><a class="active" href="index.html">Home</a></li>
                                                 <li><a href="about-us.html">About</a></li>
                                                 <li><a href="team.html">Team</a></li>
                                                 <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="contact-us.html">Contact</a>
-                                                </li>
+                                                <li><a href="contact-us.html">Contact</a></li>
                                              </ul>
                                         </nav>
                                     </div><!-- /main-menu -->
@@ -418,12 +451,12 @@
                                 <div class="my-btn pl-20 pr-30 d-md-block">
                                     <a href="wishlist.html" class="btn theme-bg text-capitalize">Join Wishlist</a>
                                 </div><!-- /my-btn -->
-                                <ul class="home12-menu text-right d-none d-lg-inline-block">
+                                <ul class="home12-menu text-right" style="display: none;">
                                     <li class="click-show-menu-h12"><span class="theme-color"><i class="fal fa-bars"></i></span></li>
                                     <li class="click-close-menu-h12"><span class="theme-color"><i class="fas fa-times"></i></span></li>
                                 </ul>
                             </div><!-- /col -->
-                            <div class="col-xl-2 col-lg-2 col-md-9 col-sm-8 col-6 d-lg-none d-block">
+                            <div class="col-xl-2 col-lg-2 col-md-9 col-sm-8 col-6" style="display: none;">
                                 <div class="d-block d-lg-none pl-3 text-right">
                                     <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
                                 </div><!-- /mobile-menubar -->
@@ -517,22 +550,25 @@
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-6 col-md-12 mt-40">
                                 <div class="slider-content">
-                                    <span class="theme-color d-block mb-3" data-aos="fade-up" data-aos-duration="600">AI CAREER CO-PILOT</span>
-                                    <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Your AI Career Hack</h1>
-                                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Franklink unifies fragmented career resources into one intelligent system. Discover opportunities, connect with the right people, and get personalized outreach that opens doors to your target companies.</p>
+                                    <span class="theme-color d-block mb-3" data-aos="fade-up" data-aos-duration="600">FOR STUDENTS WHO WANT MORE THAN JOB BOARDS</span>
+                                    <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Your AI Career Intelligence</h1>
+                                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Stop missing the opportunities that matter. Get personalized access to the career resources others never find.</p>
                                     <div class="hero-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                                         <a href="#" class="btn theme-bg white-color me-3">
-                                            Get Started Free
+                                            Join Early Access
                                         </a>
                                         <a href="#" class="btn btn-outline-secondary">
-                                            Watch Demo
+                                            How It Works
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="slider-img position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                    <img src="images/graph.jpg" alt="Franklink AI Platform" class="img-fluid" style="border-radius: 12px;box-shadow: 0 25px 50px rgba(15, 23, 42, 0.08);">
+                                    <!-- Demo video or interactive element will go here -->
+                                    <div style="height: 400px; background: #f8fafc; border: 2px dashed #e2e8f0; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b;">
+                                        Demo Video / Interactive Element
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -543,42 +579,42 @@
 
 
             <!-- ====== about-area-start=========================================== -->
-            <div class="about-area home5 home5-about-margin pb-100 z-index1 over-hidden">
-                <div class="home5-about-bg" >
+            <div class="about-area home5 pb-100 z-index1 over-hidden" style="padding-top: 80px;">
+                <div class="home5-about-bg">
                     <div class="container">
                         <div class="row align-items-end flex-column-reverse flex-lg-row">
-                            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-11">
+                            <div class="col-xl-6 col-lg-6 col-md-10 col-sm-11 col-11" style="display: none;">
                                 <div class="home5-about-left-img" data-aos="" data-aos-duration="2000" style="margin-left: 0px; margin-top: -510px;  width: 100%; height: auto;">
-                                <img class="bounce-animate" src="images/chat.jpg" alt="image">
+                                    <img class="bounce-animate" src="images/chat.jpg" alt="image">
                                 </div><!-- /about-left-img -->
                             </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="pb-70 about-content mt-85" data-aos="" data-aos-duration="2000">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="pb-70 about-content mt-40 text-center" data-aos="" data-aos-duration="2000">
                                     <div class="title">
-                                        <span class="theme-color d-block" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Break into your dream company</span>
-                                        <h3 class="f-700">Your AI-powered career co-pilot for success</h3>
+                                        <span class="theme-color d-block" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">THE PROBLEM</span>
+                                        <h3 class="f-700">LinkedIn shows you jobs. But the best opportunities aren't job postings.</h3>
                                     </div>
                                     <div class="home5-about-text mt-25 pt-1">
-                                        <p class="mb-25">Students miss career opportunities because resources are scattered across career services, alumni databases, and departmental newsletters.</p>
+                                        <p class="mb-25">The perfect workshop is buried in a department newsletter you don't read. Research opportunities are announced in labs you don't know exist.</p>
 
-                                         <p class="mb-25">Franklink unifies everything into one intelligent system, highlighting valuable opportunities and connecting you with the right people to accelerate your career path.</p>
+                                         <p class="mb-25">Networking events happen in groups you're not part of. Career fairs focus on companies that don't match your goals.</p>
                                     </div>
 
                                     <div class="row home5-fact-wrapper justify-content-between mt-40">
                                         <div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12">
                                             <div class="home5-single-f-counter mb-15">
                                                 <div class="f-count pr-20">
-                                                    <span class="f-700 d-inline-block counter">3</span><span class="d-inline-block f-700">x</span>
+                                                    <span class="f-700 d-inline-block counter">5</span><span class="d-inline-block f-700">+</span>
                                                 </div>
-                                                <p class="black-color f-700 mb-0">More Responses</p>
-                                            </div> 
+                                                <p class="black-color f-700 mb-0">Hours Wasted Weekly</p>
+                                            </div>
                                         </div><!-- /col -->
                                         <div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12 pl-lg-0 pr-lg-0">
                                             <div class="home5-single-f-counter mb-15">
                                                 <div class="f-count pr-20">
-                                                    <span class="f-700 d-inline-block counter">100</span><span class="d-inline-block f-700">+</span>
+                                                    <span class="f-700 d-inline-block counter">90</span><span class="d-inline-block f-700">%</span>
                                                 </div>
-                                                <p class="black-color f-700 mb-0">Messages per Hour</p>
+                                                <p class="black-color f-700 mb-0">Never Find Best Opportunities</p>
                                             </div>
                                         </div><!-- /col -->
                                         <div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12">
@@ -586,7 +622,7 @@
                                                 <div class="f-count pr-20">
                                                     <span class="f-700 d-inline-block counter">20</span><span class="d-inline-block f-700">+</span>
                                                 </div>
-                                                <p class="black-color f-700 mb-0">Hours Saved</p>
+                                                <p class="black-color f-700 mb-0">Places to Check Daily</p>
                                             </div>
                                         </div><!-- /col -->
                                     </div><!-- /fact-wrapper -->
@@ -605,51 +641,103 @@
                     <div class="row justify-content-center mb-140 mt-20">
                         <div class="col-xl-12  col-lg-8  col-md-10  col-sm-10 col-12">
                             <div class="title text-center">
-                                <h4 class="f-700">“Talent gets you qualified. Networking gets you noticed.”</h4>
+                                <h4 class="f-700">Here's exactly what you get:</h4>
                             </div>
                         </div><!-- /col -->
                     </div><!-- /row -->
 
                     <!-- home5-feature-wrapper 1 start -->
                     <div class="row align-items-center justify-content-center home5-feature-wrapper mt-65">
-                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
+                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0" style="display: none;">
                             <div class="home5-feature-img  pt-40" data-aos="fade-right" data-aos-duration="2000">
                                 <img class="d-block bounce-animate" src="images/prompt.jpg" alt="University Network Visualization" style="border-radius: 10px;">
                             </div><!-- /service-img -->
                         </div><!-- /col -->
-                        <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
-                            <div class="service-content" data-aos="fade-left" data-aos-duration="2000">
-                                <div class="home5-feature-icon mb-30">
+                        <div class="col-xl-12  col-lg-12  col-md-12  col-sm-12 col-12">
+                            <div class="service-content text-center" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="home5-feature-icon mb-30" style="display: none;">
                                     <img src="images/icon/home5-feature1-icon.png" alt="image">
                                 </div><!-- /home5-feature-icon -->
                                 <div class="title">
-                                    <h3 class="f-700 mb-30">Opportunity Discovery</h3>
-                                    <p class="mt-22 mb-40"><strong>Never miss the right opportunity.</strong> We consolidate career services, alumni networks, club events, and research opportunities into one intelligent feed tailored to your career goals.</p>
+                                    <h3 class="f-700 mb-30">We find opportunities others miss</h3>
+                                    <p class="mt-22 mb-40"><strong>While others scroll job boards, we scan everywhere else.</strong> Research opportunities in labs doing cutting-edge work. Workshops that teach skills hiring managers actually want. Networking events where you'll meet the right people.</p>
                                 </div><!-- /title -->
                                 <div class="row">
-                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
-                                        <div class="single-service">
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service mb-30">
                                             <div class="ser-icon d-inline-block text-center mr-25 mt-1">
                                                 <span class="primary-bg secondary-color d-block">
                                                     <i class="fal fa-archive"></i>
                                                 </span>
                                             </div><!-- /ser-icon -->
                                             <div class="service-text">
-                                            <h6 class="f-700 pb-2">Shared Experience</h6>
-                                            <p class="mb-0">Discover shared experiences that create instant rapport</p>
+                                            <h6 class="f-700 pb-2">Research Labs</h6>
+                                            <p class="mb-0">Labs doing work your target companies fund</p>
                                             </div>
                                         </div><!-- /single-service -->
                                     </div><!-- /col -->
-                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
-                                        <div class="single-service">
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service mb-30">
                                             <div class="ser-icon d-inline-block text-center mr-25 mt-1">
                                                 <span class="primary-bg secondary-color d-block">
-                                                    <i class="fal fa-file-code"></i>
+                                                    <i class="fal fa-code"></i>
                                                 </span>
                                             </div><!-- /ser-icon -->
                                             <div class="service-text">
-                                            <h6 class="f-700 pb-2">Relevance Scoring</h6>
-                                            <p class="mb-0">AI predicts who's most likely to respond and help</p>
+                                            <h6 class="f-700 pb-2">Hackathons</h6>
+                                            <p class="mb-0">Coding competitions that build your portfolio</p>
+                                            </div>
+                                        </div><!-- /single-service -->
+                                    </div><!-- /col -->
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service mb-30">
+                                            <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                <span class="primary-bg secondary-color d-block">
+                                                    <i class="fal fa-users"></i>
+                                                </span>
+                                            </div><!-- /ser-icon -->
+                                            <div class="service-text">
+                                            <h6 class="f-700 pb-2">Networking Events</h6>
+                                            <p class="mb-0">Alumni meetups and industry gatherings</p>
+                                            </div>
+                                        </div><!-- /single-service -->
+                                    </div><!-- /col -->
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service mb-30">
+                                            <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                <span class="primary-bg secondary-color d-block">
+                                                    <i class="fal fa-building"></i>
+                                                </span>
+                                            </div><!-- /ser-icon -->
+                                            <div class="service-text">
+                                            <h6 class="f-700 pb-2">Company Info Sessions</h6>
+                                            <p class="mb-0">Exclusive recruiting events and Q&As</p>
+                                            </div>
+                                        </div><!-- /single-service -->
+                                    </div><!-- /col -->
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service mb-30">
+                                            <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                <span class="primary-bg secondary-color d-block">
+                                                    <i class="fal fa-user-graduate"></i>
+                                                </span>
+                                            </div><!-- /ser-icon -->
+                                            <div class="service-text">
+                                            <h6 class="f-700 pb-2">Club Applications</h6>
+                                            <p class="mb-0">Consulting clubs, startup incubators, honor societies</p>
+                                            </div>
+                                        </div><!-- /single-service -->
+                                    </div><!-- /col -->
+                                    <div class="col-xl-4  col-lg-4  col-md-6  col-sm-6 col-12">
+                                        <div class="single-service mb-30">
+                                            <div class="ser-icon d-inline-block text-center mr-25 mt-1">
+                                                <span class="primary-bg secondary-color d-block">
+                                                    <i class="fal fa-briefcase"></i>
+                                                </span>
+                                            </div><!-- /ser-icon -->
+                                            <div class="service-text">
+                                            <h6 class="f-700 pb-2">Hidden Internships</h6>
+                                            <p class="mb-0">Opportunities not posted on job boards</p>
                                             </div>
                                         </div><!-- /single-service -->
                                     </div><!-- /col -->
@@ -661,31 +749,31 @@
 
                     <!-- home5-feature-wrapper 2 start -->
                     <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row home5-feature-wrapper2 mt-65">
-                        <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
-                            <div class="service-content mt-10" data-aos="fade-right" data-aos-duration="2000">
-                                <div class="home5-feature-icon mb-30">
+                        <div class="col-xl-12  col-lg-12  col-md-12  col-sm-12 col-12">
+                            <div class="service-content mt-10 text-center" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="home5-feature-icon mb-30" style="display: none;">
                                     <img src="images/icon/home5-feature2-icon.png" alt="image">
                                 </div><!-- /home5-feature-icon -->
                                 <div class="title">
-                                    <h3 class="f-700 mb-30">Smart Connection Pathways</h3>
+                                    <h3 class="f-700 mb-30">Tailored to your exact goals and background</h3>
                                 </div><!-- /title -->
                                 <ul class="service-text mt-30 align-items-start">
                                     <li class="mb-10 d-flex">
                                         <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-check"></i></span>
-                                        Identifies the right contacts for each opportunity
+                                        CS students wanting PM roles get different resources than business majors
                                     </li>
                                     <li class="mb-10 d-flex">
                                         <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-check"></i></span>
-                                        Finds optimal introduction paths through mutual connections
+                                        Pre-med students see research opportunities, not tech meetups
                                     </li>
                                     <li class="mb-10 d-flex">
                                         <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-check"></i></span>
-                                        Generates hyper-personalized outreach messages that get responses
+                                        International students get visa-friendly company events
                                     </li>
                                 </ul>
                             </div><!-- /service-content -->
                         </div><!-- /col -->
-                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
+                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0" style="display: none;">
                             <div class="home5-feature-img text-right  pt-40" data-aos="fade-left" data-aos-duration="2000">
                                 <img class="bounce-animate" src="images/goodafternoon.jpg" alt="Franklink Chat Interface" style="border-radius: 10px;">
                             </div><!-- /service-img -->
@@ -695,18 +783,18 @@
 
                      <!-- home5-feature-wrapper 3 start -->
                     <div class="row align-items-center justify-content-center home5-feature-wrapper3 mt-65">
-                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0">
+                        <div class="col-xl-6 col-lg-5 col-md-10 col-sm-12 col-12 pl-xl-0" style="display: none;">
                             <div class="home5-feature-img  pt-30" data-aos="fade-right" data-aos-duration="1500">
                                 <img class="bounce-animate" src="images/feature/franklink-chat.jpg" alt="image">
                             </div><!-- /service-img -->
                         </div><!-- /col -->
-                        <div class="col-xl-6  col-lg-7  col-md-12  col-sm-12 col-12">
-                            <div class="service-content" data-aos="fade-left" data-aos-duration="1500">
-                                <div class="home5-feature-icon mb-30">
+                        <div class="col-xl-12  col-lg-12  col-md-12  col-sm-12 col-12">
+                            <div class="service-content text-center" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="home5-feature-icon mb-30" style="display: none;">
                                     <img src="images/icon/home5-feature3-icon.png" alt="image">
                                 </div><!-- /home5-feature-icon -->
                                 <div class="title">
-                                    <h3 class="f-700 mb-30">Scale Your Outreach Effortlessly</h3>
+                                    <h3 class="f-700 mb-30">We tell you why each resource matters for YOUR path</h3>
                                 </div><!-- /title -->
 
                                 <div class="row">
@@ -714,15 +802,15 @@
                                         <ul class="service-text mt-30 align-items-start">
                                             <li class="mb-10 d-flex">
                                                 <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
-                                                Send 100+ messages per hour 
+                                                This lab's research aligns with your target company's focus
                                             </li>
                                             <li class="mb-10 d-flex">
                                                 <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
-                                                Track response rates and engagement 
+                                                This workshop covers skills mentioned in your dream job descriptions
                                             </li>
                                             <li class="mb-10 d-flex">
                                                 <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
-                                                Automated follow-up sequences 
+                                                These alumni work at companies on your target list
                                             </li>
                                         </ul>
                                     </div><!-- /col -->
@@ -730,15 +818,15 @@
                                         <ul class="service-text mt-30 service-text-margin align-items-start">
                                             <li class="mb-10 d-flex">
                                                 <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
-                                                Advanced analytics and insights 
+                                                Not just job postings
                                             </li>
                                             <li class="mb-10 d-flex">
                                                 <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
-                                                CRM integration for contact management 
+                                                Not random networking events
                                             </li>
                                             <li class="mb-10 d-flex">
                                                 <span class="theme-color d-inline-block mt-1 pr-25"><i class="fal fa-long-arrow-right"></i></span>
-                                                Bulk outreach with personal touch 
+                                                Strategic career resources
                                             </li>
                                         </ul>
                                     </div><!-- /col -->
@@ -762,9 +850,9 @@
                             <div class="col-xl-8 col-lg-7  col-md-12  col-sm-12 col-12 pb-80">
                                 <div class="service-content" data-aos="fade-right" data-aos-duration="2000">
                                     <div class="title">
-                                        <span class="theme-color d-block mb-3" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Launching at Penn</span>
-                                        <h3 class="f-700 mb-30">Partnering with Career Services for maximum impact</h3>
-                                        <p class="mt-22 mb-35"><strong>500K+ alumni network access.</strong> Our pilot with Penn Career Services gives students unprecedented access to career opportunities and connections.</p>
+                                        <span class="theme-color d-block mb-3" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">What You Get</span>
+                                        <h3 class="f-700 mb-30">Personalized career resource intelligence</h3>
+                                        <p class="mt-22 mb-35"><strong>Stop searching blindly.</strong> Get curated opportunities that match your specific background and goals - from research labs to networking events to workshops that directly impact your target career path.</p>
                                     </div><!-- /title -->
                                     <div class="row">
                                         <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12">
@@ -775,8 +863,8 @@
                                                     </span>
                                                 </div><!-- /ser-icon -->
                                                 <div class="service-text">
-                                                    <h6 class="f-700 pb-2">Opportunity Discovery</h6>
-                                                    <p class="mb-0">Consolidates career services, clubs, and research opportunities</p>
+                                                    <h6 class="f-700 pb-2">Networking Events</h6>
+                                                    <p class="mb-0">Alumni meetups and industry gatherings you'd never find</p>
                                                 </div>
                                             </div><!-- /single-service -->
                                             <div class="single-service mb-30 d-xl-flex d-lg-block d-flex">
@@ -786,8 +874,8 @@
                                                     </span>
                                                 </div><!-- /ser-icon -->
                                                 <div class="service-text">
-                                                    <h6 class="f-700 pb-2">Smart Connections</h6>
-                                                    <p class="mb-0">Identifies optimal introduction paths through mutual connections</p>
+                                                    <h6 class="f-700 pb-2">Career Fairs</h6>
+                                                    <p class="mb-0">Company-specific events focused on your target list</p>
                                                 </div>
                                             </div><!-- /single-service -->
                                         </div><!-- /col -->
@@ -799,8 +887,8 @@
                                                     </span>
                                                 </div><!-- /ser-icon -->
                                                 <div class="service-text">
-                                                    <h6 class="f-700 pb-2">Response Tracking</h6>
-                                                    <p class="mb-0">Monitor engagement rates and optimize your networking strategy</p>
+                                                    <h6 class="f-700 pb-2">Skill-Building</h6>
+                                                    <p class="mb-0">Courses and certifications that hiring managers recognize</p>
                                                 </div>
                                             </div><!-- /single-service -->
                                             <div class="single-service mb-30 d-xl-flex d-lg-block d-flex">
@@ -810,8 +898,8 @@
                                                     </span>
                                                 </div><!-- /ser-icon -->
                                                 <div class="service-text">
-                                                    <h6 class="f-700 pb-2">Full Automation</h6>
-                                                    <p class="mb-0">Save 20+ hours monthly with intelligent automation and scaling</p>
+                                                    <h6 class="f-700 pb-2">Strategic Context</h6>
+                                                    <p class="mb-0">Why each resource matters for your specific career goal</p>
                                                 </div>
                                             </div><!-- /single-service -->
                                         </div><!-- /col -->
@@ -1055,93 +1143,93 @@
                                     <div id="monthly" class="tab-pane price-table in active">
                                         <div class="col-inner">
                                             <div class="price-header mb-30">
-                                                <h5 class="f-700 mb-15">Basic</h5>
+                                                <h5 class="f-700 mb-15">Franklink Free</h5>
                                             </div>
                                             <div class="price mb-35">
                                                 <h3 class="text1 theme-color f-700 mb-1">Free</h3>
-                                                <span >Forever</span>
+                                                <span>Perfect to get started</span>
                                             </div>
                                             <ul class="price-item-list text-center d-inline-block mb-50">
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0 xw">10 messages per month</p>
+                                                    <p class="secondary-color mb-0 xw">Limited opportunity highlights</p>
                                                 </li>
                                                  <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">Basic opportunity discovery</p>
+                                                    <p class="secondary-color mb-0">Basic AI guidance</p>
                                                 </li>
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">Alumni search access</p>
+                                                    <p class="secondary-color mb-0">Access to community</p>
                                                 </li>
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">Message templates</p>
-                                                </li> 
+                                                    <p class="secondary-color mb-0">Basic opportunity matching</p>
+                                                </li>
                                                 <li class="d-inline-block d-flex align-items-center">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">Lifetime Updates</p>
-                                                </li> 
+                                                    <p class="secondary-color mb-0">Forever free</p>
+                                                </li>
                                             </ul>
                     
                                             <div class="my-btn d-block">
-                                                <a href="#" class="btn theme-bg text-capitalize">Download</a>
+                                                <a href="#" class="btn theme-bg text-capitalize">Start Free Trial</a>
                                             </div><!-- /my-btn -->
                                         </div>
                                     </div> <!-- /#monthly -->
                                       <div id="yearly" class="tab-pane price-table price-table2">
                                         <div class="col-inner">
                                             <div class="price-header mb-30">
-                                                <h5 class="f-700 mb-15">Student Pro</h5>
+                                                <h5 class="f-700 mb-15">Franklink Pro</h5>
                                             </div>
                                             <div class="price mb-35">
-                                                <h3 class="text1 theme-color f-700 mb-1">$14 <span><sup class="p-p theme-color">.99</sup></span></h3>
-                                                <span >Per Month</span>
+                                                <h3 class="text1 theme-color f-700 mb-1">$17<span><sup class="p-p theme-color"></sup></span></h3>
+                                                <span>Per Month</span>
                                             </div>
                                             <ul class="price-item-list text-center d-inline-block mb-50">
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0 xw">500+ messages per month</p>
+                                                    <p class="secondary-color mb-0 xw">Full AI opportunity recommendation</p>
                                                 </li>
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">Advanced opportunity discovery</p>
+                                                    <p class="secondary-color mb-0">Personalized guidance & coaching</p>
                                                 </li>
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">500K+ alumni network access</p>
+                                                    <p class="secondary-color mb-0">Access to all opportunity sources</p>
                                                 </li>
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">AI-powered message generation</p>
+                                                    <p class="secondary-color mb-0">Progress tracking & analytics</p>
                                                 </li>
                                                 <li class="d-inline-block d-flex align-items-center mb-12">
                                                     <span class="theme-color d-block pr-20">
                                                         <span class=""><i class="fal fa-check"></i></span>
                                                     </span>
-                                                    <p class="secondary-color mb-0">Response tracking & analytics</p>
-                                                </li> 
+                                                    <p class="secondary-color mb-0">Priority support</p>
+                                                </li>
                                             </ul>
                                             <div class="my-btn d-block">
-                                                <a href="#" class="btn theme-bg text-capitalize">Download</a>
+                                                <a href="#" class="btn theme-bg text-capitalize">Start Free Trial</a>
                                             </div><!-- /my-btn -->
                                         </div>
                                       </div> <!-- /#yearly -->
@@ -1236,13 +1324,13 @@
                             <div class="row justify-content-center">
                                 <div class="col-xl-8  col-lg-  col-md-  col-sm- col-">
                                     <div class="title text-center">
-                                        <span class="theme-color d-block mb-3" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Ready to Transform Your Networking?</span>
-                                        <h3 class="f-700 mb-30">Join Hundreds of Students Already Using Franklink</h3>
-                                        <p>Stop wasting time on ineffective networking. Get 3x more responses, build meaningful connections, and accelerate your career with AI-powered outreach.</p>
+                                        <span class="theme-color d-block mb-3" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Ready to stop wasting time?</span>
+                                        <h3 class="f-700 mb-30">Get your roadmap today</h3>
+                                        <p>Stop applying to jobs you'll never get. Stop missing opportunities you never heard about. Get a clear, personalized plan that actually works.</p>
                                     </div><!-- /title -->
                                     <div class="cta-buttons pt-35 text-center">
                                         <a href="#" class="btn theme-bg white-color text-capitalize px-4 py-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="30">
-                                            Start Free Today
+                                            Join Early Access
                                         </a>
                                     </div><!-- /cta-buttons -->
                                 </div><!-- /col -->
