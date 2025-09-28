@@ -565,15 +565,17 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="slider-img position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                    <!-- Franklink Demo Video with Enhanced Styling -->
+                                    <!-- Franklink Demo Video with Enhanced Responsive Styling -->
                                     <div class="video-container" style="
                                         position: relative;
                                         background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
                                         border-radius: 20px;
-                                        padding: 20px;
+                                        padding: 15px;
                                         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5);
                                         backdrop-filter: blur(10px);
                                         border: 1px solid rgba(37, 99, 235, 0.1);
+                                        width: 100%;
+                                        max-width: 100%;
                                     ">
                                         <div style="
                                             position: relative;
@@ -581,10 +583,14 @@
                                             overflow: hidden;
                                             box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
                                             border: 2px solid rgba(37, 99, 235, 0.1);
+                                            width: 100%;
                                         ">
                                             <video class="w-100" controls style="
                                                 border-radius: 14px;
-                                                max-height: 400px;
+                                                width: 100%;
+                                                min-height: 300px;
+                                                max-height: 500px;
+                                                height: auto;
                                                 object-fit: cover;
                                                 display: block;
                                             ">
@@ -615,6 +621,50 @@
                                             opacity: 0.5;
                                         "></div>
                                     </div>
+
+                                    <!-- Responsive CSS for video -->
+                                    <style>
+                                        @media (min-width: 1400px) {
+                                            .video-container video {
+                                                min-height: 400px !important;
+                                                max-height: 600px !important;
+                                            }
+                                        }
+
+                                        @media (min-width: 1200px) and (max-width: 1399px) {
+                                            .video-container video {
+                                                min-height: 350px !important;
+                                                max-height: 500px !important;
+                                            }
+                                        }
+
+                                        @media (min-width: 992px) and (max-width: 1199px) {
+                                            .video-container video {
+                                                min-height: 300px !important;
+                                                max-height: 450px !important;
+                                            }
+                                        }
+
+                                        @media (min-width: 768px) and (max-width: 991px) {
+                                            .video-container video {
+                                                min-height: 250px !important;
+                                                max-height: 400px !important;
+                                            }
+                                            .video-container {
+                                                padding: 12px !important;
+                                            }
+                                        }
+
+                                        @media (max-width: 767px) {
+                                            .video-container video {
+                                                min-height: 200px !important;
+                                                max-height: 350px !important;
+                                            }
+                                            .video-container {
+                                                padding: 10px !important;
+                                            }
+                                        }
+                                    </style>
                                 </div>
                             </div>
                         </div>
