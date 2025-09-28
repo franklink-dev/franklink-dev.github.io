@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>About — Franklink AI Career Intelligence</title>
-        <meta name="description" content="Learn about Franklink's mission to transform student networking with AI-powered outreach that builds authentic professional connections.">
+        <meta name="description" content="Learn about FrankLink's mission to help students discover niche events and opportunities through AI-powered email scanning, timely notifications, and personalized career planning.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
@@ -237,7 +237,29 @@
                 font-size: 2.5rem !important;
             }
         }
-        \n        /* Modern Navigation & Additional Styles */\n        .header-area {\n            background: rgba(255, 255, 255, 0.95) !important;\n            backdrop-filter: blur(10px);\n            border-bottom: 1px solid var(--franklink-border);\n        }\n\n        .btn-outline-secondary {\n            border: 1px solid var(--franklink-border) !important;\n            color: var(--franklink-dark) !important;\n            background: white !important;\n            border-radius: 6px !important;\n            font-weight: 500 !important;\n            padding: 12px 24px !important;\n            font-size: 14px !important;\n            transition: all 0.2s ease !important;\n        }\n\n        .btn-outline-secondary:hover {\n            border-color: var(--franklink-primary) !important;\n            color: var(--franklink-primary) !important;\n            background: white !important;\n        }\n\n        .me-3 { margin-right: 1rem !important; }\n\n        /* Fix remaining purple elements */\n        .main-menu nav ul li a:hover {\n            color: var(--franklink-primary) !important;\n        }\n\n        .back-to-top {\n            background: var(--franklink-primary) !important;\n        }\n\n        .back-to-top:hover {\n            background: var(--franklink-primary-hover) !important;\n        }\n\n        /* Fix any other purple remnants */\n        a:hover {\n            color: var(--franklink-primary) !important;\n        }\n\n        /* Blue Preloader */\n        .object {\n            background: var(--franklink-primary) !important;\n        }\n\n        /* Navigation Font Styling - Match AI NETWORKING PLATFORM */\n        .main-menu nav ul li a {\n            font-size: 14px !important;\n            font-weight: 400 !important;\n            text-transform: uppercase !important;\n            letter-spacing: 0.5px !important;\n            color: var(--franklink-dark) !important;\n        }\n\n        /* Hide image on mobile to prevent overlap */\n        @media (max-width: 991px) {\n            .home5-about-left-img {\n                display: none !important;\n            }\n            \n            .home5-about-bg {\n                padding-top: 40px !important;\n            }\n            \n            .about-content {\n                margin-top: 0px !important;\n                text-align: center;\n            }\n        }\n        </style>
+        \n        /* Modern Navigation & Additional Styles */\n        .header-area {\n            background: rgba(255, 255, 255, 0.95) !important;\n            backdrop-filter: blur(10px);\n            border-bottom: 1px solid var(--franklink-border);\n        }\n\n        .btn-outline-secondary {\n            border: 1px solid var(--franklink-border) !important;\n            color: var(--franklink-dark) !important;\n            background: white !important;\n            border-radius: 6px !important;\n            font-weight: 500 !important;\n            padding: 12px 24px !important;\n            font-size: 14px !important;\n            transition: all 0.2s ease !important;\n        }\n\n        .btn-outline-secondary:hover {\n            border-color: var(--franklink-primary) !important;\n            color: var(--franklink-primary) !important;\n            background: white !important;\n        }\n\n        .me-3 { margin-right: 1rem !important; }\n\n        /* Fix remaining purple elements */\n        .main-menu nav ul li a:hover {\n            color: var(--franklink-primary) !important;\n        }\n\n        .back-to-top {\n            background: var(--franklink-primary) !important;\n        }\n\n        .back-to-top:hover {\n            background: var(--franklink-primary-hover) !important;\n        }\n\n        /* Fix any other purple remnants */\n        a:hover {\n            color: var(--franklink-primary) !important;\n        }\n\n        /* Blue Preloader */\n        .object {\n            background: var(--franklink-primary) !important;\n        }\n\n        /* Navigation Font Styling - Match AI NETWORKING PLATFORM */\n        .main-menu nav ul li a {\n            font-size: 14px !important;\n            font-weight: 400 !important;\n            text-transform: uppercase !important;\n            letter-spacing: 0.5px !important;\n            color: var(--franklink-dark) !important;\n        }\n\n        /* Hide image on mobile to prevent overlap */\n        @media (max-width: 991px) {\n            .home5-about-left-img {\n                display: none !important;\n            }\n            \n            .home5-about-bg {\n                padding-top: 40px !important;\n            }\n            \n            .about-content {\n                margin-top: 0px !important;\n                text-align: center;\n            }\n        }\n        /* Team image consistency */
+        .single-team-img img {
+            width: 100% !important;
+            height: 350px !important;
+            object-fit: cover !important;
+            object-position: center center !important;
+            display: block !important;
+        }
+
+        /* Make Jimmy's image appear more square */
+        img[src="images/jimmy.jpeg"] {
+            object-position: center center !important;
+            object-fit: cover !important;
+        }
+
+        /* Ensure all team containers have same dimensions */
+        .single-team-img {
+            width: 100% !important;
+            height: 350px !important;
+            overflow: hidden !important;
+        }
+
+        </style>
 
 
     </head>
@@ -413,10 +435,10 @@
                                     <span class="theme-color d-block mb-3" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Our Story</span>
                                     <h3 class="f-700 mb-30">How Franklink Began</h3>
                                     <p class="pb-10">
-As students ourselves, we experienced the frustration of networking firsthand. Sending countless cold emails with minimal responses, struggling to connect with alumni, and watching opportunities slip away.
+As students ourselves, we experienced the frustration of missing crucial opportunities firsthand. The perfect workshop announcement lost in hundreds of school emails. Research opportunities buried in department newsletters. Application deadlines for exclusive programs we discovered too late.
                                      </p>
                                     <p>
-We knew there had to be a better way. That's when we created Franklink — an AI-powered platform that transforms how students network by finding the right people and crafting authentic, personalized messages that actually get responses.
+We knew there had to be a better way. That's when we created Franklink — an AI powered platform that automatically unify and organize all available career resources by scanning your emails, finding niche events and opportunities on campus, creating personalized career preparation plans, and more. At Franklink, you can unlock 1000+ career resources by contributing 5 resources you have. Start your journey to your dream offer with Franklink now!
                                     </p>
                                 </div>
                                 <div class="my-btn mt-47" data-aos="fade-up" data-aos-duration="2000">
@@ -427,7 +449,7 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                         <div class="col-xl-5 offset-lg-1 col-lg-5 col-md-9 col-sm-12 col-12">
                             <div class="about-us-img-wrapper mt-18 mb-100 d-flex justify-content-end ml-100">
                                 <div class="home3-about-img bg-transparent position-relative z-index11 tilt">
-                                    <img class="about-us-img1 d-inline-block z-index-1" src="images/code2.png" alt="image">
+                                    <img class="about-us-img1 d-inline-block z-index-1" src="images/Benjamin_Franklin.jpg" alt="Benjamin Franklin statue">
                                 </div><!-- /about-img -->
                             </div><!-- /home3-about-img-wrapper -->
                         </div><!-- /col -->
@@ -447,37 +469,37 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                                     <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12">
                                         <div class="home3-single-facts about-us-fact-wrapper white-bg text-center pt-45 pb-60 pl-40 pr-40 mb-30">
                                             <div class="d-flex align-items-center justify-content-center">
-                                                <span class="theme-color f-700 d-inline-block counter">3</span>
-                                                <span class="theme-color d-inline-block f-700">X</span>
+                                                <span class="theme-color f-700 d-inline-block counter">15</span>
+                                                <span class="theme-color d-inline-block f-700">+</span>
                                             </div>
-                                            <p class="black-color text-center f-700 mb-0">Higher Response
-                                                Rates</p>
+                                            <p class="black-color text-center f-700 mb-0">Events Discovered
+                                                Weekly</p>
                                         </div>  <!-- /home3-single-facts -->
 
                                         <div class="home3-single-facts about-us-fact-wrapper white-bg text-center pt-45 pb-60 pl-40 pr-40 mb-30">
                                             <div class="d-flex align-items-center justify-content-center">
-                                                <span class="theme-color f-700 d-inline-block counter">20</span>
+                                                <span class="theme-color f-700 d-inline-block counter">500</span>
                                                 <span class="per theme-color d-inline-block f-700">+</span>
                                             </div>
-                                            <p class="black-color text-center f-700 mb-0">Hours Saved
-                                                Monthly</p>
+                                            <p class="black-color text-center f-700 mb-0">Niche Resources Uploaded
+                                                Daily</p>
                                         </div> <!-- /home3-single-facts -->
                                     </div><!-- /col -->
                                     <div class="col-xl-6  col-lg-6  col-md-6  col-sm-6 col-12 ">
                                         <div class="home3-single-facts about-us-fact-wrapper home3-single-facts-margin white-bg text-center pt-45 pb-60 pl-40 pr-40 mb-30 mt-60">
                                             <div class="d-flex align-items-center justify-content-center">
-                                                <span class="theme-color f-700 d-inline-block counter">500</span>
+                                                <span class="theme-color f-700 d-inline-block counter">10</span>
                                                 <span class="per theme-color d-inline-block f-700">+</span>
                                             </div>
-                                            <p class="black-color text-center f-700 mb-0">Alumni Database Access</p>
+                                            <p class="black-color text-center f-700 mb-0">School Email Sources</p>
                                         </div>  <!-- /home3-single-facts -->
                                         <div class="home3-single-facts about-us-fact-wrapper white-bg text-center pt-45 pb-60 pl-40 pr-40 mb-30">
                                             <div class="d-flex align-items-center justify-content-center">
                                                 <span class="theme-color f-700 d-inline-block counter">95</span>
                                                 <span class="per theme-color d-inline-block f-700">%</span>
                                             </div>
-                                            <p class="black-color text-center f-700 mb-0">User
-                                                Satisfaction</p>
+                                            <p class="black-color text-center f-700 mb-0">Notification Accuracy
+                                                Rate</p>
                                         </div>  <!-- /home3-single-facts -->
                                     </div><!-- /col -->
                                 </div><!-- /row -->
@@ -485,7 +507,7 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                             <div class="col-xl-5 offset-xl-1 col-lg-5 col-md-12 col-sm-12 col-12">
                                 <div class="title">
                                     <h3 class="f-700 mb-30">Results that speak for themselves</h3>
-                                    <p class="pb-10">Students using Franklink see dramatically improved networking outcomes with authentic AI-powered outreach.</p>
+                                    <p class="pb-10">Students using FrankLink never miss important deadlines and discover exclusive events buried in their email inboxes.</p>
                                 </div>
                             </div><!-- /col -->
                         </div><!-- /row -->
@@ -504,7 +526,7 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                                 <div class="title">
                                     <span class="theme-color d-block mb-3" style="font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">What Makes Us Different</span>
                                     <h3 class="f-700 mb-30">Why Students Choose Franklink</h3>
-                                    <p class="pb-10">Our pilot partnership with Penn Career Services gives us access to 500K+ alumni network and Handshake career data. This validates our approach before expanding to more universities.</p>
+                                    <p class="pb-10">FrankLink automatically monitors your school email inbox, extracts relevant events and opportunities, and creates a personalized timeline of career-building activities tailored to your goals.</p>
                                 </div>
                             </div><!-- /Speciality-left-content -->
                         </div><!-- /col -->
@@ -517,8 +539,8 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                                                 <img class="h-100" src="images/icon/about-us-web.png" alt="image">
                                             </div><!-- /ser-icon -->
                                             <div class="service-text">
-                                                <h6 class="f-700 mb-15">Smart Alumni Matching</h6>
-                                                <p>Our AI identifies the most relevant alumni based on your goals, industry, and career interests.</p>
+                                                <h6 class="f-700 mb-15">Smart Email Scanning</h6>
+                                                <p>Our AI automatically scans your school emails to extract relevant events, deadlines, and opportunities.</p>
                                             </div>
                                         </div><!-- /single-service-content -->
                                     </div><!-- /col -->
@@ -528,8 +550,8 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                                                 <img class="h-100" src="images/icon/about-us-code.png" alt="image">
                                             </div><!-- /ser-icon -->
                                             <div class="service-text">
-                                                <h6 class="f-700 mb-15">Personalized Messages</h6>
-                                                <p>Each outreach message is crafted specifically for the recipient, ensuring authentic connections.</p>
+                                                <h6 class="f-700 mb-15">Timely Notifications</h6>
+                                                <p>Get alerted about important events and deadlines before they pass, so you never miss out.</p>
                                             </div>
                                         </div><!-- /single-service-content -->
                                     </div><!-- /col -->
@@ -540,8 +562,8 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                                                 <img class="h-100" src="images/icon/about-us-folder.png" alt="image">
                                             </div><!-- /ser-icon -->
                                             <div class="service-text">
-                                                <h6 class="f-700 mb-15">Scalable Outreach</h6>
-                                                <p>Reach hundreds of relevant connections while maintaining the personal touch that gets responses.</p>
+                                                <h6 class="f-700 mb-15">Personal Career Planning</h6>
+                                                <p>Creates customized preparation plans with specific steps to reach your career goals.</p>
                                             </div>
                                         </div><!-- /single-service-content -->
                                     </div><!-- /col -->
@@ -551,8 +573,8 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                                                 <img class="h-100" src="images/icon/about-us-user.png" alt="image">
                                             </div><!-- /ser-icon -->
                                             <div class="service-text">
-                                                <h6 class="f-700 mb-15">Success Tracking</h6>
-                                                <p>Monitor your networking progress with detailed analytics and response tracking features.</p>
+                                                <h6 class="f-700 mb-15">Niche Event Discovery</h6>
+                                                <p>Finds specialized workshops, research opportunities, and exclusive programs hidden in email announcements.</p>
                                             </div>
                                         </div><!-- /single-service-content -->
                                     </div><!-- /col -->
@@ -650,10 +672,10 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="our-team-wrapper position-relative mb-40">
                                     <div class="single-team-img position-relative z-index1">
-                                        <img class="w-100" src="images/jimmy.jpeg" alt="image">
+                                        <img class="w-100" src="images/jimmy.jpeg" alt="Jimmy Zhong">
                                         <ul class="our-team-social-link text-center position-absolute left-0 right-0 z-index11 transition5">
                                              <li class="d-inline-block">
-                                            <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="www.linkedin.com/in/jimmy-zhong-517973242/"><i class="fab fa-linkedin"></i></a>
+                                            <a class="text-center rounded-circle white-bg d-inline-block transition-3" href="https://www.linkedin.com/in/jimmy-zhong-517973242/"><i class="fab fa-linkedin"></i></a>
                                         </li>
                                         </ul><!-- /our-team-social-link -->
                                     </div>
@@ -722,8 +744,8 @@ We knew there had to be a better way. That's when we created Franklink — an AI
                         <div class="row align-items-center justify-content-between">
                             <div class="col-xl-9 col-lg-9  col-md-12 col-sm-12 col-12">
                                 <div class="banner-content">
-                                    <h4 class="f-700 mb-18">Franklink helps you to grow fast</h4>
-                                    <p class="mb-0">Better connection. More sleep.</p>
+                                    <h4 class="f-700 mb-18">FrankLink turns your inbox into your career advantage</h4>
+                                    <p class="mb-0">Never miss a deadline. Never miss an opportunity.</p>
                                 </div><!-- /work-banner-content -->
                             </div><!-- /col -->
                             <div class="col-xl-3 col-lg-3  col-md-12 col-sm-12 col-12">
