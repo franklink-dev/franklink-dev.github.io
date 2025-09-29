@@ -72,6 +72,48 @@
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15) !important;
         }
 
+        /* Hero Button Standardization - Shorter Width for Horizontal Alignment */
+        .hero-btn {
+            width: 160px !important;
+            padding: 14px 16px !important;
+            font-size: 15px !important;
+            font-weight: 500 !important;
+            text-align: center !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            white-space: nowrap !important;
+            border-radius: 6px !important;
+            text-decoration: none !important;
+            transition: all 0.2s ease !important;
+            box-sizing: border-box !important;
+            line-height: 1.2 !important;
+        }
+
+        .hero-cta {
+            display: flex !important;
+            gap: 16px !important;
+            align-items: center !important;
+            flex-wrap: wrap !important;
+        }
+
+        .hero-cta .me-3 {
+            margin-right: 0 !important;
+        }
+
+        /* Ensure outline button has same dimensions and proper text centering */
+        .hero-btn.btn-outline-secondary {
+            width: 160px !important;
+            padding: 14px 16px !important;
+            border-width: 1px !important;
+            box-sizing: border-box !important;
+            text-align: center !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            line-height: 1.2 !important;
+        }
+
         .theme-color, .theme-color span {
             color: var(--franklink-primary) !important;
         }
@@ -304,6 +346,28 @@
             .btn.theme-bg {
                 padding: 10px 20px !important;
                 font-size: 14px !important;
+            }
+
+            .hero-btn {
+                width: 140px !important;
+                padding: 12px 14px !important;
+                font-size: 14px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            .hero-btn.btn-outline-secondary {
+                width: 140px !important;
+                padding: 12px 14px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+
+            .hero-cta {
+                gap: 12px !important;
+                justify-content: center !important;
             }
 
             .about-content .title h3 {
@@ -548,52 +612,27 @@
                 <div class="single-slider d-flex align-items-center position-relative ">
                     <div class="container">
                         <div class="row align-items-center">
-                            <div class="col-xl-6 col-lg-6 col-md-12 mt-40">
+                            <div class="col-xl-5 col-lg-5 col-md-12 mt-40">
                                 <div class="slider-content">
                                     <span class="theme-color d-block mb-3" data-aos="fade-up" data-aos-duration="600">FOR STUDENTS WHO WANT MORE THAN JOB BOARDS</span>
                                     <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Your AI Career Intelligence</h1>
                                     <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Stop missing the opportunities that matter. Get personalized access to the career resources others never find.</p>
                                     <div class="hero-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                        <a href="wishlist.html" class="btn theme-bg white-color me-3">
+                                        <a href="wishlist.html" class="btn theme-bg white-color hero-btn">
                                             Early Access
                                         </a>
-                                        <a href="https://discord.gg/7JQSKGgj" class="btn btn-outline-secondary">
-                                            Beta Testing Community
+                                        <a href="https://discord.gg/7JQSKGgj" class="btn btn-outline-secondary hero-btn">
+                                            Join our Discord
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12">
+                            <div class="col-xl-7 col-lg-7 col-md-12">
                                 <div class="slider-img position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                    <!-- Franklink Demo Video with Enhanced Responsive Styling -->
-                                    <div class="video-container" style="
-                                        position: relative;
-                                        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-                                        border-radius: 20px;
-                                        padding: 15px;
-                                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5);
-                                        backdrop-filter: blur(10px);
-                                        border: 1px solid rgba(37, 99, 235, 0.1);
-                                        width: 100%;
-                                        max-width: 100%;
-                                    ">
-                                        <div style="
-                                            position: relative;
-                                            border-radius: 16px;
-                                            overflow: hidden;
-                                            box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
-                                            border: 2px solid rgba(37, 99, 235, 0.1);
-                                            width: 100%;
-                                        ">
-                                            <video class="w-100" controls style="
-                                                border-radius: 14px;
-                                                width: 100%;
-                                                min-height: 300px;
-                                                max-height: 500px;
-                                                height: auto;
-                                                object-fit: cover;
-                                                display: block;
-                                            ">
+                                    <!-- Franklink Demo Video with Proper Responsive Design -->
+                                    <div class="franklink-video-container">
+                                        <div class="video-wrapper">
+                                            <video class="responsive-video" controls>
                                                 <source src="Franklink_demo.mov" type="video/mp4">
                                                 <source src="Franklink_demo.mov" type="video/quicktime">
                                                 Your browser does not support the video tag.
@@ -622,47 +661,103 @@
                                         "></div>
                                     </div>
 
-                                    <!-- Responsive CSS for video -->
+                                    <!-- Responsive Video CSS -->
                                     <style>
-                                        @media (min-width: 1400px) {
-                                            .video-container video {
-                                                min-height: 400px !important;
-                                                max-height: 600px !important;
+                                        .franklink-video-container {
+                                            position: relative;
+                                            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                                            border-radius: 24px;
+                                            padding: 20px;
+                                            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.5);
+                                            backdrop-filter: blur(10px);
+                                            border: 1px solid rgba(37, 99, 235, 0.1);
+                                            width: 100%;
+                                            max-width: 100%;
+                                        }
+
+                                        .video-wrapper {
+                                            position: relative;
+                                            width: 100%;
+                                            padding-bottom: 65%; /* Taller aspect ratio for better visibility */
+                                            height: 0;
+                                            border-radius: 16px;
+                                            overflow: hidden;
+                                            box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+                                            border: 2px solid rgba(37, 99, 235, 0.1);
+                                            background: #000;
+                                        }
+
+                                        .responsive-video {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 14px;
+                                            object-fit: contain; /* Maintain aspect ratio without cropping */
+                                            background: #000;
+                                        }
+
+                                        /* Responsive adjustments for larger video */
+                                        @media (min-width: 1200px) {
+                                            .video-wrapper {
+                                                padding-bottom: 60%; /* Slightly less tall on large screens */
                                             }
                                         }
 
-                                        @media (min-width: 1200px) and (max-width: 1399px) {
-                                            .video-container video {
-                                                min-height: 350px !important;
-                                                max-height: 500px !important;
+                                        @media (max-width: 768px) {
+                                            .franklink-video-container {
+                                                padding: 16px;
+                                                border-radius: 20px;
+                                            }
+
+                                            .video-wrapper {
+                                                border-radius: 14px;
+                                                padding-bottom: 70%; /* Taller on tablets for better visibility */
+                                            }
+
+                                            .responsive-video {
+                                                border-radius: 12px;
                                             }
                                         }
 
-                                        @media (min-width: 992px) and (max-width: 1199px) {
-                                            .video-container video {
-                                                min-height: 300px !important;
-                                                max-height: 450px !important;
+                                        @media (max-width: 576px) {
+                                            .franklink-video-container {
+                                                padding: 12px;
+                                                border-radius: 16px;
+                                            }
+
+                                            .video-wrapper {
+                                                border-radius: 12px;
+                                                padding-bottom: 75%; /* Even taller on mobile */
+                                            }
+
+                                            .responsive-video {
+                                                border-radius: 8px;
                                             }
                                         }
 
-                                        @media (min-width: 768px) and (max-width: 991px) {
-                                            .video-container video {
-                                                min-height: 250px !important;
-                                                max-height: 400px !important;
-                                            }
-                                            .video-container {
-                                                padding: 12px !important;
-                                            }
+                                        /* Enhanced browser compatibility */
+                                        .responsive-video::-webkit-media-controls-panel {
+                                            background-color: rgba(0, 0, 0, 0.8);
                                         }
 
-                                        @media (max-width: 767px) {
-                                            .video-container video {
-                                                min-height: 200px !important;
-                                                max-height: 350px !important;
-                                            }
-                                            .video-container {
-                                                padding: 10px !important;
-                                            }
+                                        /* Ensure proper loading state */
+                                        .video-wrapper::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: linear-gradient(45deg, #f8fafc 25%, transparent 25%),
+                                                        linear-gradient(-45deg, #f8fafc 25%, transparent 25%),
+                                                        linear-gradient(45deg, transparent 75%, #f8fafc 75%),
+                                                        linear-gradient(-45deg, transparent 75%, #f8fafc 75%);
+                                            background-size: 20px 20px;
+                                            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+                                            opacity: 0.1;
+                                            z-index: -1;
                                         }
                                     </style>
                                 </div>
