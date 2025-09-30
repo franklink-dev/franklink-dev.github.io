@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Franklink - AI Career Intelligence
 
-## Getting Started
+[![Deploy to GitHub Pages](https://github.com/franklink-dev/franklink-dev.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/franklink-dev/franklink-dev.github.io/actions/workflows/deploy.yml)
 
-First, run the development server:
+Stop missing opportunities that matter. Discover research labs, hackathons, networking events, and hidden internships tailored to your exact goals.
 
+🌐 **Live Website**: [franklink.dev](https://franklink.dev)
+
+## About Franklink
+
+Franklink is an AI-powered career intelligence platform that helps students and professionals discover personalized opportunities in their field. Our platform analyzes your background, interests, and career goals to surface relevant:
+
+- Research lab opportunities
+- Hackathons and competitions
+- Networking events
+- Hidden internship positions
+- Company information sessions
+- Club applications
+
+## Features
+
+- **AI-Powered Matching**: Advanced algorithms match you with opportunities based on your profile
+- **Real-time Notifications**: Get alerted when new opportunities match your criteria
+- **Comprehensive Database**: Access to exclusive opportunities not found elsewhere
+- **Personalized Dashboard**: Track your applications and manage your career journey
+- **Demo Video Integration**: Watch our product demo to see Franklink in action
+
+## Technology Stack
+
+- **Frontend**: React, Next.js 15, TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages with GitHub Actions
+
+## Development
+
+This is a Next.js project optimized for static export and GitHub Pages deployment.
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or pnpm
+
+### Getting Started
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/franklink-dev/franklink-dev.github.io.git
+cd franklink-dev.github.io
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This generates a static export in the `out` directory, ready for deployment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Team
 
-## Deploy on Vercel
+- **Eric Bi** - CEO & Co-Founder
+- **Cici Cai** - Technical Co-Founder
+- **Jimmy Zhong** - Technical Co-Founder
+- **Samson Shi** - Product Co-Founder
+- **Daniel Wong** - Business Co-Founder
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We welcome contributions! Please feel free to submit issues and pull requests.
+
+## Contact
+
+- **Website**: [franklink.dev](https://franklink.dev)
+- **Email**: info@franklink.app
+
+---
+
+© 2025 Franklink. All rights reserved.
