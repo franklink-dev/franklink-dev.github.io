@@ -85,19 +85,22 @@ export function HeroSection() {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button size="xl" variant="gradient" className="group whitespace-nowrap" asChild>
-                <a href="/wishlist" className="flex items-center">
-                  Get Started
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <Button
+                size="xl"
+                variant="gradient"
+                className="group whitespace-nowrap"
+                onClick={() => window.location.href = '/wishlist'}
+              >
+                Get Started
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
                 size="xl"
                 variant="outline"
                 onClick={handlePlayVideo}
-                className="group"
+                className="group whitespace-nowrap"
               >
-                <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                <Play className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 Watch Demo
               </Button>
             </motion.div>
