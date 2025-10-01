@@ -16,11 +16,11 @@ import {
 
 const features = [
   {
-    icon: Search,
-    title: 'Research Labs',
-    description: 'Discover cutting-edge research opportunities tailored to your academic interests and career goals.',
-    color: 'text-blue-600',
-    bgColor: 'bg-blue-100'
+    icon: Briefcase,
+    title: 'Hidden Internships',
+    description: 'Uncover exclusive internship opportunities that aren\'t posted on traditional job boards.',
+    color: 'text-cyan-600',
+    bgColor: 'bg-cyan-100'
   },
   {
     icon: Trophy,
@@ -51,11 +51,11 @@ const features = [
     bgColor: 'bg-red-100'
   },
   {
-    icon: Briefcase,
-    title: 'Hidden Internships',
-    description: 'Uncover exclusive internship opportunities that aren\'t posted on traditional job boards.',
-    color: 'text-cyan-600',
-    bgColor: 'bg-cyan-100'
+    icon: Search,
+    title: 'Research Labs',
+    description: 'Discover cutting-edge research opportunities tailored to your academic background.',
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-100'
   }
 ];
 
@@ -105,7 +105,7 @@ export function FeaturesSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Stop hunting through scattered emails and websites. Our AI finds and curates
+            Enough hunting through scattered emails and websites. Our AI finds and curates
             the opportunities that matter most to your career journey.
           </p>
         </motion.div>
@@ -153,11 +153,11 @@ export function FeaturesSection() {
           <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-8 backdrop-blur-sm border border-blue-200/50">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Target className="w-6 h-6 text-blue-600" />
-              <h3 className="text-2xl font-bold text-gray-900">Personalized to You</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Personalized Career Path Builder</h3>
             </div>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Our AI analyzes your background, interests, and goals to surface exactly
-              the opportunities you need to advance your career.
+              Our AI analyzes your background, interests, and goals to tell you exactly
+              what to do with the opportunities you need to advance your career.
             </p>
           </div>
         </motion.div>

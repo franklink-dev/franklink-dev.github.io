@@ -13,11 +13,10 @@ const pricingPlans = [
     period: 'forever',
     description: 'Perfect for getting started with career discovery',
     features: [
-      'Basic opportunity discovery',
-      'Email notifications',
-      'Up to 5 saved opportunities',
+      'Basic career path discovery',
+      'Email updates',
+      'Up to 5 exclusive opportunities',
       'Community support',
-      'Mobile app access'
     ],
     cta: 'Get Started Free',
     popular: false,

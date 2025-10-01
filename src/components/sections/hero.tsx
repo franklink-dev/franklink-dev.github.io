@@ -72,7 +72,7 @@ export function HeroSection() {
               transition={{ delay: 0.4 }}
               className="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl"
             >
-              Stop missing opportunities that matter. LinkedIn and Handshake show you jobs,
+              The best opportunities are not job postings. LinkedIn and Handshake show you jobs,
               but the best opportunities aren't job postings.
             </motion.p>
 
