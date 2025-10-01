@@ -12,7 +12,8 @@
       "Bash(git push:*)",
       "Bash(find:*)",
       "Bash(curl:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
