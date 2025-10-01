@@ -14,7 +14,8 @@
       "Bash(curl:*)",
       "Bash(xargs kill:*)",
       "Bash(rm:*)",
-      "Bash(kill:*)"
+      "Bash(kill:*)",
+      "Bash(npm run lint)"
     ],
     "deny": [],
     "ask": []

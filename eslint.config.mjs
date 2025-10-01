@@ -18,6 +18,7 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      "_old_html_site/**",
     ],
   },
 ];

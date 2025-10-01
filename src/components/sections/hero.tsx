@@ -4,7 +4,6 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Play, ArrowRight, Sparkles } from 'lucide-react';
-import Image from 'next/image';
 
 export function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -15,10 +14,10 @@ export function HeroSection() {
       // Enter fullscreen mode
       if (videoRef.current.requestFullscreen) {
         videoRef.current.requestFullscreen();
-      } else if ((videoRef.current as any).webkitRequestFullscreen) {
-        (videoRef.current as any).webkitRequestFullscreen();
-      } else if ((videoRef.current as any).msRequestFullscreen) {
-        (videoRef.current as any).msRequestFullscreen();
+      } else if ((videoRef.current as HTMLVideoElement & { webkitRequestFullscreen?: () => void }).webkitRequestFullscreen) {
+        (videoRef.current as HTMLVideoElement & { webkitRequestFullscreen: () => void }).webkitRequestFullscreen();
+      } else if ((videoRef.current as HTMLVideoElement & { msRequestFullscreen?: () => void }).msRequestFullscreen) {
+        (videoRef.current as HTMLVideoElement & { msRequestFullscreen: () => void }).msRequestFullscreen();
       }
     }
   };
@@ -73,7 +72,7 @@ export function HeroSection() {
               className="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl"
             >
               The best opportunities are not job postings. LinkedIn and Handshake show you jobs,
-              but the best opportunities aren't job postings.
+              but the best opportunities aren&apos;t job postings.
             </motion.p>
 
 
