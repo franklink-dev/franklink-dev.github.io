@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -7,6 +7,12 @@ import { Footer } from "@/components/layout/footer";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -42,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased bg-white text-gray-900`}>
+      <body className={`${inter.variable} ${poppins.variable} font-sans antialiased bg-white text-gray-900`}>
         <Header />
         <main className="min-h-screen">
           {children}
