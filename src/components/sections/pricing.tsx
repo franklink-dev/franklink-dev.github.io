@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, Sparkles, Crown, ArrowRight } from 'lucide-react';
+import { Check, Gift, Crown, ArrowRight } from 'lucide-react';
 
 const pricingPlans = [
   {
@@ -20,7 +20,7 @@ const pricingPlans = [
     ],
     cta: 'Get Started Free',
     popular: false,
-    icon: Sparkles
+    icon: Gift
   },
   {
     name: 'Pro',
@@ -55,7 +55,7 @@ export function PricingSection() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium mb-6">
-            💎 Simple Pricing
+            Simple Pricing
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Choose your{' '}
@@ -84,19 +84,19 @@ export function PricingSection() {
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium">
+                    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium">
                       Most Popular
                     </div>
                   </div>
                 )}
                 <Card className={`relative h-full transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col ${
                   plan.popular
-                    ? 'border-2 border-purple-200 bg-gradient-to-br from-purple-50 to-blue-50'
+                    ? 'border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-gray-50'
                     : 'border border-gray-200 bg-white/80 backdrop-blur-sm'
                 }`}>
                   <CardHeader className="text-center pb-8 pt-12">
                     <div className={`w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-4 ${
-                      plan.popular ? 'bg-gradient-to-br from-purple-600 to-blue-600' : 'bg-gray-100'
+                      plan.popular ? 'bg-gradient-to-br from-blue-600 to-blue-700' : 'bg-gray-100'
                     }`}>
                       <Icon className={`w-8 h-8 ${plan.popular ? 'text-white' : 'text-gray-600'}`} />
                     </div>
@@ -114,9 +114,9 @@ export function PricingSection() {
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-3">
                           <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                            plan.popular ? 'bg-purple-100' : 'bg-gray-100'
+                            plan.popular ? 'bg-blue-100' : 'bg-gray-100'
                           }`}>
-                            <Check className={`w-3 h-3 ${plan.popular ? 'text-purple-600' : 'text-gray-600'}`} />
+                            <Check className={`w-3 h-3 ${plan.popular ? 'text-blue-600' : 'text-gray-600'}`} />
                           </div>
                           <span className="text-gray-700">{feature}</span>
                         </li>

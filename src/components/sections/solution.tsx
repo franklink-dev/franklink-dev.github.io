@@ -44,7 +44,7 @@ export function SolutionSection() {
             transition={{ duration: 0.8 }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-100 text-red-700 text-sm font-medium mb-6">
-              ⚠️ The Problem
+              The Problem
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
               Stop missing the{' '}
@@ -88,7 +88,7 @@ export function SolutionSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-6">
-              ✨ Our Solution
+              Our Solution
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
               AI that finds{' '}

@@ -40,7 +40,7 @@ const values = [
 ];
 
 const stats = [
-  { number: '1000+', label: 'Career Resources' },
+  { number: '100,000+', label: 'Career Resources' },
   { number: '50+', label: 'Universities' },
   { number: '85%', label: 'Better Match Rate' },
   { number: '24/7', label: 'AI Availability' }
@@ -57,7 +57,7 @@ const features = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-50 pt-20">
       {/* Hero Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,7 +108,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 lg:p-12 border border-blue-100">
+            <div className="bg-gradient-to-r from-blue-50 to-gray-50 rounded-3xl p-8 lg:p-12 border border-blue-100">
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
                   As students ourselves, we experienced the frustration of missing crucial opportunities firsthand.
@@ -124,8 +124,8 @@ export default function AboutPage() {
                 </p>
 
                 <p className="font-semibold text-blue-600 text-xl">
-                  At Franklink, you can unlock 1000+ career resources by contributing 5 resources you have.
-                  Start your journey to your dream offer with Franklink now!
+                  With Franklink, you can unlock 100,000+ career resources by contributing 5 resources you have.
+                  Start your journey to your dream offer with us now!
                 </p>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-100"
+                className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-gray-50 border border-blue-100"
               >
                 <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                 <span className="text-gray-700 font-medium">{feature}</span>
@@ -311,7 +311,7 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-12 border border-blue-100"
+            className="text-center bg-gradient-to-r from-blue-50 to-gray-50 rounded-3xl p-12 border border-blue-100"
           >
             <Zap className="w-16 h-16 text-blue-600 mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-gray-900 mb-4">

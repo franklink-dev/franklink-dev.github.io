@@ -10,8 +10,13 @@ import {
   Building,
   Trophy,
   Briefcase,
-  Sparkles,
-  Target
+  Compass,
+  Target,
+  ArrowRight,
+  MapPin,
+  Zap,
+  TrendingUp,
+  CheckCircle
 } from 'lucide-react';
 
 const features = [
@@ -54,8 +59,8 @@ const features = [
     icon: Search,
     title: 'Research Labs',
     description: 'Discover cutting-edge research opportunities tailored to your academic background.',
-    color: 'text-blue-600',
-    bgColor: 'bg-blue-100'
+    color: 'text-purple-600',
+    bgColor: 'bg-purple-100'
   }
 ];
 
@@ -95,7 +100,6 @@ export function FeaturesSection() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-6">
-            <Sparkles className="w-4 h-4" />
             Discover Opportunities
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -141,24 +145,149 @@ export function FeaturesSection() {
             );
           })}
         </motion.div>
-
-        {/* Bottom CTA */}
+        {/* Career Path Builder - Creative Design */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-16"
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-20 relative"
         >
-          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-8 backdrop-blur-sm border border-blue-200/50">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Target className="w-6 h-6 text-blue-600" />
-              <h3 className="text-2xl font-bold text-gray-900">Personalized Career Path Builder</h3>
+          <div className="relative bg-gradient-to-br from-indigo-50 via-white to-purple-50 rounded-[2rem] p-8 md:p-12 overflow-hidden border border-indigo-100/50 shadow-xl">
+            {/* Floating Elements Background */}
+            <div className="absolute inset-0 overflow-hidden">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full opacity-20"
+              />
+              <motion.div
+                animate={{ y: [-10, 10, -10] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-4 left-4 w-16 h-16 bg-gradient-to-r from-cyan-200 to-blue-200 rounded-xl opacity-30"
+              />
+              <motion.div
+                animate={{ x: [-5, 5, -5] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-8 right-1/4 w-20 h-20 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-25"
+              />
             </div>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Our AI analyzes your background, interests, and goals to tell you exactly
-              what to do with the opportunities you need to advance your career.
-            </p>
+
+            <div className="relative z-10">
+              {/* Header */}
+              <div className="text-center mb-8">
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 text-sm font-medium mb-4"
+                >
+                  <Target className="w-4 h-4" />
+                  AI-Powered Career Intelligence
+                </motion.div>
+                <motion.h3
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+                >
+                  Your{' '}
+                  <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    Personalized Career Path
+                  </span>
+                </motion.h3>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                  className="text-lg text-gray-600 max-w-2xl mx-auto"
+                >
+                  Our AI analyzes your background, interests, and goals to create a tailored roadmap
+                  with the exact opportunities you need to advance your career.
+                </motion.p>
+              </div>
+
+              {/* Interactive Career Path Visualization */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                {[
+                  { icon: MapPin, title: "Analyze", desc: "Your profile & goals", color: "from-blue-500 to-cyan-500", delay: 0.9 },
+                  { icon: Zap, title: "Match", desc: "Perfect opportunities", color: "from-indigo-500 to-purple-500", delay: 1.0 },
+                  { icon: TrendingUp, title: "Advance", desc: "Your career path", color: "from-purple-500 to-pink-500", delay: 1.1 }
+                ].map((step, index) => {
+                  const Icon = step.icon;
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: step.delay }}
+                      whileHover={{ y: -5 }}
+                      className="relative group"
+                    >
+                      <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${step.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                          <Icon className="w-6 h-6 text-white" />
+                        </div>
+                        <h4 className="font-semibold text-gray-900 mb-2">{step.title}</h4>
+                        <p className="text-gray-600 text-sm">{step.desc}</p>
+                      </div>
+                      {index < 2 && (
+                        <motion.div
+                          initial={{ scale: 0 }}
+                          whileInView={{ scale: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.3, delay: step.delay + 0.2 }}
+                          className="hidden md:block absolute top-1/2 -right-3 z-20"
+                        >
+                          <ArrowRight className="w-6 h-6 text-indigo-400" />
+                        </motion.div>
+                      )}
+                    </motion.div>
+                  );
+                })}
+              </div>
+
+              {/* Success Metrics */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6"
+              >
+                {[
+                  { metric: "95%", label: "Match Accuracy" },
+                  { metric: "3x", label: "Faster Discovery" },
+                  { metric: "100,000+", label: "Opportunities" },
+                  { metric: "24/7", label: "AI Monitoring" }
+                ].map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                      {stat.metric}
+                    </div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
+                  </div>
+                ))}
+              </motion.div>
+
+              {/* CTA */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 1.3 }}
+                className="text-center"
+              >
+                <a href="/wishlist" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer group">
+                  Build My Career Path
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>

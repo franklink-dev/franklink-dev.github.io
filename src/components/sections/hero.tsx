@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Play, ArrowRight, Sparkles } from 'lucide-react';
+import { Play, ArrowRight, Brain, Target } from 'lucide-react';
 
 export function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -47,7 +47,7 @@ export function HeroSection() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-8"
             >
-              <Sparkles className="w-4 h-4" />
+              <Brain className="w-4 h-4" />
               FOR STUDENTS WHO WANT MORE THAN JOB BOARDS
             </motion.div>
 
@@ -166,7 +166,7 @@ export function HeroSection() {
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
             >
               <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-purple-600" />
+                <Target className="w-4 h-4 text-purple-600" />
                 <span className="text-sm font-medium">Smart Matching</span>
               </div>
             </motion.div>

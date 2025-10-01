@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Users, MessageCircle, Sparkles } from 'lucide-react';
+import { Users, MessageCircle, UserPlus, Network } from 'lucide-react';
 
 export function BetaSection() {
   return (
@@ -18,8 +18,8 @@ export function BetaSection() {
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium mb-8">
-            <Sparkles className="w-4 h-4" />
-            JOIN THE BETA
+            <UserPlus className="w-4 h-4" />
+            Join The Beta
           </div>
 
           {/* Main Content */}
@@ -68,7 +68,7 @@ export function BetaSection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-blue-100"
             >
-              <Sparkles className="w-8 h-8 text-blue-600 mb-4 mx-auto" />
+              <Network className="w-8 h-8 text-blue-600 mb-4 mx-auto" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Community</h3>
               <p className="text-gray-600">Connect with other beta testers and share career insights and tips.</p>
             </motion.div>
