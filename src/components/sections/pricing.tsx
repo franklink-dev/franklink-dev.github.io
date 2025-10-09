@@ -24,7 +24,7 @@ const pricingPlans = [
   },
   {
     name: 'Pro',
-    price: '$14.99',
+    price: '$9.99',
     period: 'per month',
     description: 'Advanced AI matching and premium features',
     features: [

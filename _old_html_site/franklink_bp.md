@@ -76,7 +76,7 @@ Franklink provides:
 
 ### Pricing Structure
 - **Franklink Free** – Students receive limited opportunity highlights and AI guidance.
-- **Franklink Pro ($17/month)** – Full access to AI opportunity recommendation and guidance.
+- **Franklink Pro ($9.99/month)** – Full access to AI opportunity recommendation and guidance.
 - **Franklink Enterprise ($30K–$50K/year per campus)** – FrankLink Enterprise is a campus-wide platform that equips universities with an advanced career recommendation system and analytics dashboard to guide every student toward internships and job offers. For $30K–$50K per year, career centers receive seamless integration with campus calendars and resources, personalized Path Builders for students, mentor and provider marketplaces, and placement uplift reporting that proves how recommended actions translate into interviews and offers.
 
 ### Intellectual Property Rights

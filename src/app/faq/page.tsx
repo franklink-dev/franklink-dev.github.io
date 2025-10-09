@@ -104,7 +104,7 @@ const faqs = [
     id: 11,
     category: 'Pricing',
     question: 'What\'s included in the Pro plan?',
-    answer: 'Pro includes unlimited access to exclusive, high-quality career and networking opportunities, personalized step-by-step career path builder, early access to upcoming features and platform updates, priority notifications, analytics dashboard, custom filters, and priority support. All for $14.99/month with a free trial available.'
+    answer: 'Pro includes unlimited access to exclusive, high-quality career and networking opportunities, personalized step-by-step career path builder, early access to upcoming features and platform updates, priority notifications, analytics dashboard, custom filters, and priority support. All for $9.99/month with a free trial available.'
   },
   {
     id: 12,
