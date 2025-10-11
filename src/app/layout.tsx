@@ -48,6 +48,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.op = window.op||function(...args){(window.op.q=window.op.q||[]).push(args);};
+              window.op('init', {
+                clientId: '1c2a7c35-6ea7-4934-91ce-3a8f2a946e72',
+                trackScreenViews: true,
+                trackOutgoingLinks: true,
+                trackAttributes: true,
+              });
+            `,
+          }}
+        />
+        <script src="https://openpanel.dev/op1.js" defer async />
+      </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased bg-white text-gray-900`}>
         <Header />
         <main className="min-h-screen">
