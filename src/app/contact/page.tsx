@@ -21,15 +21,15 @@ const contactMethods = [
     icon: Mail,
     title: 'Email Us',
     description: 'Get in touch via email',
-    contact: 'info@franklink.app',
-    action: 'mailto:info@franklink.app'
+    contact: 'info@franklink.ai',
+    action: 'mailto:info@franklink.ai'
   },
   {
     icon: MessageCircle,
     title: 'Join Discord',
     description: 'Chat with our community',
     contact: 'Franklink Discord',
-    action: 'https://discord.gg/7JQSKGgj'
+    action: 'https://discord.gg/eVMzKt4T'
   },
   {
     icon: Phone,
@@ -309,7 +309,7 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5 text-gray-500 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">info@franklink.app</p>
+                      <p className="text-gray-600">info@franklink.ai</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
